@@ -36,4 +36,8 @@ class Comment extends Model
     public function post() : BelongsTo {
         return $this->BelongsTo(Post::class);
     }
+
+    public function parent() : BelongsTo {
+        return $this->BelongsTo(Comment::class);
+    }
 }

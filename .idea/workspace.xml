@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Docker Integration">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CommentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CommentFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_05_11_215906_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_05_11_215906_create_comments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +21,21 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "SABECK1"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/SABECK1/personalblog",
+    "accountId": "0501a90c-c5d6-491c-a8df-75b18fb9ee0b"
+  }
+}]]></component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
@@ -130,6 +152,7 @@
   "associatedIndex": 6
 }]]></component>
   <component name="ProjectId" id="2heOu1S7oNZC5k77QdAqLYsm1Vx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -137,6 +160,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/Samue/Desktop/Laravel/personal_blog_new",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -168,11 +192,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717951295729</updated>
-      <workItem from="1717951296774" duration="3628000" />
+      <workItem from="1717951296774" duration="6422000" />
     </task>
+    <task id="LOCAL-00001" summary="Docker Integration">
+      <option name="closed" value="true" />
+      <created>1717960441813</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717960441813</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Docker Integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker Integration" />
   </component>
 </project>

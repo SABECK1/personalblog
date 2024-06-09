@@ -34,7 +34,6 @@
                                 {{ $comment->created_at->diffForHumans() }} by {{ $comment->user->name }}
                             </div>
                         </ul>
-                        <hr class="solid">
                     </div>
                 @endforeach
                 <div class="paginate-links">{{ $comments->fragment('comments')->links('vendor.pagination.custom_pagination') }}</div>

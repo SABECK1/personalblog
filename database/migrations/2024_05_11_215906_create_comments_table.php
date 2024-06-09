@@ -5,6 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use App\Models\Post;
 use App\Models\User;
+use App\Models\Comment;
 use PharIo\Manifest\Author;
 
 return new class extends Migration
@@ -18,6 +19,7 @@ return new class extends Migration
             $table->id();
             $table->foreignIdFor(Post::class);
             $table->foreignIdFor(User::class);
+            $table->foreignIdFor(Comment::class)->nullable();
             $table->string('content')->nullable();
             $table->timestamps();
         });

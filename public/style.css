@@ -65,7 +65,7 @@ body {
 
 .light-theme {
     --background-primary: hsl(0, 0%, 100%);
-    --background-secondary: hsl(0, 0%, 97%);
+    --background-secondary: hsl(0, 0%, 93%);
     --background-tertiary: hsl(0, 0%, 70%);
     --underline: hsl(0, 0%, 20%);
     --action-primary: hsl(214, 32%, 91%);
@@ -344,7 +344,6 @@ body {
     cursor: pointer;
     height: 25vh;
     overflow-wrap: break-word;
-
 }
 
 .blog-card:hover {
@@ -444,6 +443,14 @@ hr {
 .comment-section > * {
     padding-bottom: 0.5em;
     padding-top: 0.5em;
+}
+
+.comment {
+    background: var(--background-secondary);
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05);
 }
 
 /* LOGIN SECTION */

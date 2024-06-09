@@ -5,6 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\User;
 use App\Models\Category;
+use App\Models\Comment;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Comment>
  */
@@ -20,6 +21,8 @@ class CommentFactory extends Factory
         return [
             'user_id' => User::factory(),
             'content' => $this->faker->sentence(),
+            'comment_id' => $this->faker->numberBetween(0, 100),
+//            'parent_id' => Comment::factory(),
         ];
     }
 }

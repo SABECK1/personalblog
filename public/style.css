@@ -405,12 +405,11 @@ body {
 
 /* ARTICLE SECTION */
 .article-container {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     /*box-shadow: -10px -5px 5px rgba(0, 0, 0, 0.2), !* Shadow on the left *!*/
     /*10px -5px 5px rgba(0, 0, 0, 0.2); !* Shadow on the right *!*/
-    min-height: 100vh;
     padding: 2%;
 }
 
@@ -436,7 +435,7 @@ hr {
 /* Comment Section */
 
 .comment-section {
-    padding: 5%;
+    padding: 2%;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -790,7 +789,7 @@ table .icon-column {
 }
 
 #logout-btn:hover {
-    /* background-color: hsl(261, 100%, 12%); */
+     background-color: var(--background-primary);
     color: hsl(261, 100%, 12%);
     box-shadow: 0 0 35px hsl(261, 100%, 12%);
 }

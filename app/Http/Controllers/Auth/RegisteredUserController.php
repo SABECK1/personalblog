@@ -34,7 +34,7 @@ class RegisteredUserController extends Controller
         $request->validate([
             //Comments are already handled by Javascript
             'name' => ['required', 'string', 'max:255', 'unique:'.User::class],
-            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
             // 'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
         // dd("test");

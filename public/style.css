@@ -450,7 +450,7 @@ hr {
     padding: 10px;
     margin-bottom: 1rem;
     border-radius: 10px;
-    box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05);
+    box-shadow: 5px 10px 10px hsla(0, 0%, 0%, 0.3);
 }
 
 .comment-indented {

@@ -445,13 +445,19 @@ hr {
     padding-top: 0.5em;
 }
 
-.comment {
+.comment, .comment-indented {
     background: var(--background-secondary);
     padding: 10px;
     margin-bottom: 1rem;
     border-radius: 10px;
     box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05);
 }
+
+.comment-indented {
+    position: relative;
+    left: 100px;
+}
+
 
 /* LOGIN SECTION */
 

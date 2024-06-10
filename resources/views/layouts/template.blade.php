@@ -29,14 +29,14 @@
 <body class="light-theme">
     <div class="container">
         <header class="header">
-            <nav class="navbar">
+            <nav class="flex-wrapper navbar">
                 <a href="{{ route('home') }}" class="">Home</a>
                 <a href="{{ route('articles') }}" class="">Articles</a>
                 <a href="{{ route('about') }}" class="">About</a>
                 <a href="{{ route('contact') }}" class="">Contact</a>
             </nav>
 
-            <div class='navbar'>
+            <div class='flex-wrapper navbar'>
                 <div id='theme-toggle'>
                     <i></i>
                 </div>

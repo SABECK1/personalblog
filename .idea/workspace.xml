@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="media query to prepare alternative menu on mobile">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" afterDir="false" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Added slider with styling">
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +190,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717951295729</updated>
       <workItem from="1717951296774" duration="12410000" />
-      <workItem from="1718046724084" duration="8615000" />
+      <workItem from="1718046724084" duration="9354000" />
     </task>
     <task id="LOCAL-00001" summary="Docker Integration">
       <option name="closed" value="true" />
@@ -250,13 +248,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718054825701</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added slider with styling">
+      <option name="closed" value="true" />
+      <created>1718056026456</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718056026456</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Docker Integration" />
     <MESSAGE value="Added PHPmyAdmin to Docker installation" />
     <MESSAGE value="Added Comments and Replies with different styling to article's comment section" />
@@ -264,6 +272,7 @@
     <MESSAGE value="Indenting childcomments and recursively get children" />
     <MESSAGE value="improved responsive design of navbar" />
     <MESSAGE value="media query to prepare alternative menu on mobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="media query to prepare alternative menu on mobile" />
+    <MESSAGE value="Added slider with styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added slider with styling" />
   </component>
 </project>

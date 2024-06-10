@@ -26,11 +26,13 @@
                 <p>Write a comment:</p>
                 <form action="" method="POST">
                     <textarea class="textinput" placeholder="Your comment"></textarea>
-                    <button type="submit" class="btn btn-secondary">Submit</button>
+                    <div class="flex-wrapper">
+                    <button type="submit" class="btn btn-tertiary">Submit</button>
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
                     </label>
+                    </div>
                 </form>
                 <h1>Comment Section</h1>
                 @foreach($comments as $comment)

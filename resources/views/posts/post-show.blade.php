@@ -23,6 +23,15 @@
             </div>
             <section class="comment-section" id="comments">
                 <h1>Discussion ({{$comment_count}})</h1>
+                <p>Write a comment:</p>
+                <form action="" method="POST">
+                    <textarea class="textinput" placeholder="Your comment"></textarea>
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </form>
                 <h1>Comment Section</h1>
                 @foreach($comments as $comment)
                     <div class="comment">

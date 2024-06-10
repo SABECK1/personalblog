@@ -1,5 +1,4 @@
 @extends('layouts.template')
-{{-- {{ dd($post) }} --}}
 
 @section('content')
     <div class="main">
@@ -25,7 +24,6 @@
             <section class="comment-section" id="comments">
                 <h1>Discussion ({{$comment_count}})</h1>
                 <h1>Comment Section</h1>
-{{--                {{dd($comments)}}--}}
                 @foreach($comments as $comment)
                     <div class="comment">
                         <ul>
@@ -35,18 +33,11 @@
                             </div>
                         </ul>
                     </div>
-                    @foreach($comment->replies as $reply)
-                    <div class="comment-indented">
-                        <ul>
-                            <p>{{ $reply->content }}</p>
-                            <div class="text-sm text-grayed-out">
-                                {{ $reply->created_at->diffForHumans() }} by {{ $reply->user->name }}
-                            </div>
-                        </ul>
-                    </div>
-                    @endforeach
+                    @if($comment->replies->count() > 0)
+                        @include('posts.post-show-child-comment-list',['comments'=>$comment->replies, 'indent_level'=> 1])
+                    @endif
                 @endforeach
-                <div class="paginate-links">{{ $comments->fragment('comments')->links('vendor.pagination.custom_pagination') }}</div>
+                {{--                @include('posts.posts-show-comments',['comments'=>$comments])--}}
             </section>
         </div>
     </div>

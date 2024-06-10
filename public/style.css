@@ -451,11 +451,11 @@ hr {
     margin-bottom: 1rem;
     border-radius: 10px;
     box-shadow: 5px 10px 10px hsla(0, 0%, 0%, 0.3);
+    /*width: fit-content;*/
 }
 
 .comment-indented {
     position: relative;
-    left: 100px;
 }
 
 

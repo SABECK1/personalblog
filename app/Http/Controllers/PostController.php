@@ -41,7 +41,7 @@ class PostController extends Controller
             'post' => $post,
             'categories' => $post->categories,
 //            'comments' => $post->comments()->with('user')->paginate(10),
-            'comments' => $post->comments()->with('replies')->latest()->paginate(5),
+            'comments' => $post->comments()->with('replies')->paginate(10),
 //            'comments' => Comment::with('replies')->where('post_id', $post->id)->get(),
             'comment_count' => $post->comments()->count(),
             'tags' => $post->tags,

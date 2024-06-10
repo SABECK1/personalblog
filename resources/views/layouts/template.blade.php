@@ -35,10 +35,11 @@
                 <a href="{{ route('about') }}" class="">About</a>
                 <a href="{{ route('contact') }}" class="">Contact</a>
             </nav>
-            <div id='theme-toggle'>
-                <i></i>
-            </div>
-            <div class='login-navbar'>
+
+            <div class='navbar'>
+                <div id='theme-toggle'>
+                    <i></i>
+                </div>
                 <i class="fa-solid fa-user"></i>
                 @guest
                     <a href="{{ route('login.create') }}">Login</a>

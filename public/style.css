@@ -140,6 +140,14 @@ body {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
 }
 
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
 
 .navbar a {
     display: inline-block;
@@ -173,7 +181,7 @@ body {
 #theme-toggle {
     position: relative;
     right: 10vw;
-    width: 5vw;
+    width: 120px;
     border-radius: 160px;
     background: var(--background-secondary);
     box-shadow: inset 0 0.1em 1.2em rgba(0, 0, 0, 0.03),

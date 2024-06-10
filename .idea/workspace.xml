@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Changed Boxshadow">
-      <change afterPath="$PROJECT_DIR$/resources/views/posts/post-show-child-comment-list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/posts/posts-show-comments.blade.php" afterDir="false" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Indenting childcomments and recursively get children">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +192,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717951295729</updated>
       <workItem from="1717951296774" duration="12410000" />
-      <workItem from="1718046724084" duration="4976000" />
+      <workItem from="1718046724084" duration="6393000" />
     </task>
     <task id="LOCAL-00001" summary="Docker Integration">
       <option name="closed" value="true" />
@@ -229,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717969514627</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Indenting childcomments and recursively get children">
+      <option name="closed" value="true" />
+      <created>1718051845725</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718051845725</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +245,7 @@
     <MESSAGE value="Added PHPmyAdmin to Docker installation" />
     <MESSAGE value="Added Comments and Replies with different styling to article's comment section" />
     <MESSAGE value="Changed Boxshadow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed Boxshadow" />
+    <MESSAGE value="Indenting childcomments and recursively get children" />
+    <option name="LAST_COMMIT_MESSAGE" value="Indenting childcomments and recursively get children" />
   </component>
 </project>

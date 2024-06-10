@@ -27,11 +27,13 @@
                 <form action="" method="POST">
                     <textarea class="textinput" placeholder="Your comment"></textarea>
                     <div class="flex-wrapper">
-                    <button type="submit" class="btn btn-tertiary">Submit</button>
-                    <label class="switch">
-                        <input type="checkbox" checked>
-                        <span class="slider round"></span>
-                    </label>
+                        <button type="submit" class="btn btn-tertiary">Submit</button>
+                        Show markdown preview:
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+
                     </div>
                 </form>
                 <h1>Comment Section</h1>
@@ -48,7 +50,8 @@
                         @include('posts.post-show-child-comment-list',['comments'=>$comment->replies, 'indent_level'=> 1])
                     @endif
                 @endforeach
-                {{--                @include('posts.posts-show-comments',['comments'=>$comments])--}}
+                <div
+                    class="paginate-links">{{ $comments->fragment('comments')->links('vendor.pagination.custom_pagination') }}</div>
             </section>
         </div>
     </div>

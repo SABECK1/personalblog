@@ -48,6 +48,7 @@
                     </div>
                     @if($comment->replies->count() > 0)
                         @include('posts.post-show-child-comment-list',['comments'=>$comment->replies, 'indent_level'=> 1])
+                       
                     @endif
                 @endforeach
                 <div

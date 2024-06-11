@@ -29,24 +29,9 @@
 <body class="light-theme">
     <div class="container">
         <header class="header">
-            <div class="btn-group">
-
-                <button id="theme-toggle-mobile">
-                    <div class="logo-dark">
-                    <i name="moon" class="fa-solid fa-moon"></i>
-                    </div>
-                    <div class="logo-light">
-                    <i name="sunny" class="fa-solid fa-sun"></i>
-                    </div>
-                </button>
-
-                <button class="nav-menu-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-
-            </div>
 
 
+            <div class="desktop-nav">
             <nav class="flex-wrapper navbar">
                 <a href="{{ route('home') }}" class="">Home</a>
                 <a href="{{ route('articles') }}" class="">Articles</a>
@@ -72,6 +57,25 @@
                                 class="fa fa-sign-out"></i></button>
                     </form>
                 @endguest
+            </div>
+            </div>
+
+            <div class="mobile-nav">
+                <div class="btn-group">
+
+                    <button id="theme-toggle-mobile">
+                        <div class="logo-dark">
+                            <i name="moon" class="fa-solid fa-moon"></i>
+                        </div>
+                        <div class="logo-light">
+                            <i name="sunny" class="fa-solid fa-sun"></i>
+                        </div>
+                    </button>
+
+                    <button class="nav-menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
             </div>
         </header>
     </div>

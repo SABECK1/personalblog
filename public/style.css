@@ -258,7 +258,7 @@ header .btn-group {
 
 #theme-toggle {
     position: relative;
-    right: 10vw;
+    /*right: 10vw;*/
     width: 5.3vw;
     border-radius: 160px;
     background: var(--background-secondary);
@@ -1081,5 +1081,11 @@ input:checked + .slider:before {
     header .navbar {
         display: flex;
         gap: 30px;
+    }
+    .desktop-nav {
+        display:     flex;
+        align-items: center;
+        gap: 30px;
+        /*width: 50%;*/
     }
 }

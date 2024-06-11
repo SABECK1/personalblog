@@ -41,7 +41,7 @@
                 </button>
 
                 <button class="nav-menu-btn">
-                    <ion-icon name="menu-outline"></ion-icon>
+                    <i class="fa-solid fa-bars"></i>
                 </button>
 
             </div>

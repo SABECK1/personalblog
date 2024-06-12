@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="fixed javascript for theme setter and css for theme button">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="fixed header spacing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/theme-toggle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/theme-toggle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" afterDir="false" />
     </list>
@@ -195,7 +194,7 @@
       <workItem from="1717951296774" duration="12410000" />
       <workItem from="1718046724084" duration="10523000" />
       <workItem from="1718132321921" duration="4965000" />
-      <workItem from="1718218505010" duration="8358000" />
+      <workItem from="1718218505010" duration="8703000" />
     </task>
     <task id="LOCAL-00001" summary="Docker Integration">
       <option name="closed" value="true" />
@@ -317,7 +316,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718226736785</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed header spacing">
+      <option name="closed" value="true" />
+      <created>1718228472589</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1718228472589</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,14 +348,15 @@
     <MESSAGE value="refactor js" />
     <MESSAGE value="Saving theme to localstorage" />
     <MESSAGE value="fixed javascript for theme setter and css for theme button" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed javascript for theme setter and css for theme button" />
+    <MESSAGE value="fixed header spacing" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed header spacing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/layouts/template.blade.php</url>
-          <line>14</line>
+          <line>15</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

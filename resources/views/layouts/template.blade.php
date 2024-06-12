@@ -2,14 +2,15 @@
 <html lang='en'>
 
 <head>
-    <meta charset="UTF-8" <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8"
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     {{-- FA-Icons --}}
     <script src="https://kit.fontawesome.com/4ab20c1496.js" crossorigin="anonymous"></script>
 
     {{-- DevICON --}}
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
 
     {{-- Vanilla CSS Stylesheet --}}
     <link rel="stylesheet" href="{{ asset('style.css') }}">
@@ -23,18 +24,16 @@
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
 
 
-
-
     {{-- Other Javascript Functionality --}}
     <script src="{{ asset('/js/theme-toggle.js') }}" defer></script>
 </head>
 
 <body class="light-theme">
-    <div class="container">
-        <header class="header">
+<div class="container">
+    <div class="header">
 
 
-            <div class="desktop-nav">
+        <div class="desktop-nav">
             <div class="flex-wrapper navbar">
                 <a href="{{ route('home') }}" class="">Home</a>
                 <a href="{{ route('articles') }}" class="">Articles</a>
@@ -66,29 +65,55 @@
                     </form>
                 @endguest
             </div>
-            </div>
+        </div>
 
-            <div class="mobile-nav">
-                <div class="btn-group">
+        <div class="mobile-nav">
+            <div class="btn-group">
 
-                    <button id="theme-toggle-mobile" class="theme-btn">
-                        <div class="logo-dark">
-                            <i name="moon" class="fa-solid fa-moon"></i>
-                        </div>
-                        <div class="logo-light">
-                            <i name="sunny" class="fa-solid fa-sun"></i>
-                        </div>
-                    </button>
+                <button id="theme-toggle-mobile" class="theme-btn">
+                    <div class="logo-dark">
+                        <i name="moon" class="fa-solid fa-moon"></i>
+                    </div>
+                    <div class="logo-light">
+                        <i name="sunny" class="fa-solid fa-sun"></i>
+                    </div>
+                </button>
 
-                    <button class="nav-menu-btn">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
+                <button class="nav-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="wrapper">
+
+                    <p class="h3 nav-title">Main Menu</p>
+
+                    <ul>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About Me</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+
                 </div>
+
+
             </div>
-        </header>
+
+
+        </div>
     </div>
-    @yield('content')
-    @include('layouts.footer')
+</div>
+</header>
+</div>
+@yield('content')
+@include('layouts.footer')
 </body>
 <script>
     function goToUrl(url, event) {
@@ -96,7 +121,7 @@
         window.location.href = url;
         event.stopPropagation();
     }
-    </script>
+</script>
 
 
 {{--    const toggle_icon = document.querySelector('#theme-toggle i');--}}

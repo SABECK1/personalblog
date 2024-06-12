@@ -19,11 +19,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
-    {{-- Just-Validate --}}
+
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
-    <script src="{{ asset('/js/validation.js') }} " defer></script>
-    <script src="{{ asset('/js/validation_contact.js') }} " defer></script>
-    <script src="{{ asset('/js/validation_forgot_password.js') }}" defer></script>
+
+
+
+
+    {{-- Other Javascript Functionality --}}
+    <script src="{{ asset('/js/theme-toggle.js') }}" defer></script>
 </head>
 
 <body class="light-theme">
@@ -41,7 +44,7 @@
 
             <div class='flex-wrapper navbar'>
                 <div id='theme-toggle'>
-                    <i></i>
+                    <i class="theme-btn"></i>
                 </div>
                 <i class="fa-solid fa-user"></i>
                 @guest
@@ -63,7 +66,7 @@
             <div class="mobile-nav">
                 <div class="btn-group">
 
-                    <button id="theme-toggle-mobile">
+                    <button id="theme-toggle-mobile" class="theme-btn">
                         <div class="logo-dark">
                             <i name="moon" class="fa-solid fa-moon"></i>
                         </div>

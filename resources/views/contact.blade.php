@@ -1,7 +1,7 @@
 @extends('layouts.template')
 
 @section('content')
-
+    <script src="{{ asset('/js/validation_contact.js') }} " defer></script>
     <body class="light-theme">
         <div class="form-template">
             <section class="container">
@@ -30,7 +30,7 @@
                             <div>
                                 <button type="submit" name="contact_message_submit" class="btn btn-primary">
                                     <i class="fas fa-envelope"></i>
-                                    SendMessage</button>
+                                    Send Message</button>
                             </div>
                         </form>
                     </div>

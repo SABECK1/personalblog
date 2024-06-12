@@ -166,6 +166,17 @@ header .btn-group {
     border-bottom: 1px solid var(--action-primary);
 }
 
+.mobile-nav .nav-title { margin-bottom: 1rem; }
+
+.mobile-nav .nav-item { margin-bottom: 0.5rem; }
+
+.mobile-nav .nav-link {
+    font-size: var(--fs-3);
+    color: var(--foreground-secondary);
+}
+
+.mobile-nav .nav-link:hover { color: var(--accent); }
+
 .navbar a {
     display: inline-block;
     position: relative;
@@ -219,6 +230,10 @@ header .btn-group {
 .nav-close-btn):hover {
     background: var(--accent);
     color: white;
+}
+
+.desktop-nav {
+    display: none;
 }
 
 /*.mobile-nav {*/

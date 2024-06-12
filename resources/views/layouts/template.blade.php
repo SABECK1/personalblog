@@ -67,46 +67,46 @@
             </div>
         </div>
 
-        <div class="mobile-nav">
-            <div class="btn-group">
+        <div class="btn-group">
 
-                <button id="theme-toggle-mobile" class="theme-btn">
-                    <div class="logo-dark">
-                        <i name="moon" class="fa-solid fa-moon"></i>
-                    </div>
-                    <div class="logo-light">
-                        <i name="sunny" class="fa-solid fa-sun"></i>
-                    </div>
-                </button>
-
-                <button class="nav-menu-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-
-                <div class="wrapper">
-
-                    <p class="h3 nav-title">Main Menu</p>
-
-                    <ul>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">About Me</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-
+            <button id="theme-toggle-mobile" class="theme-btn">
+                <div class="logo-dark">
+                    <i name="moon" class="fa-solid fa-moon"></i>
                 </div>
+                <div class="logo-light">
+                    <i name="sunny" class="fa-solid fa-sun"></i>
+                </div>
+            </button>
 
+            <button class="nav-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
 
+        <div class="mobile-nav">
+
+            <button class="nav-close-btn">
+                <i class="fa-solid fa-x"></i>
+            </button>
+
+            <div class="wrapper">
+
+                <p class="h3 nav-title">Main Menu</p>
+
+                <ul>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Me</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
             </div>
-
-
         </div>
     </div>
 </div>

@@ -35,12 +35,12 @@
 
 
             <div class="desktop-nav">
-            <nav class="flex-wrapper navbar">
+            <div class="flex-wrapper navbar">
                 <a href="{{ route('home') }}" class="">Home</a>
                 <a href="{{ route('articles') }}" class="">Articles</a>
                 <a href="{{ route('about') }}" class="">About</a>
                 <a href="{{ route('contact') }}" class="">Contact</a>
-            </nav>
+            </div>
 
             <div class='flex-wrapper navbar'>
                 <div id='theme-toggle' class="theme-btn">
@@ -98,7 +98,7 @@
     }
     </script>
 
-{{--    const toggle = document.getElementById('theme-toggle');--}}
+
 {{--    const toggle_icon = document.querySelector('#theme-toggle i');--}}
 {{--    const body = document.querySelector('body');--}}
 

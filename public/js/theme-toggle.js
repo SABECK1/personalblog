@@ -33,7 +33,6 @@ const navToggleFunc = function () { nav.classList.toggle('active'); }
 // navMenuBtn.addEventListener('click', navToggleFunc);
 // navCloseBtn.addEventListener('click', navToggleFunc);
 
-debugger
 
 // theme toggle variables
 const themeBtn = document.querySelectorAll('.theme-btn');

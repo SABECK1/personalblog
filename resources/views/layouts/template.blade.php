@@ -43,8 +43,13 @@
             </nav>
 
             <div class='flex-wrapper navbar'>
-                <div id='theme-toggle'>
-                    <i class="theme-btn"></i>
+                <div id='theme-toggle' class="theme-btn">
+                    <div class="logo-dark">
+                        <i name="moon" class="fa-solid fa-moon"></i>
+                    </div>
+                    <div class="logo-light">
+                        <i name="sunny" class="fa-solid fa-sun"></i>
+                    </div>
                 </div>
                 <i class="fa-solid fa-user"></i>
                 @guest
@@ -91,42 +96,36 @@
         window.location.href = url;
         event.stopPropagation();
     }
+    </script>
 
-    const toggle = document.getElementById('theme-toggle');
-    const toggle_icon = document.querySelector('#theme-toggle i');
-    const body = document.querySelector('body');
+{{--    const toggle = document.getElementById('theme-toggle');--}}
+{{--    const toggle_icon = document.querySelector('#theme-toggle i');--}}
+{{--    const body = document.querySelector('body');--}}
 
-    function toggleTheme() {
-        if (localStorage.getItem('theme') != 'dark') {
-            localStorage.setItem('theme', 'dark');
-        } else {
-            localStorage.setItem('theme', 'light');
-        }
-        setTheme();
-    }
 
-    function setTheme() {
-        if (localStorage.getItem('theme') == 'dark') {
-            body.classList.add('dark-theme');
-            body.classList.remove('light-theme');
-            toggle.classList.add('active');
-            toggle_icon.classList.add('fa-solid');
-            toggle_icon.classList.remove('fa-sun');
-            toggle_icon.classList.add('fa-moon');
-            toggle_icon.style.color = "black";
-        } else {
-            body.classList.add('light-theme');
-            body.classList.remove('dark-theme');
-            toggle.classList.remove('active');
-            toggle_icon.classList.add('fa-solid');
-            toggle_icon.classList.remove('fa-moon');
-            toggle_icon.classList.add('fa-sun');
-            toggle_icon.style.color = "orange";
-        }
 
-    }
-    toggle.addEventListener('click', toggleTheme);
-    setTheme();
-</script>
+{{--    function setTheme() {--}}
+{{--        if (localStorage.getItem('theme') == 'dark') {--}}
+{{--            body.classList.add('dark-theme');--}}
+{{--            body.classList.remove('light-theme');--}}
+{{--            toggle.classList.add('active');--}}
+{{--            toggle_icon.classList.add('fa-solid');--}}
+{{--            toggle_icon.classList.remove('fa-sun');--}}
+{{--            toggle_icon.classList.add('fa-moon');--}}
+{{--            toggle_icon.style.color = "black";--}}
+{{--        } else {--}}
+{{--            body.classList.add('light-theme');--}}
+{{--            body.classList.remove('dark-theme');--}}
+{{--            toggle.classList.remove('active');--}}
+{{--            toggle_icon.classList.add('fa-solid');--}}
+{{--            toggle_icon.classList.remove('fa-moon');--}}
+{{--            toggle_icon.classList.add('fa-sun');--}}
+{{--            toggle_icon.style.color = "orange";--}}
+{{--        }--}}
+
+{{--    }--}}
+{{--    toggle.addEventListener('click', toggleTheme);--}}
+{{--    setTheme();--}}
+{{--</script>--}}
 
 </html>

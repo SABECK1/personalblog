@@ -25,7 +25,7 @@ setTheme();
 const nav = document.querySelector('.mobile-nav');
 const navMenuBtn = document.querySelector('.nav-menu-btn');
 const navCloseBtn = document.querySelector('.nav-close-btn');
-debugger
+
 
 // navToggle function
 const navToggleFunc = function () { nav.classList.toggle('active'); }
@@ -37,7 +37,7 @@ navCloseBtn.addEventListener('click', navToggleFunc);
 // theme toggle variables
 const themeBtn = document.querySelectorAll('.theme-btn');
 
-debugger
+
 for (let i = 0; i < themeBtn.length; i++) {
 
     themeBtn[i].addEventListener('click', function toggle_theme() {

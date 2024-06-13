@@ -105,6 +105,8 @@ body {
     --background-gradient: linear-gradient(hsl(0, 0%, 0%), hsl(261, 100%, 12%));
  }
 
+li { list-style: none; }
+
 /* MAIN SECTION */
 
 .container {
@@ -153,10 +155,11 @@ body {
 
 .header .flex-wrapper { display: none; }
 
-header .btn-group {
+.header .btn-group {
     display:     flex;
-    align-items: center;
+    justify-content: flex-end;
     gap: 15px;
+    width: 100%;
 }
 
 
@@ -236,46 +239,52 @@ header .btn-group {
     display: none;
 }
 
-/*.mobile-nav {*/
-/*    position: fixed;*/
-/*    inset: 0;*/
-/*    background: var(--background-primary);*/
-/*    padding: 70px 20px;*/
-/*    overflow: auto;*/
-/*    overscroll-behavior: contain;*/
-/*    transform: translateX(100%);*/
-/*    visibility: hidden;*/
-/*    transition: 0.5s cubic-bezier(1, 0, 0.30, 0.70);*/
-/*    z-index: 10;*/
-/*}*/
+.mobile-nav {
+    background: var(--background-primary);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.5s cubic-bezier(1, 0, 0.30, 0.70);
+    z-index: 10;
+}
 
-/*.mobile-nav.active {*/
-/*    transform: translateX(0);*/
-/*    visibility: visible;*/
-/*}*/
+.mobile-nav.active {
+    right: 0;
+}
 
-/*.nav-close-btn {*/
-/*    position: absolute;*/
-/*    top:   20px;*/
-/*    right: 20px;*/
-/*}*/
+.nav-close-btn {
+    position: absolute;
+    top:   20px;
+    right: 20px;
+}
 
-/*.mobile-nav .wrapper {*/
-/*    padding-bottom: 1.25rem;*/
-/*    margin-bottom:  1.25rem;*/
-/*    border-bottom: 1px solid var(--action-primary);*/
-/*}*/
+.mobile-nav .wrapper {
+    padding-bottom: 1.25rem;
+    margin-bottom:  1.25rem;
+    border-bottom: 1px solid var(--action-primary);
+    height: 100%;
+    padding-top: 1.25rem;
+}
 
-/*.mobile-nav .nav-title { margin-bottom: 1rem; }*/
+.mobile-nav .nav-title { margin-bottom: 1rem; }
 
-/*.mobile-nav .nav-item { margin-bottom: 0.5rem; }*/
+.mobile-nav .nav-item { margin-bottom: 0.5rem; }
 
-/*.mobile-nav .nav-link {*/
-/*    font-size: var(--fs-3);*/
-/*    color: var(--foreground-secondary);*/
-/*}*/
+.mobile-nav .nav-link {
+    font-size: var(--fs-3);
+    color: var(--foreground-secondary);
+}
 
-/*.mobile-nav .nav-link:hover { color: var(--accent); }*/
+.mobile-nav .nav-link:hover { color: var(--accent); }
 
 
 #theme-toggle {

@@ -83,34 +83,35 @@
             </button>
         </div>
 
-        <div class="mobile-nav">
 
-            <button class="nav-close-btn">
-                <i class="fa-solid fa-x"></i>
-            </button>
-
-            <div class="wrapper">
-
-                <p class="h3 nav-title">Main Menu</p>
-
-                <ul>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">About Me</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
 </div>
 </header>
+<div class="mobile-nav">
+
+    <button class="nav-close-btn">
+        <i class="fa-solid fa-x"></i>
+    </button>
+
+    <div class="wrapper">
+
+        <p class="h3 nav-title">Main Menu</p>
+
+        <ul>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">About Me</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
 </div>
 @yield('content')
 @include('layouts.footer')

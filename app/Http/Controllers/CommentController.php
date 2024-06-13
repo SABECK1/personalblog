@@ -8,6 +8,8 @@ use App\Http\Requests\UpdateCommentRequest;
 
 class CommentController extends Controller
 {
+//    protected $input = ['content', 'user_id'];
+    /**
     /**
      * Display a listing of the resource.
      */

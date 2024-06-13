@@ -26,6 +26,7 @@
                 @auth
                 <p>Write a comment:</p>
                 <form action="{{ route('posts.comments.store', $post) }}" method="POST">
+                    @csrf
                     <textarea class="textinput" placeholder="Your comment"></textarea>
                     <div class="flex-wrapper">
                         <button type="submit" class="btn btn-tertiary">Submit</button>

@@ -23,19 +23,21 @@
             </div>
             <section class="comment-section" id="comments">
                 <h1>Discussion ({{$comment_count}})</h1>
+                @auth
                 <p>Write a comment:</p>
-                <form action="" method="POST">
+                <form action="{{ route('posts.comments.store', $post) }}" method="POST">
                     <textarea class="textinput" placeholder="Your comment"></textarea>
                     <div class="flex-wrapper">
                         <button type="submit" class="btn btn-tertiary">Submit</button>
-                        Show markdown preview:
-                        <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
-                        </label>
+{{--                        Show markdown preview:--}}
+{{--                        <label class="switch">--}}
+{{--                            <input type="checkbox" checked>--}}
+{{--                            <span class="slider round"></span>--}}
+{{--                        </label>--}}
 
                     </div>
                 </form>
+                @endauth
                 <h1>Comment Section</h1>
                 @foreach($comments as $comment)
                     <div class="comment">
@@ -48,7 +50,7 @@
                     </div>
                     @if($comment->replies->count() > 0)
                         @include('posts.post-show-child-comment-list',['comments'=>$comment->replies, 'indent_level'=> 1])
-                       
+
                     @endif
                 @endforeach
                 <div

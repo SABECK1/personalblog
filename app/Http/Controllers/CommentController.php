@@ -27,9 +27,13 @@ class CommentController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreCommentRequest $request)
+    public function store(StoreCommentRequest $request, Post $post)
     {
-        //
+        $request->validate(['content'=>'required', 'string', 'max:500']);
+
+        $post->comments()->create([...$data, 'user_id' => $request->user()->id]);
+
+        return to_route('post.show', $post)->withFragment('comments');
     }
 
     /**

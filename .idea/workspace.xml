@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="route middleware auth for comments">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="csrf token">
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +193,7 @@
       <workItem from="1718046724084" duration="10523000" />
       <workItem from="1718132321921" duration="4965000" />
       <workItem from="1718218505010" duration="9838000" />
-      <workItem from="1718304195960" duration="6452000" />
+      <workItem from="1718304195960" duration="6756000" />
     </task>
     <task id="LOCAL-00001" summary="Docker Integration">
       <option name="closed" value="true" />
@@ -388,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718314888936</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="csrf token">
+      <option name="closed" value="true" />
+      <created>1718315007268</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1718315007268</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,7 +427,8 @@
     <MESSAGE value="commenting only possible when auth" />
     <MESSAGE value="fixed button styling" />
     <MESSAGE value="route middleware auth for comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="route middleware auth for comments" />
+    <MESSAGE value="csrf token" />
+    <option name="LAST_COMMIT_MESSAGE" value="csrf token" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

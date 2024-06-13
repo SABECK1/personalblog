@@ -8,7 +8,7 @@ use App\Http\Requests\UpdateCommentRequest;
 
 class CommentController extends Controller
 {
-//    protected $input = ['content', 'user_id'];
+    protected $input = ['content', 'user_id'];
     /**
     /**
      * Display a listing of the resource.
@@ -31,7 +31,7 @@ class CommentController extends Controller
      */
     public function store(StoreCommentRequest $request, Post $post)
     {
-        $request->validate(['content'=>'required', 'string', 'max:500']);
+        $data = $request->validate(['content'=>'required', 'string', 'max:500']);
 
         $post->comments()->create([...$data, 'user_id' => $request->user()->id]);
 

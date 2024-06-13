@@ -921,16 +921,14 @@ table .icon-column {
     font-size: 12px;
     min-width: 7rem;
     min-height: 2rem;
+    text-align: center;
 }
 
-.btn-secondary:hover, .btn-tertiary:hover {
+.btn-primary:hover, .btn-secondary:hover, .btn-tertiary:hover {
     background: var(--accent);
-    color: var(--action-primary);
+    /*color: var(--action-primary);*/
 }
 
-.btn-primary:hover {
-    background: var(--accent);
-}
 
 .switch {
     position: relative;

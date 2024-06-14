@@ -587,8 +587,21 @@ hr {
     /*width: fit-content;*/
 }
 
+.comment .role {
+    background: var(--accent);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
 .comment-indented {
     position: relative;
+}
+
+.comment-section hr {
+    color: var(--foreground-primary-light);
+    margin-block: 10px;
 }
 
 

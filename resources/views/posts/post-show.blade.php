@@ -46,15 +46,15 @@
                 @foreach($comments as $comment)
                     <div class="comment">
                         <ul>
-                            <p>{{ $comment->content }}</p>
                             <div class="text-sm text-grayed-out">
-                                {{ $comment->created_at->diffForHumans() }} by {{ $comment->user->name }}
+                                @if ($post->user == $comment->user) <div class="role">AUTHOR</div> @endif {{ $comment->user->name }}{{ $comment->created_at->diffForHumans() }}
                             </div>
+                            <hr class="solid">
+                            <p>{{ $comment->content }}</p>
                         </ul>
                     </div>
                     @if($comment->replies->count() > 0)
                         @include('posts.post-show-child-comment-list',['comments'=>$comment->replies, 'indent_level'=> 1])
-
                     @endif
                 @endforeach
                 <div

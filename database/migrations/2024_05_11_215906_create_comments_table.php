@@ -20,6 +20,7 @@ return new class extends Migration
             $table->foreignIdFor(Post::class);
             $table->foreignIdFor(User::class);
             $table->foreignIdFor(Comment::class)->nullable();
+            $table->bigInteger('likes')->default(0);
             $table->string('content')->nullable();
             $table->timestamps();
         });

@@ -27,7 +27,10 @@
                 <p>Write a comment:</p>
                 <form action="{{ route('posts.comments.store', $post) }}" method="POST">
                     @csrf
-                    <textarea class="textinput" placeholder="Your comment"></textarea>
+                    @if($errors->has('content'))
+                        <div class="error">{{ $errors->first('content') }}</div>
+                    @endif
+                    <textarea class="textinput" placeholder="Your comment" name="content"></textarea>
                     <div class="flex-wrapper">
                         <button type="submit" class="btn btn-tertiary">Submit</button>
 {{--                        Show markdown preview:--}}

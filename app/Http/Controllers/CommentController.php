@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comment;
+use App\Models\Post;
 use App\Http\Requests\StoreCommentRequest;
 use App\Http\Requests\UpdateCommentRequest;
 
 class CommentController extends Controller
 {
-    protected $input = ['content', 'user_id'];
+
     /**
     /**
      * Display a listing of the resource.
@@ -31,8 +32,7 @@ class CommentController extends Controller
      */
     public function store(StoreCommentRequest $request, Post $post)
     {
-
-        $data = $request->validate(['content'=>'required', 'string', 'max:500']);
+        $data = $request->validated();
 
         $post->comments()->create([...$data, 'user_id' => $request->user()->id]);
 

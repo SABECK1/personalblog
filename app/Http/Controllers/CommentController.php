@@ -31,6 +31,7 @@ class CommentController extends Controller
      */
     public function store(StoreCommentRequest $request, Post $post)
     {
+
         $data = $request->validate(['content'=>'required', 'string', 'max:500']);
 
         $post->comments()->create([...$data, 'user_id' => $request->user()->id]);

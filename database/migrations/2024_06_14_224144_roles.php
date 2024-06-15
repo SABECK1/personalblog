@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('roles', function (Blueprint $table) {
-            $table->integer('role_id')->default(1);
+            $table->id();
             $table->string('role_name', 50);
 //            $table->string('icon', 100);
         });

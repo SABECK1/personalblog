@@ -43,7 +43,7 @@ class PostController extends Controller
             'comments' => $post->comments()->with('replies')->paginate(10),
             'comment_count' => $post->comments()->count(),
             'tags' => $post->tags,
-            'user' => $post->user
+            'roles' => $post->comments()->user()->with('roles')
         ]);
     }
 

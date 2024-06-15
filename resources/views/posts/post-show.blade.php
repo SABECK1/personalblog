@@ -47,7 +47,20 @@
                     <div class="comment">
                         <ul>
                             <div class="text-sm text-grayed-out">
-                                @if ($post->user == $comment->user) <div class="role">AUTHOR</div> @endif {{ $comment->user->name }}{{ $comment->created_at->diffForHumans() }}
+                                @if ($post->user == $comment->user)
+                                    <div class="role">AUTHOR</div>
+                                @endif
+                                {{dd($comment->user->roles)}}
+
+{{--                                @foreach($roles->roles as $role)--}}
+{{--                                    {{dd($role)}}--}}
+{{--                                @endforeach--}}
+{{--                                {{dd($comment->user->roles)}}--}}
+{{--                                @if ($comment->user->roles !== 1 )--}}
+{{--                                        <div class="role">{{ $comment->user->role->role_name }}</div>--}}
+{{--                                    @endif--}}
+
+                                    {{ $comment->user->name }}  {{ $comment->created_at->diffForHumans() }}
                             </div>
                             <hr class="solid">
                             <p>{{ $comment->content }}</p>

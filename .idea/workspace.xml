@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="added roles table">
-      <change afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="edited htaccess for caching">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_06_14_224144_roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_06_14_224144_roles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +200,7 @@
       <workItem from="1718132321921" duration="4965000" />
       <workItem from="1718218505010" duration="9838000" />
       <workItem from="1718304195960" duration="6756000" />
-      <workItem from="1718397807194" duration="5893000" />
+      <workItem from="1718397807194" duration="12066000" />
     </task>
     <task id="LOCAL-00001" summary="Docker Integration">
       <option name="closed" value="true" />
@@ -437,7 +442,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718404988154</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="edited migrations to support roles">
+      <option name="closed" value="true" />
+      <created>1718405662778</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1718405662778</updated>
+    </task>
+    <task id="LOCAL-00032" summary="edited htaccess for caching">
+      <option name="closed" value="true" />
+      <created>1718406321058</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1718406321058</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,8 +467,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Changed Boxshadow" />
-    <MESSAGE value="Indenting childcomments and recursively get children" />
     <MESSAGE value="improved responsive design of navbar" />
     <MESSAGE value="media query to prepare alternative menu on mobile" />
     <MESSAGE value="Added slider with styling" />
@@ -471,7 +490,9 @@
     <MESSAGE value="Basic Comment functionality" />
     <MESSAGE value="Added role display in comment section" />
     <MESSAGE value="added roles table" />
-    <option name="LAST_COMMIT_MESSAGE" value="added roles table" />
+    <MESSAGE value="edited migrations to support roles" />
+    <MESSAGE value="edited htaccess for caching" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited htaccess for caching" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

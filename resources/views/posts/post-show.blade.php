@@ -56,6 +56,11 @@
                                 @endif
 
                                 {{ $comment->user->name }}  {{ $comment->created_at->diffForHumans() }}
+                                <button class="btn btn-quarternary"><i class="fa fa-reply"
+                                                                                   aria-hidden="true"> Reply</i>
+                                </button>
+                                <button class="btn btn-quarternary btn-warning"><i class="fa fa-trash-o"
+                                                                                   aria-hidden="true"></i></button>
                             </div>
                             <hr class="solid">
                             <p>{{ $comment->content }}</p>

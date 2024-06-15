@@ -67,9 +67,11 @@
                                         <button class="btn btn-quarternary"><i class="fa fa-reply"
                                                                                aria-hidden="true"> Reply</i>
                                         </button>
+                                        @can('delete', $comment)
                                         <button class="btn btn-quarternary btn-warning"><i class="fa fa-trash-o"
                                                                                            aria-hidden="true"></i>
                                         </button>
+                                        @endcan
                                     </form>
                                 </div>
                             </div>

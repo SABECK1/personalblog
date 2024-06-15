@@ -25,26 +25,12 @@
                 <h1>Discussion ({{$comment_count}})</h1>
                 @auth
                     <p>Write a comment:</p>
-                    <form action="{{ route('posts.comments.store', $post) }}" method="POST">
-                        @csrf
-                        @if($errors->has('content'))
-                            <div class="error">{{ $errors->first('content') }}</div>
-                        @endif
-                        <textarea class="textinput" placeholder="Your comment" name="content"></textarea>
-                        <div class="flex-wrapper">
-                            <button type="submit" class="btn btn-tertiary">Submit</button>
-                            {{--                        Show markdown preview:--}}
-                            {{--                        <label class="switch">--}}
-                            {{--                            <input type="checkbox" checked>--}}
-                            {{--                            <span class="slider round"></span>--}}
-                            {{--                        </label>--}}
-
-                        </div>
-                    </form>
+                    <x-comment-box :post="$post"/>
                 @endauth
                 <h1>Comment Section</h1>
                 @foreach($comments as $comment)
                    <x-comment :post="$post" :comment="$comment"/>
+                    <x-comment-box :post="$post" :comment="$comment"/>
                     @if($comment->replies->count() > 0)
                         @include('posts.post-show-child-comment-list',['comments'=>$comment->replies, 'indent_level'=> 1])
                     @endif
@@ -54,9 +40,20 @@
             </section>
         </div>
     </div>
+    <script>
+        function toggleElement() {
+            const paragraph = document
+                .getElementById('myparagraph');
+            const currentVisibility = window
+                .getComputedStyle(paragraph).visibility;
 
-
-
+            if (currentVisibility === 'hidden') {
+                paragraph.style.visibility = 'visible';
+            } else {
+                paragraph.style.visibility = 'hidden';
+            }
+        }
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const copyUrlBtn = document.getElementById('copy-url-btn');

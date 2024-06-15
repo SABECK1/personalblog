@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Fully functional delete method">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="comment component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -196,7 +197,8 @@
       <workItem from="1718218505010" duration="9838000" />
       <workItem from="1718304195960" duration="6756000" />
       <workItem from="1718397807194" duration="12677000" />
-      <workItem from="1718452575386" duration="11926000" />
+      <workItem from="1718452575386" duration="13137000" />
+      <workItem from="1718492476655" duration="2431000" />
     </task>
     <task id="LOCAL-00001" summary="Docker Integration">
       <option name="closed" value="true" />
@@ -518,7 +520,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718479306261</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="comment component">
+      <option name="closed" value="true" />
+      <created>1718480783058</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1718480783058</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +537,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="refactor js" />
     <MESSAGE value="Saving theme to localstorage" />
     <MESSAGE value="fixed javascript for theme setter and css for theme button" />
     <MESSAGE value="fixed header spacing" />
@@ -552,7 +561,8 @@
     <MESSAGE value="styling of delete and reply buttons" />
     <MESSAGE value="Policy for deleting comments" />
     <MESSAGE value="Fully functional delete method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fully functional delete method" />
+    <MESSAGE value="comment component" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment component" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

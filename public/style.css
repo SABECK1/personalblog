@@ -584,7 +584,21 @@ hr {
     margin-bottom: 1rem;
     border-radius: 10px;
     box-shadow: 5px 10px 10px hsla(0, 0%, 0%, 0.3);
+    position: relative;
     /*width: fit-content;*/
+}
+
+.comment .btn.group {
+    display:flex;
+    position: absolute;
+    right: 0;
+}
+
+.comment-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .comment .role {
@@ -596,9 +610,9 @@ hr {
     display: inline-flex;
 }
 
-.comment-indented {
-    position: relative;
-}
+/*.comment-indented {*/
+/*    position: relative;*/
+/*}*/
 
 .comment-section hr {
     color: var(--foreground-primary-light);
@@ -942,7 +956,7 @@ table .icon-column {
 .btn-quarternary {
     background: var(--action-secondary);
     color: var(--foreground-secondary);
-    padding: 0.5rem 0.5rem;
+    padding: 0.3rem 0.3rem;
     border: 3px solid var(--foreground-tertiary);
     display: inline-flex;
     align-items: center;

@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="access user roles to comment">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="fixed role relation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -198,7 +197,7 @@
       <workItem from="1718218505010" duration="9838000" />
       <workItem from="1718304195960" duration="6756000" />
       <workItem from="1718397807194" duration="12677000" />
-      <workItem from="1718452575386" duration="1335000" />
+      <workItem from="1718452575386" duration="4863000" />
     </task>
     <task id="LOCAL-00001" summary="Docker Integration">
       <option name="closed" value="true" />
@@ -472,7 +471,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718412271021</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="fixed role relation">
+      <option name="closed" value="true" />
+      <created>1718454282041</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1718454282041</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +488,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="media query to prepare alternative menu on mobile" />
     <MESSAGE value="Added slider with styling" />
     <MESSAGE value="added flex-wrapper class" />
     <MESSAGE value="added paginator to comments" />
@@ -506,7 +512,8 @@
     <MESSAGE value="edited migrations to support roles" />
     <MESSAGE value="edited htaccess for caching" />
     <MESSAGE value="access user roles to comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="access user roles to comment" />
+    <MESSAGE value="fixed role relation" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed role relation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -24,23 +24,23 @@
             <section class="comment-section" id="comments">
                 <h1>Discussion ({{$comment_count}})</h1>
                 @auth
-                <p>Write a comment:</p>
-                <form action="{{ route('posts.comments.store', $post) }}" method="POST">
-                    @csrf
-                    @if($errors->has('content'))
-                        <div class="error">{{ $errors->first('content') }}</div>
-                    @endif
-                    <textarea class="textinput" placeholder="Your comment" name="content"></textarea>
-                    <div class="flex-wrapper">
-                        <button type="submit" class="btn btn-tertiary">Submit</button>
-{{--                        Show markdown preview:--}}
-{{--                        <label class="switch">--}}
-{{--                            <input type="checkbox" checked>--}}
-{{--                            <span class="slider round"></span>--}}
-{{--                        </label>--}}
+                    <p>Write a comment:</p>
+                    <form action="{{ route('posts.comments.store', $post) }}" method="POST">
+                        @csrf
+                        @if($errors->has('content'))
+                            <div class="error">{{ $errors->first('content') }}</div>
+                        @endif
+                        <textarea class="textinput" placeholder="Your comment" name="content"></textarea>
+                        <div class="flex-wrapper">
+                            <button type="submit" class="btn btn-tertiary">Submit</button>
+                            {{--                        Show markdown preview:--}}
+                            {{--                        <label class="switch">--}}
+                            {{--                            <input type="checkbox" checked>--}}
+                            {{--                            <span class="slider round"></span>--}}
+                            {{--                        </label>--}}
 
-                    </div>
-                </form>
+                        </div>
+                    </form>
                 @endauth
                 <h1>Comment Section</h1>
                 @foreach($comments as $comment)
@@ -50,13 +50,12 @@
                                 @if ($post->user == $comment->user)
                                     <div class="role">AUTHOR</div>
                                 @endif
-{{--                                {{dd($comment->user->role)}}--}}
 
-                                @if ($comment->user->roles !== 1 )
-                                        <div class="role">{{ $comment->user->role->role_name }}</div>
-                                    @endif
+                                @if ($comment->user->role->id != 1 )
+                                    <div class="role">{{ strtoupper($comment->user->role->role_name) }}</div>
+                                @endif
 
-                                    {{ $comment->user->name }}  {{ $comment->created_at->diffForHumans() }}
+                                {{ $comment->user->name }}  {{ $comment->created_at->diffForHumans() }}
                             </div>
                             <hr class="solid">
                             <p>{{ $comment->content }}</p>

@@ -6,6 +6,7 @@ use App\Models\Comment;
 use App\Models\Post;
 use App\Http\Requests\StoreCommentRequest;
 use App\Http\Requests\UpdateCommentRequest;
+use Illuminate\Support\Facades\Gate;
 
 class CommentController extends Controller
 {
@@ -66,8 +67,14 @@ class CommentController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Comment $comment)
+    public function destroy(Post $post, Comment $comment)
     {
-        //
+
+//        $this->authorize('delete', $comment);
+        Gate::authorize('delete', $comment);
+
+        $comment->delete();
+
+        return to_route('post.show', $post)->withFragment('comments');
     }
 }

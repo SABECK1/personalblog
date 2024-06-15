@@ -20,7 +20,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('login.create') }}">
+                    <a href="{{ route('login') }}">
                         Sign In/Register
                     </a>
                 </li>

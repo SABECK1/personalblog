@@ -59,12 +59,18 @@
                                     {{ $comment->user->name }}  {{ $comment->created_at->diffForHumans() }}
                                 </div>
                                 <div class="btn-group">
-                                    <button class="btn btn-quarternary"><i class="fa fa-reply"
-                                                                           aria-hidden="true"> Reply</i>
-                                    </button>
-                                    <button class="btn btn-quarternary btn-warning"><i class="fa fa-trash-o"
-                                                                                       aria-hidden="true"></i>
-                                    </button>
+                                    <form
+                                        action="{{ route('posts.comments.destroy', ['post' => $post, 'comment' => $comment]) }}"
+                                        method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button class="btn btn-quarternary"><i class="fa fa-reply"
+                                                                               aria-hidden="true"> Reply</i>
+                                        </button>
+                                        <button class="btn btn-quarternary btn-warning"><i class="fa fa-trash-o"
+                                                                                           aria-hidden="true"></i>
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                             <hr class="solid">

@@ -44,41 +44,7 @@
                 @endauth
                 <h1>Comment Section</h1>
                 @foreach($comments as $comment)
-                    <div class="comment">
-                        <ul>
-                            <div class="comment-header">
-                                <div class="text-sm text-grayed-out">
-                                    @if ($post->user == $comment->user)
-                                        <div class="role">AUTHOR</div>
-                                    @endif
-
-                                    @if ($comment->user->role->id != 1 )
-                                        <div class="role">{{ strtoupper($comment->user->role->role_name) }}</div>
-                                    @endif
-
-                                    {{ $comment->user->name }}  {{ $comment->created_at->diffForHumans() }}
-                                </div>
-                                <div class="btn-group">
-                                    <form
-                                        action="{{ route('posts.comments.destroy', ['post' => $post, 'comment' => $comment]) }}"
-                                        method="POST">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button class="btn btn-quarternary"><i class="fa fa-reply"
-                                                                               aria-hidden="true"> Reply</i>
-                                        </button>
-                                        @can('delete', $comment)
-                                        <button class="btn btn-quarternary btn-warning"><i class="fa fa-trash-o"
-                                                                                           aria-hidden="true"></i>
-                                        </button>
-                                        @endcan
-                                    </form>
-                                </div>
-                            </div>
-                            <hr class="solid">
-                            <p>{{ $comment->content }}</p>
-                        </ul>
-                    </div>
+                   <x-comment :post="$post" :comment="$comment"/>
                     @if($comment->replies->count() > 0)
                         @include('posts.post-show-child-comment-list',['comments'=>$comment->replies, 'indent_level'=> 1])
                     @endif

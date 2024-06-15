@@ -39,7 +39,7 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
-    public function roles() : belongsTo {
+    public function role() : belongsTo {
         return $this->belongsTo(Role::class);
     }
 

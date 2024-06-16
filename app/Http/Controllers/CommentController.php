@@ -6,12 +6,14 @@ use App\Models\Comment;
 use App\Models\Post;
 use App\Http\Requests\StoreCommentRequest;
 use App\Http\Requests\UpdateCommentRequest;
+use Debugbar;
 use Illuminate\Support\Facades\Gate;
+
+//use Barryvdh\Debugbar\Facade as Debugbar;
 
 class CommentController extends Controller
 {
 
-    /**
     /**
      * Display a listing of the resource.
      */
@@ -33,10 +35,16 @@ class CommentController extends Controller
      */
     public function store(StoreCommentRequest $request, Post $post)
     {
+
         $data = $request->validated();
-
-        $post->comments()->create([...$data, 'user_id' => $request->user()->id]);
-
+        //IF REPLY
+        if ($request->comment !== null)
+        {
+//            dd($request->comment);
+            $post->comments()->create([...$data, 'comment_id' => $request->comment, 'user_id' => $request->user()->id]);}
+        else {
+            $post->comments()->create([...$data, 'user_id' => $request->user()->id]);
+        }
         return to_route('post.show', $post)->withFragment('comments');
     }
 

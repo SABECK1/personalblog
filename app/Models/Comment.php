@@ -29,7 +29,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Comment extends Model
 {
     use HasFactory;
-    protected $fillable = ['content', 'user_id'];
+    protected $fillable = ['content', 'user_id', 'comment_id'];
     public function user() : BelongsTo {
         return $this->BelongsTo(User::class);
     }

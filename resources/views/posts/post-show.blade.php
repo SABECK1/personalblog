@@ -31,7 +31,6 @@
                 @foreach($comments as $comment)
 
                     <livewire:comment :post="$post" :comment="$comment" :indent="0"/>
-{{--                    <livewire:commentarea :post="$post" :comment="$comment" :indent="0" />--}}
                     @if($comment->replies->count() > 0)
                         @include('posts.post-show-child-comment-list',['comments'=>$comment->replies, 'indent_level'=> 1])
                     @endif

@@ -23,6 +23,9 @@
             </div>
             <section class="comment-section" id="comments">
                 <h1>Discussion ({{$comment_count}})</h1>
+                @guest
+                    <b><a href="{{route('login')}}" class="accent_link">Login to participate in the discussion!</a></b>
+                @endguest
                 @auth
                     <p>Write a comment:</p>
                     <livewire:commentarea :post="$post" :comment="null" :indent="0"/>

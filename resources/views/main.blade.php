@@ -6,7 +6,7 @@
         <div class="container">
             <div class="hero_left">
                 <div class="h1">
-                    Hi, I'm <b><a href="#" class="about_hero">Samuel Beck</a></b>,
+                    Hi, I'm <b><a href="#" class="accent_link">Samuel Beck</a></b>,
                 </div>
                 Junior ABAP-Developer, Python and C++ enthusiast
                 and the self-proclaimed author of <b>this blog!</b>

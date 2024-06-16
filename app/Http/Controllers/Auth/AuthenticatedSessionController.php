@@ -34,7 +34,7 @@ class AuthenticatedSessionController extends Controller
         } catch (\Illuminate\Validation\ValidationException $e) {
             return redirect()->back()->withInput()->withErrors($e->errors());
         }
-        return redirect(route('home'));
+        return redirect()->intended('home');
     }
 
     /**

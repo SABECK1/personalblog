@@ -1,6 +1,6 @@
 @if(count((array)$comments))
     @foreach($comments as $reply)
-        <x-comment :post="$post" :comment="$reply" :indent="$indent_level"/>
+        <livewire:comment :post="$post" :comment="$reply" :indent="$indent_level"/>
         <livewire:commentarea :post="$post" :comment="$reply" :indent="$indent_level" />
 {{--        <x-comment-box :post="$post" :comment="$reply" :indent="$indent_level"/>--}}
         @if($reply->replies->count()>0)

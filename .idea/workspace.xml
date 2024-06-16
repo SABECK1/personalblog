@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="added livewire">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="changed indent level on commentarea livewire component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/post-show-child-comment-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-show-child-comment-list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -198,7 +199,7 @@
       <workItem from="1718304195960" duration="6756000" />
       <workItem from="1718397807194" duration="12677000" />
       <workItem from="1718452575386" duration="13137000" />
-      <workItem from="1718492476655" duration="5579000" />
+      <workItem from="1718492476655" duration="6609000" />
     </task>
     <task id="LOCAL-00001" summary="Docker Integration">
       <option name="closed" value="true" />
@@ -560,7 +561,31 @@
       <option name="project" value="LOCAL" />
       <updated>1718497680987</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="changed commentbox to livewire component">
+      <option name="closed" value="true" />
+      <created>1718498527053</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1718498527053</updated>
+    </task>
+    <task id="LOCAL-00047" summary="changed indent level on commentarea livewire component">
+      <option name="closed" value="true" />
+      <created>1718498554027</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1718498554027</updated>
+    </task>
+    <task id="LOCAL-00048" summary="changed indent level on commentarea livewire component">
+      <option name="closed" value="true" />
+      <created>1718498564827</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1718498564827</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,8 +594,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="html struct mobile nav menu" />
-    <MESSAGE value="hamburger menu list styling" />
     <MESSAGE value="added scrollbar styling" />
     <MESSAGE value="commenting only possible when auth" />
     <MESSAGE value="fixed button styling" />
@@ -594,7 +617,9 @@
     <MESSAGE value="working indent in comment component" />
     <MESSAGE value="fully functional indent for comment boxes" />
     <MESSAGE value="added livewire" />
-    <option name="LAST_COMMIT_MESSAGE" value="added livewire" />
+    <MESSAGE value="changed commentbox to livewire component" />
+    <MESSAGE value="changed indent level on commentarea livewire component" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed indent level on commentarea livewire component" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

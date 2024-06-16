@@ -40,7 +40,7 @@ class PostController extends Controller
         return view('posts.post-show', [
             'post' => $post,
             'categories' => $post->categories,
-            'comments' => $post->comments()->latest()->with('replies')->paginate(10),
+            'comments' => $post->comments()->whereNull('comment_id')->latest()->with('replies')->paginate(10),
             'comment_count' => $post->comments()->count(),
             'tags' => $post->tags,
             'roles' => $post->comments()->with('user.role')->get()

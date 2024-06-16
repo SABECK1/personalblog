@@ -588,7 +588,7 @@ hr {
     /*width: fit-content;*/
 }
 
-.comment .btn.group {
+.comment .btn-group {
     display:flex;
     position: absolute;
     right: 0;

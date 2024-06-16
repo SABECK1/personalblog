@@ -578,7 +578,7 @@ hr {
     padding-top: 0.5em;
 }
 
-.comment, .comment-indented {
+.comment {
     background: var(--background-secondary);
     padding: 10px;
     margin-bottom: 1rem;

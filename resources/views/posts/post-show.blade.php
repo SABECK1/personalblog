@@ -29,7 +29,7 @@
                 @endauth
                 <h1>Comment Section</h1>
                 @foreach($comments as $comment)
-                   <x-comment :post="$post" :comment="$comment"/>
+                    <x-comment :post="$post" :comment="$comment" :indent="0"/>
                     <x-comment-box :post="$post" :comment="$comment"/>
                     @if($comment->replies->count() > 0)
                         @include('posts.post-show-child-comment-list',['comments'=>$comment->replies, 'indent_level'=> 1])

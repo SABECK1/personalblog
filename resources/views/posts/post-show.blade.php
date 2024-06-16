@@ -25,12 +25,12 @@
                 <h1>Discussion ({{$comment_count}})</h1>
                 @auth
                     <p>Write a comment:</p>
-                    <x-comment-box :post="$post"/>
+                    <x-comment-box :post="$post" :comment="null" :indent="0"/>
                 @endauth
                 <h1>Comment Section</h1>
                 @foreach($comments as $comment)
                     <x-comment :post="$post" :comment="$comment" :indent="0"/>
-                    <x-comment-box :post="$post" :comment="$comment"/>
+                    <x-comment-box :post="$post" :comment="$comment" :indent="0"/>
                     @if($comment->replies->count() > 0)
                         @include('posts.post-show-child-comment-list',['comments'=>$comment->replies, 'indent_level'=> 1])
                     @endif

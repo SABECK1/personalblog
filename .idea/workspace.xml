@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="added spatie laravel query builder">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="fixed tagsquery">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/main_w_tables.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main_w_tables.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,23 +204,7 @@
       <workItem from="1718492476655" duration="8493000" />
       <workItem from="1718543319741" duration="7898000" />
       <workItem from="1718572325324" duration="2069000" />
-      <workItem from="1718641912917" duration="2256000" />
-    </task>
-    <task id="LOCAL-00011" summary="begin of styling theme buttons of mobile design">
-      <option name="closed" value="true" />
-      <created>1718137967152</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1718137967152</updated>
-    </task>
-    <task id="LOCAL-00012" summary="added icon for menu">
-      <option name="closed" value="true" />
-      <created>1718138011772</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1718138011772</updated>
+      <workItem from="1718641912917" duration="2952000" />
     </task>
     <task id="LOCAL-00013" summary="refactor js">
       <option name="closed" value="true" />
@@ -597,7 +582,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718643393463</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="fixed category query">
+      <option name="closed" value="true" />
+      <created>1718644286311</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1718644286311</updated>
+    </task>
+    <task id="LOCAL-00061" summary="fixed tagsquery">
+      <option name="closed" value="true" />
+      <created>1718644589157</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1718644589157</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,8 +607,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="edited migrations to support roles" />
-    <MESSAGE value="edited htaccess for caching" />
     <MESSAGE value="access user roles to comment" />
     <MESSAGE value="fixed role relation" />
     <MESSAGE value="roles in comment section" />
@@ -631,7 +630,9 @@
     <MESSAGE value="redirect to intended page after login" />
     <MESSAGE value="redirect to login route when trying to reply to comments" />
     <MESSAGE value="added spatie laravel query builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="added spatie laravel query builder" />
+    <MESSAGE value="fixed category query" />
+    <MESSAGE value="fixed tagsquery" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed tagsquery" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

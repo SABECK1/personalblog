@@ -23,20 +23,12 @@
 
 @section('tags')
 <section name="tags" class="table-wrapper">
-    <table class="table">
+
         <span class="h2">Tags</span>
-        <thead>
-            <tr>
-                <th>Tag</th>
-            </tr>
-        </thead>
-        <tbody>
             @foreach ($tags as $tag)
-                <tr>
-                    <td>{{ $tag->tag_name }}</td>
-                </tr>
+                    <div class="text-wrapper-sm">
+                    {{ $tag->tag_name }}
+                    </div>
             @endforeach
-        </tbody>
-    </table>
 </section>
 @endsection

@@ -601,7 +601,7 @@ hr {
     justify-content: space-between;
 }
 
-.comment .role {
+.text-wrapper-sm {
     background: var(--accent);
     border-radius: 20px;
     width: fit-content;
@@ -834,7 +834,7 @@ textarea {
     border-style: solid;
     border-width: 3px;
     border-radius: 5px;
-    overflow-y: scroll;
+    overflow-y: auto;
     margin-bottom: 3vh;
     background-color: var(--background-secondary);
     max-height: 33vh;

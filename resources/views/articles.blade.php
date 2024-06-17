@@ -35,44 +35,8 @@
                 </div>
 
                 <div class="sidebar-container">
-                    <section name="categories" class="table-wrapper">
-                        <table class="table">
-                            <h2 class="h2">Categories</h2>
-                            <thead>
-                                <tr>
-                                    <th class="table-count">Posts</th>
-                                    <th>Category</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($categories as $category)
-                                    <tr>
-                                        <td class='table-count'>{{ $category->category_count }}</td>
-                                        <td>{{ $category->category_name }}</td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
-                    </section>
-                    <section name="tags" class="table-wrapper">
-                        <table class="table">
-                            <h2 class="h2">Tags</h2>
-                            <thead>
-                                <tr>
-                                    <th class="table-count">Posts</th>
-                                    <th>Category</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($tags as $tag)
-                                    <tr>
-                                        <td class='table-count'>{{ $tag->tag_count }}</td>
-                                        <td>{{ $tag->tag_name }}</td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
-                    </section>
+                    <livewire:categorytable :categories="$categories"/>
+                    <livewire:tagstable :tags="$tags"/>
                 </div>
             </section>
         </div>

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="fixed sidebar size" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="added livewire and debugbar components git">
+      <change beforePath="$PROJECT_DIR$/resources/views/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/main_w_tables.blade.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,15 +204,7 @@
       <workItem from="1718543319741" duration="7898000" />
       <workItem from="1718572325324" duration="2069000" />
       <workItem from="1718641912917" duration="5325000" />
-      <workItem from="1718658034385" duration="2815000" />
-    </task>
-    <task id="LOCAL-00019" summary="hamburger menu list styling">
-      <option name="closed" value="true" />
-      <created>1718312779308</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1718312779308</updated>
+      <workItem from="1718658034385" duration="3120000" />
     </task>
     <task id="LOCAL-00020" summary="added scrollbar styling">
       <option name="closed" value="true" />
@@ -595,7 +590,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718660875104</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="added livewire and debugbar components git">
+      <option name="closed" value="true" />
+      <created>1718660973297</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1718660973297</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,7 +607,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Policy for deleting comments" />
     <MESSAGE value="Fully functional delete method" />
     <MESSAGE value="comment component" />
     <MESSAGE value="CommentBox component" />
@@ -629,7 +631,8 @@
     <MESSAGE value="added all necessary components" />
     <MESSAGE value="added all necessary component controllers" />
     <MESSAGE value="fixed sidebar size" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed sidebar size" />
+    <MESSAGE value="added livewire and debugbar components git" />
+    <option name="LAST_COMMIT_MESSAGE" value="added livewire and debugbar components git" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

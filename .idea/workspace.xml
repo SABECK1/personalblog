@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="added livewire and debugbar components git">
-      <change beforePath="$PROJECT_DIR$/resources/views/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/main_w_tables.blade.php" beforeDir="false" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="deleted old blades.">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/categorytable.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/categorytable.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,23 +205,7 @@
       <workItem from="1718543319741" duration="7898000" />
       <workItem from="1718572325324" duration="2069000" />
       <workItem from="1718641912917" duration="5325000" />
-      <workItem from="1718658034385" duration="3120000" />
-    </task>
-    <task id="LOCAL-00020" summary="added scrollbar styling">
-      <option name="closed" value="true" />
-      <created>1718313006739</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1718313006739</updated>
-    </task>
-    <task id="LOCAL-00021" summary="commenting only possible when auth">
-      <option name="closed" value="true" />
-      <created>1718314674487</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1718314674487</updated>
+      <workItem from="1718658034385" duration="3418000" />
     </task>
     <task id="LOCAL-00022" summary="fixed button styling">
       <option name="closed" value="true" />
@@ -598,7 +583,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718660973297</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="changed articles.blade.php to use livewire components">
+      <option name="closed" value="true" />
+      <created>1718661240854</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1718661240854</updated>
+    </task>
+    <task id="LOCAL-00070" summary="deleted old blades.">
+      <option name="closed" value="true" />
+      <created>1718661251707</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1718661251707</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,8 +608,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Fully functional delete method" />
-    <MESSAGE value="comment component" />
     <MESSAGE value="CommentBox component" />
     <MESSAGE value="working indent in comment component" />
     <MESSAGE value="fully functional indent for comment boxes" />
@@ -632,7 +631,9 @@
     <MESSAGE value="added all necessary component controllers" />
     <MESSAGE value="fixed sidebar size" />
     <MESSAGE value="added livewire and debugbar components git" />
-    <option name="LAST_COMMIT_MESSAGE" value="added livewire and debugbar components git" />
+    <MESSAGE value="changed articles.blade.php to use livewire components" />
+    <MESSAGE value="deleted old blades." />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted old blades." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

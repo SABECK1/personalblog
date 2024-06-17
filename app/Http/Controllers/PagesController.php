@@ -15,7 +15,7 @@ class PagesController extends Controller
 
     public function main()
     {
-        return view('main_w_tables', [
+        return view('main', [
             'posts' => Post::latest()->with('user')->paginate(4),
 //            'categories' => Category::groupby('category_name', 'icon')
 //                ->select(Category::raw('COUNT(*) as category_count, category_name, icon'))

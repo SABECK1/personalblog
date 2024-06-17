@@ -4,7 +4,7 @@
             <span class="h2">Categories</span>
             <thead>
             <tr>
-                <th></th>
+                <th class="table-count"></th>
                 <th>Category</th>
                 <th class="table-count">Posts</th>
             </tr>

@@ -867,6 +867,7 @@ textarea {
     padding: 0;
     background: var(--background-secondary);
     border-spacing: 0 5px;
+    width: 100%;
 }
 
 
@@ -893,8 +894,10 @@ tr td:last-child {
     border-bottom-right-radius: 10px;
 }
 
-table .icon-column {
+.table .icon-column {
     background: var(--accent);
+    /*width: fit-content;*/
+    max-width: 6%;
 }
 
 
@@ -916,7 +919,9 @@ table .icon-column {
 }
 
 .table-count {
+    /*width: fit-content;*/
     width: 20%;
+    text-align: center;
 }
 
 /* Buttons */

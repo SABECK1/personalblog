@@ -7,7 +7,8 @@
     <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="better tag styling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/main_w_tables.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main_w_tables.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,15 +205,8 @@
       <workItem from="1718492476655" duration="8493000" />
       <workItem from="1718543319741" duration="7898000" />
       <workItem from="1718572325324" duration="2069000" />
-      <workItem from="1718641912917" duration="4514000" />
-    </task>
-    <task id="LOCAL-00014" summary="Saving theme to localstorage">
-      <option name="closed" value="true" />
-      <created>1718222218104</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1718222218104</updated>
+      <workItem from="1718641912917" duration="5325000" />
+      <workItem from="1718658034385" duration="2195000" />
     </task>
     <task id="LOCAL-00015" summary="fixed javascript for theme setter and css for theme button">
       <option name="closed" value="true" />
@@ -598,7 +592,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718644996159</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="better tag styling">
+      <option name="closed" value="true" />
+      <created>1718646911428</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1718646911428</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

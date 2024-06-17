@@ -2,7 +2,14 @@
 @section('content')
     <div class="main">
         <div class="blog">
-            <h2 class="h1">Latest Blog Posts</h2>
+
+            <section class="filter-bar">
+{{--                <label>Sort By Date</label>--}}
+
+            </section>
+
+            <h2 class="h1">All Blog Posts</h2>
+
             <section class="container">
                 <div class="blog-card-group">
                     @foreach ($posts as $post)

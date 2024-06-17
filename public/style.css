@@ -167,8 +167,15 @@ li { list-style: none; }
     flex-direction: row;
     align-content: center;
     align-items: center;
-    gap: 15px;
+    /*gap: 15px;*/
 }
+
+
+
+/*.flex-wrapper-inline {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*}*/
 
 .header .flex-wrapper { display: none; }
 
@@ -606,8 +613,7 @@ hr {
     border-radius: 20px;
     width: fit-content;
     padding: 5px;
-    margin-bottom: 5px;
-    display: inline-flex;
+    margin: 5px;
 }
 
 /*.comment-indented {*/

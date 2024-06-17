@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="better tag styling">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles.blade.php" afterDir="false" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="livewire component of tags table">
       <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,15 +203,7 @@
       <workItem from="1718543319741" duration="7898000" />
       <workItem from="1718572325324" duration="2069000" />
       <workItem from="1718641912917" duration="5325000" />
-      <workItem from="1718658034385" duration="2195000" />
-    </task>
-    <task id="LOCAL-00015" summary="fixed javascript for theme setter and css for theme button">
-      <option name="closed" value="true" />
-      <created>1718226736785</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1718226736785</updated>
+      <workItem from="1718658034385" duration="2507000" />
     </task>
     <task id="LOCAL-00016" summary="fixed header spacing">
       <option name="closed" value="true" />
@@ -600,7 +589,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718646911428</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="livewire component of tags table">
+      <option name="closed" value="true" />
+      <created>1718660411914</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1718660411914</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +606,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fixed role relation" />
     <MESSAGE value="roles in comment section" />
     <MESSAGE value="added reply and delete buttons" />
     <MESSAGE value="styling of delete and reply buttons" />
@@ -634,7 +630,8 @@
     <MESSAGE value="fixed category query" />
     <MESSAGE value="fixed tagsquery" />
     <MESSAGE value="better tag styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="better tag styling" />
+    <MESSAGE value="livewire component of tags table" />
+    <option name="LAST_COMMIT_MESSAGE" value="livewire component of tags table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

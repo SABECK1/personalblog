@@ -32,8 +32,7 @@
                     </div>
 
                     <div class="sidebar-container">
-{{--                    @yield('categories')--}}
-{{--                    @yield('tags')--}}
+                    <livewire:categorytable :categories="$categories"/>
                     <livewire:tagstable :tags="$tags"/>
                     </div>
             </section>

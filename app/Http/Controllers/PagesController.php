@@ -26,8 +26,11 @@ class PagesController extends Controller
                 ->groupBy('category_name', 'icon')
                 ->get(),
 
-            'tags' => Tag::groupby('tag_name', 'icon')
-                ->select(Tag::raw('COUNT(*) as tag_count, tag_name, icon'))
+            'tags' => Tag::query()
+                ->leftJoin('posts_tags', 'posts_tags.tag_id', '=', 'tags.tag_id')
+                ->leftJoin('posts', 'posts.id', '=', 'posts_tags.post_id')
+                ->selectRaw('tag_name, COUNT(DISTINCT(posts.id)) as tag_count, icon')
+                ->groupby('tag_name', 'icon')
                 ->get(),
         ]);
     }

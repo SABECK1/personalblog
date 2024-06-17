@@ -142,6 +142,8 @@ li { list-style: none; }
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
+    max-width: 20%;
+    margin-right: 5%;
 }
 
 .header {

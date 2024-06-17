@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="livewire component of tags table">
-      <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="fixed sidebar size" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,31 +201,7 @@
       <workItem from="1718543319741" duration="7898000" />
       <workItem from="1718572325324" duration="2069000" />
       <workItem from="1718641912917" duration="5325000" />
-      <workItem from="1718658034385" duration="2507000" />
-    </task>
-    <task id="LOCAL-00016" summary="fixed header spacing">
-      <option name="closed" value="true" />
-      <created>1718228472589</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1718228472589</updated>
-    </task>
-    <task id="LOCAL-00017" summary="html struct mobile menu">
-      <option name="closed" value="true" />
-      <created>1718228814432</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1718228814432</updated>
-    </task>
-    <task id="LOCAL-00018" summary="html struct mobile nav menu">
-      <option name="closed" value="true" />
-      <created>1718229736988</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1718229736988</updated>
+      <workItem from="1718658034385" duration="2815000" />
     </task>
     <task id="LOCAL-00019" summary="hamburger menu list styling">
       <option name="closed" value="true" />
@@ -597,7 +571,31 @@
       <option name="project" value="LOCAL" />
       <updated>1718660411914</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="added all necessary components">
+      <option name="closed" value="true" />
+      <created>1718660832892</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1718660832892</updated>
+    </task>
+    <task id="LOCAL-00066" summary="added all necessary component controllers">
+      <option name="closed" value="true" />
+      <created>1718660851613</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1718660851613</updated>
+    </task>
+    <task id="LOCAL-00067" summary="fixed sidebar size">
+      <option name="closed" value="true" />
+      <created>1718660875104</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1718660875104</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,9 +604,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="roles in comment section" />
-    <MESSAGE value="added reply and delete buttons" />
-    <MESSAGE value="styling of delete and reply buttons" />
     <MESSAGE value="Policy for deleting comments" />
     <MESSAGE value="Fully functional delete method" />
     <MESSAGE value="comment component" />
@@ -631,7 +626,10 @@
     <MESSAGE value="fixed tagsquery" />
     <MESSAGE value="better tag styling" />
     <MESSAGE value="livewire component of tags table" />
-    <option name="LAST_COMMIT_MESSAGE" value="livewire component of tags table" />
+    <MESSAGE value="added all necessary components" />
+    <MESSAGE value="added all necessary component controllers" />
+    <MESSAGE value="fixed sidebar size" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed sidebar size" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

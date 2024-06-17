@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="redirect to login route when trying to reply to comments">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="added spatie laravel query builder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,6 +145,8 @@
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-package-tools" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-query-builder" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -200,15 +203,7 @@
       <workItem from="1718492476655" duration="8493000" />
       <workItem from="1718543319741" duration="7898000" />
       <workItem from="1718572325324" duration="2069000" />
-      <workItem from="1718641912917" duration="1269000" />
-    </task>
-    <task id="LOCAL-00010" summary="added paginator to comments">
-      <option name="closed" value="true" />
-      <created>1718057723066</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1718057723066</updated>
+      <workItem from="1718641912917" duration="2256000" />
     </task>
     <task id="LOCAL-00011" summary="begin of styling theme buttons of mobile design">
       <option name="closed" value="true" />
@@ -594,7 +589,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718573818640</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="added spatie laravel query builder">
+      <option name="closed" value="true" />
+      <created>1718643393461</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1718643393463</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +606,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added roles table" />
     <MESSAGE value="edited migrations to support roles" />
     <MESSAGE value="edited htaccess for caching" />
     <MESSAGE value="access user roles to comment" />
@@ -628,7 +630,8 @@
     <MESSAGE value="fixed button group styling in comment" />
     <MESSAGE value="redirect to intended page after login" />
     <MESSAGE value="redirect to login route when trying to reply to comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="redirect to login route when trying to reply to comments" />
+    <MESSAGE value="added spatie laravel query builder" />
+    <option name="LAST_COMMIT_MESSAGE" value="added spatie laravel query builder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

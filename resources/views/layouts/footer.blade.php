@@ -55,8 +55,8 @@
                 @if ($errors->any() AND Request::is('contact'))
                     {!! implode('', $errors->all('<div class="error">:message</div>')) !!}
                 @endif
-                <input type="email" name="contact_email" class="textinput" placeholder="Your Email Address...">
-                <textarea name="contact_message" class="textinput" placeholder="Your Message..."></textarea>
+                <input type="email" name="contact_email" class="textinput" placeholder="Your Email">
+                <textarea name="contact_message" class="textinput" placeholder="Your Message"></textarea>
                 <button type="submit" name="contact_message_submit" class="btn btn-primary"><i
                         class="fas fa-envelope"></i> Send
                     Message</button>

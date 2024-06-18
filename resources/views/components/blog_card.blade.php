@@ -9,7 +9,7 @@
                 {{ $post->title }}
             </div>
         </h3>
-        {{ Str::substr($post->content, 0, 150) }}
+        <section class="blog-card-body">{{ Str::substr($post->content, 0, 150).'...' }}</section>
         <p class="text-tiny"><time>
                 {{ $post->date }}
             </time><i class="fa-solid fa-clock"></i></p>

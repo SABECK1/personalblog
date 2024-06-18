@@ -831,6 +831,11 @@ textarea {
     padding: 25px;
 }
 
+.footer-section.links li {
+    margin-bottom: 5px;
+}
+
+
 .message {
     text-align: center;
     border: 1px solid;

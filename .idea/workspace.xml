@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="fixed categorytable.blade.php styling">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="media queries">
       <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/blog_card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/blog_card.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,15 +204,7 @@
       <workItem from="1718572325324" duration="2069000" />
       <workItem from="1718641912917" duration="5325000" />
       <workItem from="1718658034385" duration="3751000" />
-      <workItem from="1718737365302" duration="2379000" />
-    </task>
-    <task id="LOCAL-00024" summary="route middleware auth for comments">
-      <option name="closed" value="true" />
-      <created>1718314888936</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1718314888936</updated>
+      <workItem from="1718737365302" duration="2683000" />
     </task>
     <task id="LOCAL-00025" summary="csrf token">
       <option name="closed" value="true" />
@@ -601,7 +590,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718661795581</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="media queries">
+      <option name="closed" value="true" />
+      <created>1718739919088</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1718739919088</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +607,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="working indent in comment component" />
     <MESSAGE value="fully functional indent for comment boxes" />
     <MESSAGE value="added livewire" />
     <MESSAGE value="changed commentbox to livewire component" />
@@ -635,7 +631,8 @@
     <MESSAGE value="changed articles.blade.php to use livewire components" />
     <MESSAGE value="deleted old blades." />
     <MESSAGE value="fixed categorytable.blade.php styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed categorytable.blade.php styling" />
+    <MESSAGE value="media queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="media queries" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

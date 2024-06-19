@@ -39,11 +39,16 @@ class PagesController extends Controller
     {
         return view('articles', [
             'posts' => Post::latest()->with('user')->paginate(5),
-            'categories' => Category::groupby('category_name', 'icon')
-                ->select(Category::raw('COUNT(*) as category_count, category_name, icon'))
+            'categories' => Category::query()
+                ->leftJoin('posts', 'posts.category_id', '=', 'categories.id')
+                ->selectRaw('category_name, icon, COUNT(DISTINCT(posts.id)) as category_count')
+                ->groupBy('category_name', 'icon')
                 ->get(),
-            'tags' => Tag::groupby('tag_name', 'icon')
-                ->select(Tag::raw('COUNT(*) as tag_count, tag_name, icon'))
+            'tags' => Tag::query()
+                ->leftJoin('posts_tags', 'posts_tags.tag_id', '=', 'tags.tag_id')
+                ->leftJoin('posts', 'posts.id', '=', 'posts_tags.post_id')
+                ->selectRaw('tag_name, COUNT(DISTINCT(posts.id)) as tag_count, icon')
+                ->groupby('tag_name', 'icon')
                 ->get(),
         ]);
     }

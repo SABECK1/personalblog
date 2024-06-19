@@ -11,7 +11,7 @@ use App\Http\Controllers\PagesController;
 // })->name('home');
 
 Route::get('/', [PagesController::class, 'main'])->name('home');
-Route::get('articles', [PagesController::class, 'articles'])->name('articles');
+Route::get('posts', [PagesController::class, 'posts'])->name('posts');
 Route::get('about', [PagesController::class, 'about'])->name('about');
 Route::get('contact', [PagesController::class, 'contact'])->name('contact');
 Route::post('contact', [PagesController::class, 'contact_mail'])->name('contact.mail');

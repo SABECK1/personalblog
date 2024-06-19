@@ -36,7 +36,7 @@
         <div class="desktop-nav">
             <div class="flex-wrapper navbar">
                 <a href="{{ route('home') }}" class="">Home</a>
-                <a href="{{ route('articles') }}" class="">Articles</a>
+                <a href="{{ route('posts') }}" class="">Posts</a>
                 <a href="{{ route('about') }}" class="">About</a>
                 <a href="{{ route('contact') }}" class="">Contact</a>
             </div>

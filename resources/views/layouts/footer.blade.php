@@ -25,8 +25,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('articles') }}">
-                        Articles
+                    <a href="{{ route('posts') }}">
+                        Posts
                     </a>
                 </li>
                 <li>

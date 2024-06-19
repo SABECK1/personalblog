@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="styling for filter options">
-      <change afterPath="$PROJECT_DIR$/public/js/filterbar.js" afterDir="false" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="changed queries and migrations to get rid of obsolete date field">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,15 +211,7 @@
       <workItem from="1718641912917" duration="5325000" />
       <workItem from="1718658034385" duration="3751000" />
       <workItem from="1718737365302" duration="8030000" />
-      <workItem from="1718815476495" duration="5470000" />
-    </task>
-    <task id="LOCAL-00028" summary="Added role display in comment section">
-      <option name="closed" value="true" />
-      <created>1718404879781</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1718404879781</updated>
+      <workItem from="1718815476495" duration="7089000" />
     </task>
     <task id="LOCAL-00029" summary="added roles table">
       <option name="closed" value="true" />
@@ -603,7 +597,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718817474757</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="changed queries and migrations to get rid of obsolete date field">
+      <option name="closed" value="true" />
+      <created>1718822140718</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1718822140718</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +614,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="changed indent level on commentarea livewire component" />
     <MESSAGE value="changed comment to livewire component" />
     <MESSAGE value="fixed multiple elements when nested comments" />
     <MESSAGE value="added functionality to open replywindow" />
@@ -637,6 +638,7 @@
     <MESSAGE value="footer queries" />
     <MESSAGE value="fixed up tag and category queries in the articles.blade.php" />
     <MESSAGE value="styling for filter options" />
-    <option name="LAST_COMMIT_MESSAGE" value="styling for filter options" />
+    <MESSAGE value="changed queries and migrations to get rid of obsolete date field" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed queries and migrations to get rid of obsolete date field" />
   </component>
 </project>

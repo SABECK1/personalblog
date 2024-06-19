@@ -10,10 +10,10 @@
                     <button onclick="showDropdown('sortdropdown')" class="btn btn-primary"><i class="fa fa-sort" aria-hidden="true"></i> Sort By</button>
                     <div id="sortdropdown" class="dropdown-content">
 {{--                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">--}}
-                        <a href="#">Latest</a>
-                        <a href="#">Oldest</a>
-                        <a href="#"><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i> A-Z</a>
-                        <a href="#"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i> Alphabet Z-A</a>
+                        <a href="?sort=-created_at">Latest</a>
+                        <a href="?sort=created_at">Oldest</a>
+                        <a href="?sort=title"><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i> A-Z</a>
+                        <a href="?sort=-title"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i> Z-A</a>
                     </div>
 
                     <button onclick="showDropdown('filterdropdowncategories')" class="btn btn-primary"><i class="fa fa-sort" aria-hidden="true"></i> Filter By Category</button>
@@ -43,7 +43,7 @@
                             <img class="blog-image" src="{{ asset('images/posts/' . $post->image_path) }}"
                                  alt="Post Image">
                             <div class="blog-details">
-                                <div class="blog-topic text-tiny" onclick="goToUrl('{{ route('articles') }}', event)">
+                                <div class="blog-topic text-tiny" onclick="goToUrl('{{ route('posts') }}', event)">
                                     {{ $post->category_id }}
                                 </div>
                                 <h3>
@@ -55,7 +55,7 @@
                                 <p class="text-tiny">
                                     <time>
                                         {{ $post->created_at }}
-                                    </time>
+                                    </time> <i class="fa-solid fa-clock"></i>
                                 </p>
                             </div>
                         </div>

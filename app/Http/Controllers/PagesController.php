@@ -36,11 +36,11 @@ class PagesController extends Controller
         ]);
     }
 
-    public function articles()
+    public function posts()
     {
         return view('articles', [
-            'posts' => QueryBuilder::for(Post::class)->with('user')->paginate(4),
-            'categories' => QueryBuilder::for(Category::class)->allowedSorts('id', 'created_at')
+            'posts' => QueryBuilder::for(Post::class)->allowedSorts('created_at', 'title')->with('user')->paginate(4),
+            'categories' => QueryBuilder::for(Category::class)
                 ->leftJoin('posts', 'posts.category_id', '=', 'categories.id')
                 ->selectRaw('category_name, icon, COUNT(DISTINCT(posts.id)) as category_count')
                 ->groupBy('category_name', 'icon')

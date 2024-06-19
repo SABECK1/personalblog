@@ -2,7 +2,7 @@
     <img class="blog-image" src="{{ asset('images/posts/'.$post->image_path) }}" alt="Post Image">
     <div class="blog-details">
         <div class="blog-topic text-tiny" onclick="goToUrl('{{ route('articles') }}', event)">
-            {{ $post->category_id }}
+            {{ $post->category->category_name }}
         </div>
         <h3>
             <div class="title">

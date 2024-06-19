@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="changed queries and migrations to get rid of obsolete date field">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="sorting of articles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/filterbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/filterbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/blog_card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/blog_card.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,15 +210,7 @@
       <workItem from="1718641912917" duration="5325000" />
       <workItem from="1718658034385" duration="3751000" />
       <workItem from="1718737365302" duration="8030000" />
-      <workItem from="1718815476495" duration="7089000" />
-    </task>
-    <task id="LOCAL-00029" summary="added roles table">
-      <option name="closed" value="true" />
-      <created>1718404983914</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1718404983914</updated>
+      <workItem from="1718815476495" duration="10486000" />
     </task>
     <task id="LOCAL-00030" summary="added roles table">
       <option name="closed" value="true" />
@@ -605,7 +596,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718822140718</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="sorting of articles">
+      <option name="closed" value="true" />
+      <created>1718823801399</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1718823801399</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,7 +613,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="changed comment to livewire component" />
     <MESSAGE value="fixed multiple elements when nested comments" />
     <MESSAGE value="added functionality to open replywindow" />
     <MESSAGE value="working reply on child comment" />
@@ -639,6 +637,7 @@
     <MESSAGE value="fixed up tag and category queries in the articles.blade.php" />
     <MESSAGE value="styling for filter options" />
     <MESSAGE value="changed queries and migrations to get rid of obsolete date field" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed queries and migrations to get rid of obsolete date field" />
+    <MESSAGE value="sorting of articles" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorting of articles" />
   </component>
 </project>

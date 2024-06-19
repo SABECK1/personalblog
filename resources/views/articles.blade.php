@@ -18,17 +18,17 @@
 
                     <button onclick="showDropdown('filterdropdowncategories')" class="btn btn-primary"><i class="fa fa-sort" aria-hidden="true"></i> Filter By Category</button>
                     <div id="filterdropdowncategories" class="dropdown-content">
-                        {{--                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">--}}
+                        <input type="text" class="textinput" placeholder="Search.." id="filtercategories" onkeyup="filter('filtercategories', 'filterdropdowncategories')">
                         @foreach($categories as $category)
-                        <a href="#">{{$category->category_name}}</a>
+                        <a href="?filter[categories.category_name]={{$category->category_name}}&">{{$category->category_name}}</a>
                         @endforeach
                     </div>
 
                     <button onclick="showDropdown('filterdropdowntags')" class="btn btn-primary"><i class="fa fa-sort" aria-hidden="true"></i> Filter By Tag</button>
                     <div id="filterdropdowntags" class="dropdown-content">
-                        {{--                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">--}}
+                        <input type="text" class="textinput" placeholder="Search.." id="filtertags" onkeyup="filter('filtertags', 'filterdropdowntags')">
                         @foreach($tags as $tag)
-                        <a href="#">Latest</a>
+                        <a href="?filter[tags.tag_name]={{$tag->tag_name}}&">{{$tag->tag_name }}</a>
                         @endforeach
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                                  alt="Post Image">
                             <div class="blog-details">
                                 <div class="blog-topic text-tiny" onclick="goToUrl('{{ route('posts') }}', event)">
-                                    {{ $post->category_id }}
+                                    {{ $post->category->category_name }}
                                 </div>
                                 <h3>
                                     <div class="title">

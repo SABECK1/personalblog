@@ -60,7 +60,7 @@ class Post extends Model
         return $this->belongsTo(Tag::class);
     }
 
-    public function categories() : BelongsTo {
+    public function category() : BelongsTo {
         return $this->BelongsTo(Category::class);
     }
 

@@ -9,6 +9,7 @@ use App\Models\Post;
 use App\Models\Category;
 use App\Models\Tag;
 use Illuminate\Support\Facades\Mail;
+use Spatie\QueryBuilder\AllowedFilter;
 use Spatie\QueryBuilder\QueryBuilder;
 
 class PagesController extends Controller
@@ -39,18 +40,25 @@ class PagesController extends Controller
     public function posts()
     {
         return view('articles', [
-            'posts' => QueryBuilder::for(Post::class)->allowedSorts('created_at', 'title')->with('user')->paginate(4),
+            'posts' => QueryBuilder::for(Post::class)->allowedSorts('created_at', 'title')
+                ->allowedFilters([AllowedFilter::exact('categories.category_name'), AllowedFilter::exact('tags.tag_name', null, false)])
+                ->leftJoin('posts_tags', 'posts.id', '=', 'posts_tags.post_id')
+                ->leftJoin('tags', 'tags.tag_id', '=', 'posts_tags.tag_id')
+                ->join('categories', 'posts.category_id', '=', 'categories.id')
+                ->with('user')->paginate(4),
             'categories' => QueryBuilder::for(Category::class)
                 ->leftJoin('posts', 'posts.category_id', '=', 'categories.id')
                 ->selectRaw('category_name, icon, COUNT(DISTINCT(posts.id)) as category_count')
                 ->groupBy('category_name', 'icon')
                 ->get(),
-            'tags' => Tag::query()
+
+            'tags' => QueryBuilder::for(Tag::class)
                 ->leftJoin('posts_tags', 'posts_tags.tag_id', '=', 'tags.tag_id')
                 ->leftJoin('posts', 'posts.id', '=', 'posts_tags.post_id')
                 ->selectRaw('tag_name, COUNT(DISTINCT(posts.id)) as tag_count, icon')
                 ->groupby('tag_name', 'icon')
                 ->get(),
+
         ]);
     }
 

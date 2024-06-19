@@ -4,18 +4,29 @@
         <div class="blog">
 
             <section class="filter-bar">
-                                <label>Sort By Date</label>
+
                 <div class="dropdown">
-                    <button onclick="showDropdown()" class="btn btn-primary"></button>
+                    <button onclick="showDropdown()" class="btn btn-primary"><i class="fa fa-sort" aria-hidden="true"></i> Sort By</button>
                     <div id="sortdropdown" class="dropdown-content">
 {{--                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">--}}
-                        <a href="#">About</a>
-                        <a href="#">Base</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Contact</a>
-                        <a href="#">Custom</a>
-                        <a href="#">Support</a>
-                        <a href="#">Tools</a>
+                        <a href="#">Latest</a>
+                        <a href="#">Oldest</a>
+                        <a href="#"><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i> A-Z</a>
+                        <a href="#"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i> Alphabet Z-A</a>
+                    </div>
+
+                    <div id="filterdropdowncategories" class="dropdown-content">
+                        {{--                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">--}}
+                        @foreach($categor)
+                        <a href="#">Latest</a>
+                        @endforeach
+                    </div>
+                    <div id="filterdropdowntags" class="dropdown-content">
+                        {{--                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">--}}
+                        <a href="#">Latest</a>
+                        <a href="#">Oldest</a>
+                        <a href="#"><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i> A-Z</a>
+                        <a href="#"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i> Alphabet Z-A</a>
                     </div>
                 </div>
             </section>

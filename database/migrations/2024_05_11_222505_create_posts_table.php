@@ -22,7 +22,7 @@ class CreatePostsTable extends Migration
             $table->text('subtitle')->nullable();
             $table->foreignIdFor(Category::class)->constrained()->cascadeOnUpdate();
             $table->string('image_path')->nullable();
-            $table->timestamp('date')->useCurrent();
+//            $table->timestamp('date')->useCurrent();
             $table->foreignIdFor(User::class)->constrained()->restrictOnDelete();
             $table->timestamps();
         });

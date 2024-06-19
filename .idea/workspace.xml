@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="footer queries">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="styling for filter options">
+      <change afterPath="$PROJECT_DIR$/public/js/filterbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles.blade.php" afterDir="false" />
     </list>
@@ -207,23 +209,7 @@
       <workItem from="1718641912917" duration="5325000" />
       <workItem from="1718658034385" duration="3751000" />
       <workItem from="1718737365302" duration="8030000" />
-      <workItem from="1718815476495" duration="1746000" />
-    </task>
-    <task id="LOCAL-00026" summary="Custom Auth StoreCommentRequest.php">
-      <option name="closed" value="true" />
-      <created>1718399457104</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1718399457104</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Basic Comment functionality">
-      <option name="closed" value="true" />
-      <created>1718400806601</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1718400806601</updated>
+      <workItem from="1718815476495" duration="5470000" />
     </task>
     <task id="LOCAL-00028" summary="Added role display in comment section">
       <option name="closed" value="true" />
@@ -601,7 +587,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718740170124</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="fixed up tag and category queries in the articles.blade.php">
+      <option name="closed" value="true" />
+      <created>1718817464820</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1718817464820</updated>
+    </task>
+    <task id="LOCAL-00076" summary="styling for filter options">
+      <option name="closed" value="true" />
+      <created>1718817474757</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1718817474757</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,8 +612,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added livewire" />
-    <MESSAGE value="changed commentbox to livewire component" />
     <MESSAGE value="changed indent level on commentarea livewire component" />
     <MESSAGE value="changed comment to livewire component" />
     <MESSAGE value="fixed multiple elements when nested comments" />
@@ -635,17 +635,8 @@
     <MESSAGE value="fixed categorytable.blade.php styling" />
     <MESSAGE value="media queries" />
     <MESSAGE value="footer queries" />
-    <option name="LAST_COMMIT_MESSAGE" value="footer queries" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/layouts/template.blade.php</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="fixed up tag and category queries in the articles.blade.php" />
+    <MESSAGE value="styling for filter options" />
+    <option name="LAST_COMMIT_MESSAGE" value="styling for filter options" />
   </component>
 </project>

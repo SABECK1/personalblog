@@ -9,6 +9,7 @@ use App\Models\Post;
 use App\Models\Category;
 use App\Models\Tag;
 use Illuminate\Support\Facades\Mail;
+use Spatie\QueryBuilder\QueryBuilder;
 
 class PagesController extends Controller
 {
@@ -38,8 +39,8 @@ class PagesController extends Controller
     public function articles()
     {
         return view('articles', [
-            'posts' => Post::latest()->with('user')->paginate(5),
-            'categories' => Category::query()
+            'posts' => QueryBuilder::for(Post::class)->with('user')->paginate(4),
+            'categories' => QueryBuilder::for(Category::class)->allowedSorts('id', 'created_at')
                 ->leftJoin('posts', 'posts.category_id', '=', 'categories.id')
                 ->selectRaw('category_name, icon, COUNT(DISTINCT(posts.id)) as category_count')
                 ->groupBy('category_name', 'icon')

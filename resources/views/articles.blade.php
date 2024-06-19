@@ -1,12 +1,13 @@
 @extends('layouts.template')
 @section('content')
+    <script src="{{ asset('/js/filterbar.js') }}" defer></script>
     <div class="main">
         <div class="blog">
 
             <section class="filter-bar">
 
                 <div class="dropdown">
-                    <button onclick="showDropdown()" class="btn btn-primary"><i class="fa fa-sort" aria-hidden="true"></i> Sort By</button>
+                    <button onclick="showDropdown('sortdropdown')" class="btn btn-primary"><i class="fa fa-sort" aria-hidden="true"></i> Sort By</button>
                     <div id="sortdropdown" class="dropdown-content">
 {{--                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">--}}
                         <a href="#">Latest</a>
@@ -15,18 +16,20 @@
                         <a href="#"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i> Alphabet Z-A</a>
                     </div>
 
+                    <button onclick="showDropdown('filterdropdowncategories')" class="btn btn-primary"><i class="fa fa-sort" aria-hidden="true"></i> Filter By Category</button>
                     <div id="filterdropdowncategories" class="dropdown-content">
                         {{--                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">--}}
-                        @foreach($categor)
-                        <a href="#">Latest</a>
+                        @foreach($categories as $category)
+                        <a href="#">{{$category->category_name}}</a>
                         @endforeach
                     </div>
+
+                    <button onclick="showDropdown('filterdropdowntags')" class="btn btn-primary"><i class="fa fa-sort" aria-hidden="true"></i> Filter By Tag</button>
                     <div id="filterdropdowntags" class="dropdown-content">
                         {{--                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">--}}
+                        @foreach($tags as $tag)
                         <a href="#">Latest</a>
-                        <a href="#">Oldest</a>
-                        <a href="#"><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i> A-Z</a>
-                        <a href="#"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i> Alphabet Z-A</a>
+                        @endforeach
                     </div>
                 </div>
             </section>
@@ -51,7 +54,7 @@
                                 {{ Str::substr($post->content, 0, 150) }}
                                 <p class="text-tiny">
                                     <time>
-                                        {{ $post->date }}
+                                        {{ $post->created_at }}
                                     </time>
                                 </p>
                             </div>
@@ -72,9 +75,7 @@
     <script>
         /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
-        function showDropdown() {
-            document.getElementById("sortdropdown").classList.toggle("show");
-        }
+
 
         // function filterFunction() {
         //     const input = document.getElementById("dropdownSearch");

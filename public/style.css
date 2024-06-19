@@ -944,6 +944,7 @@ tr td:last-child {
     background-color: var(--background-primary);
     /*color: var(--foreground-primary);*/
     min-width: 230px;
+    max-height: 30vh;
     overflow: auto;
     border: 1px solid var(--background-secondary);
     z-index: 1;
@@ -958,6 +959,7 @@ tr td:last-child {
 
 .dropdown-content a:hover {
     background: var(--accent);
+    cursor: pointer;
 }
 
 .show {display: block;}

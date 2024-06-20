@@ -14,7 +14,7 @@ use Spatie\QueryBuilder\QueryBuilder;
 
 class PagesController extends Controller
 {
-
+    public $articles_header = 'All Blog Posts';
     public function main()
     {
         return view('main', [
@@ -61,7 +61,6 @@ class PagesController extends Controller
 
         ]);
     }
-
     public function about()
     {
         return view('about');

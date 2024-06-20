@@ -45,6 +45,7 @@ class CommentPolicy
      */
     public function delete(User $user, Comment $comment): bool
     {
+//        if $user->role
         return $user->id === $comment->user_id;
     }
 

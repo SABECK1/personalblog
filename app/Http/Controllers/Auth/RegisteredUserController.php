@@ -53,6 +53,6 @@ class RegisteredUserController extends Controller
 
         Mail::to($to_email)->send(new Welcome($to_name));
 
-        return redirect(route('home', absolute: false));
+        return redirect(route('verification.notice', absolute: false));
     }
 }

@@ -175,7 +175,7 @@
                                                     <tr>
                                                         <td style="width:64px;">
 
-                                                            <img height="auto" src="https://i.imgur.com/KO1vcE9.png" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="64" />
+{{--                                                            <img height="auto" src="https://en.m.wikipedia.org/wiki/File:Laravel.svg" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="64" />--}}
 
                                                         </td>
                                                     </tr>
@@ -226,8 +226,9 @@
                                         <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
 
                                             <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:20px;text-align:left;color:#525252;">
-                                                Best regards,<br><br> Csaba Kissi<br>Elerion ltd., CEO and Founder<br>
-                                                <a href="https://www.htmlemailtemplates.net" style="color:#2F67F6">htmlemailtemplates.net</a>
+                                                Best regards,<br><br> Samuel Beck
+{{--                                                <br>Elerion ltd., CEO and Founder<br>--}}
+{{--                                                <a href="https://www.htmlemailtemplates.net" style="color:#2F67F6">htmlemailtemplates.net</a>--}}
                                             </div>
 
                                         </td>
@@ -293,9 +294,9 @@
                                                     <tr>
                                                         <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
 
-                                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:300;line-height:1;text-align:center;color:#575757;">
-                                                                Some Firm Ltd, 35 Avenue. City 10115, USA
-                                                            </div>
+{{--                                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:300;line-height:1;text-align:center;color:#575757;">--}}
+{{--                                                                Some Firm Ltd, 35 Avenue. City 10115, USA--}}
+{{--                                                            </div>--}}
 
                                                         </td>
                                                     </tr>
@@ -303,9 +304,9 @@
                                                     <tr>
                                                         <td align="center" style="font-size:0px;padding:10px;word-break:break-word;">
 
-                                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:300;line-height:1;text-align:center;color:#575757;">
-                                                                <a href="" style="color:#575757">Unsubscribe</a> from our emails
-                                                            </div>
+{{--                                                            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:300;line-height:1;text-align:center;color:#575757;">--}}
+{{--                                                                <a href="" style="color:#575757">Unsubscribe</a> from our emails--}}
+{{--                                                            </div>--}}
 
                                                         </td>
                                                     </tr>

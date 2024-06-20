@@ -5,7 +5,7 @@
         <div class="blog">
 
             <section class="filter-bar">
-
+                <h2>Apply Filters/Sort</h2>
                 <div class="dropdown">
                     <button onclick="showDropdown('sortdropdown')" class="btn btn-primary"><i class="fa fa-sort"
                                                                                               aria-hidden="true"></i>
@@ -15,10 +15,12 @@
                         {{--                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">--}}
                         <a href="{{url()->query('/posts?'.request()->getQueryString(), ['sort' => '-created_at'])}}">Latest</a>
                         <a href="{{url()->query('/posts?'.request()->getQueryString(), ['sort' => 'created_at'])}}">Oldest</a>
-                        <a href="{{url()->query('/posts?'.request()->getQueryString(), ['sort' => 'title'])}}"><i class="fa fa-sort-alpha-asc"
-                                                                                     aria-hidden="true"></i> A-Z</a>
-                        <a href="{{url()->query('/posts?'.request()->getQueryString(), ['sort' => '-title'])}}"><i class="fa fa-sort-alpha-desc"
-                                                                                      aria-hidden="true"></i> Z-A</a>
+                        <a href="{{url()->query('/posts?'.request()->getQueryString(), ['sort' => 'title'])}}"><i
+                                class="fa fa-sort-alpha-asc"
+                                aria-hidden="true"></i> A-Z</a>
+                        <a href="{{url()->query('/posts?'.request()->getQueryString(), ['sort' => '-title'])}}"><i
+                                class="fa fa-sort-alpha-desc"
+                                aria-hidden="true"></i> Z-A</a>
                     </div>
 
                     <button onclick="showDropdown('filterdropdowncategories')" class="btn btn-primary"><i
@@ -43,7 +45,13 @@
                             <a href="{{url()->query('/posts?'.request()->getQueryString(), ['filter[tags.tag_name]' => $tag->tag_name])}}">{{$tag->tag_name }}</a>
                         @endforeach
                     </div>
-                </div>
+
+                    @if(str_contains(url()->full(), '?'))
+                        <form action="{{route('posts')}}" method="GET">
+                            <button class="btn btn-quarternary btn-warning"><i class="fa-solid fa-filter"></i>
+                            </button>
+                        </form>
+                @endif
             </section>
 
             <h2 class="h1">All Blog Posts</h2>

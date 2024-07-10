@@ -58,11 +58,11 @@
             <section class="container">
                 <div class="blog-card-group">
                     @foreach ($posts as $post)
-                        <div class="blog-card" onclick="goToUrl('{{ route('post.show', $post) }}', event)">
+                        <div class="blog-card" onclick="goToUrl('{{ route('post.show', $post) }}')">
                             <img class="blog-image" src="{{ asset('images/posts/' . $post->image_path) }}"
                                  alt="Post Image">
                             <div class="blog-details">
-                                <div class="blog-topic text-tiny" onclick="goToUrl('{{ route('posts') }}', event)">
+                                <div class="blog-topic text-tiny" onclick="goToUrl('{{ route('posts') }}')">
                                     {{ $post->category->category_name }}
                                 </div>
                                 <h3>

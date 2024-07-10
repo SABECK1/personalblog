@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="fixed mail template">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="New Mail template">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/EmailVerificationNotificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/EmailVerificationNotificationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,15 +216,7 @@
       <workItem from="1718815476495" duration="12683000" />
       <workItem from="1718905888477" duration="10478000" />
       <workItem from="1720551975805" duration="3318000" />
-      <workItem from="1720643234264" duration="1578000" />
-    </task>
-    <task id="LOCAL-00034" summary="access user roles to comment">
-      <option name="closed" value="true" />
-      <created>1718412271021</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1718412271021</updated>
+      <workItem from="1720643234264" duration="4191000" />
     </task>
     <task id="LOCAL-00035" summary="fixed role relation">
       <option name="closed" value="true" />
@@ -610,7 +602,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718912441483</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="New Mail template">
+      <option name="closed" value="true" />
+      <created>1720644990704</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1720644990704</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,7 +619,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fixed button group styling in comment" />
     <MESSAGE value="redirect to intended page after login" />
     <MESSAGE value="redirect to login route when trying to reply to comments" />
     <MESSAGE value="added spatie laravel query builder" />
@@ -644,6 +643,7 @@
     <MESSAGE value="filter combination" />
     <MESSAGE value="clear filter and better styling" />
     <MESSAGE value="fixed mail template" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed mail template" />
+    <MESSAGE value="New Mail template" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Mail template" />
   </component>
 </project>

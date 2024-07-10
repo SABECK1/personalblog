@@ -18,13 +18,22 @@ class PostFactory extends Factory
      */
     public function definition(): array
     {
+        $autoIncrement = $this->autoIncrement();
+
         return [
-            'id' => User::factory(),
+            'id' => $autoIncrement->current(),
             'title' => $this->faker->sentence(),
             'content' => $this->faker->realText(),
             'subtitle' => $this->faker->sentence(),
             'category_id' => Category::factory(),
             'image_path' => $this->faker->name()."png",
         ];
+    }
+
+    public function autoIncrement()
+    {
+        for ($i = 0; $i < 1000; $i++) {
+            yield $i;
+        }
     }
 }

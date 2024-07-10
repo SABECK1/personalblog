@@ -123,35 +123,4 @@
         event.stopPropagation();
     }
 </script>
-
-
-{{--    const toggle_icon = document.querySelector('#theme-toggle i');--}}
-{{--    const body = document.querySelector('body');--}}
-
-
-
-{{--    function setTheme() {--}}
-{{--        if (localStorage.getItem('theme') == 'dark') {--}}
-{{--            body.classList.add('dark-theme');--}}
-{{--            body.classList.remove('light-theme');--}}
-{{--            toggle.classList.add('active');--}}
-{{--            toggle_icon.classList.add('fa-solid');--}}
-{{--            toggle_icon.classList.remove('fa-sun');--}}
-{{--            toggle_icon.classList.add('fa-moon');--}}
-{{--            toggle_icon.style.color = "black";--}}
-{{--        } else {--}}
-{{--            body.classList.add('light-theme');--}}
-{{--            body.classList.remove('dark-theme');--}}
-{{--            toggle.classList.remove('active');--}}
-{{--            toggle_icon.classList.add('fa-solid');--}}
-{{--            toggle_icon.classList.remove('fa-moon');--}}
-{{--            toggle_icon.classList.add('fa-sun');--}}
-{{--            toggle_icon.style.color = "orange";--}}
-{{--        }--}}
-
-{{--    }--}}
-{{--    toggle.addEventListener('click', toggleTheme);--}}
-{{--    setTheme();--}}
-{{--</script>--}}
-
 </html>

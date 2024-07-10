@@ -48,10 +48,10 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        $to_email = $request->email;
-        $to_name = $request->name;
-
-        Mail::to($to_email)->send(new Welcome($to_name));
+//        $to_email = $request->email;
+//        $to_name = $request->name;
+//
+//        Mail::to($to_email)->send(new Welcome($to_name));
 
         return redirect(route('verification.notice', absolute: false));
     }

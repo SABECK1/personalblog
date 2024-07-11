@@ -9,6 +9,7 @@ use App\Models\Post;
 use App\Models\Category;
 use App\Models\Tag;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Notification;
 use Spatie\QueryBuilder\AllowedFilter;
 use Spatie\QueryBuilder\QueryBuilder;
 
@@ -79,10 +80,24 @@ class PagesController extends Controller
             'contact_email' => ['required', 'string', 'lowercase', 'email', 'max:255'],
             // 'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
-        $to_mail = $request->contact_email;
+        Notification::route('mail', $request->contact_email)
+            ->notify(new ContactConfirmation());
 
-        Mail::to(getenv('MAIL_USERNAME'))->send(new ContactMessage($request->contact_email, $request->contact_message));
-        Mail::to($to_mail)->send(new ContactConfirmation());
+//        $to_mail = $request->contact_email;
+//
+//        Mail::to(getenv('MAIL_USERNAME'))->send(new ContactMessage($request->contact_email, $request->contact_message));
+//        Mail::to($to_mail)->send(new ContactConfirmation());
+        return redirect(route('home', absolute: true));
+    }
+
+    public function contact_mail_guest(Request $request): RedirectResponse
+    {
+        $request->validate([
+            //Comments are already handled by Javascript
+            'contact_message' => ['required', 'string'],
+        ]);
+
+        $request->user()->notify(new ContactConfirmation());
         return redirect(route('home', absolute: true));
     }
 }

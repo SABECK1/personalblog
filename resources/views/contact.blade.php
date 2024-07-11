@@ -15,17 +15,18 @@
                         <h2 class="title">
                             Let's get in touch!
                         </h2>
-                        <form action="{{ route('contact') }}" method="POST" id="contactform">
+                        @guest
+                        <form action="{{ route('contact.mail_guest') }}" method="POST" id="contactform_guest">
                             @csrf
                             @if ($errors->any())
                                 {!! implode('', $errors->all('<div class="error">:message</div>')) !!}
                             @endif
                             <div>
-                                <input type="email" class="textinput email" placeholder="E-Mail" name="contact_email"
-                                    id="contact_email">
+                                <input type="email" class="textinput email" placeholder="E-Mail" name="contact_email_guest"
+                                    id="contact_email_guest">
                             </div>
                             <div class="textinput">
-                                <textarea id="contact_message" name="contact_message" class="textinput" placeholder="Your Message..."></textarea>
+                                <textarea id="contact_message_guest" name="contact_message_guest" class="textinput" placeholder="Your Message..."></textarea>
                             </div>
                             <div>
                                 <button type="submit" name="contact_message_submit" class="btn btn-primary">
@@ -33,6 +34,23 @@
                                     Send Message</button>
                             </div>
                         </form>
+                        @endguest
+                        @auth
+                            <form action="{{ route('contact.mail') }}" method="POST" id="contactform_auth">
+                                @csrf
+                                @if ($errors->any())
+                                    {!! implode('', $errors->all('<div class="error">:message</div>')) !!}
+                                @endif
+                                <div class="textinput">
+                                    <textarea id="contact_message_auth" name="contact_message_auth" class="textinput" placeholder="Your Message..."></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" name="contact_message_submit" class="btn btn-primary">
+                                        <i class="fas fa-envelope"></i>
+                                        Send Message</button>
+                                </div>
+                            </form>
+                        @endauth
                     </div>
                 </div>
             </section>

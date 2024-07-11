@@ -28,7 +28,11 @@
                 @endguest
                 @auth
                     <p>Write a comment:</p>
+                @cannot('store', App\Models\Comment::class)
+                    <p><a href="{{route('verification.notice')}}" class="message error">You need to verify your Email first!</a></p>
+                    @endcan
                     <livewire:commentarea :post="$post" :comment="null" :indent="0"/>
+
                 @endauth
                 <h1>Comment Section</h1>
                 @foreach($comments as $comment)

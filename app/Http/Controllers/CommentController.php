@@ -6,13 +6,19 @@ use App\Models\Comment;
 use App\Models\Post;
 use App\Http\Requests\StoreCommentRequest;
 use App\Http\Requests\UpdateCommentRequest;
-use Debugbar;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Routing\Controllers\HasMiddleware;
+use Illuminate\Routing\Controllers\Middleware;
 
-//use Barryvdh\Debugbar\Facade as Debugbar;
-
-class CommentController extends Controller
+class CommentController extends Controller implements HasMiddleware
 {
+
+    public static function middleware(): array
+    {
+        return [
+            new Middleware(middleware: 'verified'),
+        ];
+    }
 
     /**
      * Display a listing of the resource.

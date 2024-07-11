@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="fixed form side on contact">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="js cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,15 +217,7 @@
       <workItem from="1718905888477" duration="10478000" />
       <workItem from="1720551975805" duration="3318000" />
       <workItem from="1720643234264" duration="4877000" />
-      <workItem from="1720722330417" duration="7167000" />
-    </task>
-    <task id="LOCAL-00039" summary="Policy for deleting comments">
-      <option name="closed" value="true" />
-      <created>1718479204821</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1718479204821</updated>
+      <workItem from="1720722330417" duration="9172000" />
     </task>
     <task id="LOCAL-00040" summary="Fully functional delete method">
       <option name="closed" value="true" />
@@ -609,7 +603,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720728707207</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="js cleanup">
+      <option name="closed" value="true" />
+      <created>1720731735754</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1720731735754</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,7 +620,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fixed category query" />
     <MESSAGE value="fixed tagsquery" />
     <MESSAGE value="better tag styling" />
     <MESSAGE value="livewire component of tags table" />
@@ -643,6 +644,7 @@
     <MESSAGE value="Fixed ID generation in Seeder" />
     <MESSAGE value="Contact for Users and for guests" />
     <MESSAGE value="fixed form side on contact" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed form side on contact" />
+    <MESSAGE value="js cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="js cleanup" />
   </component>
 </project>

@@ -40,7 +40,6 @@ class CommentController extends Controller
         //IF REPLY
         if ($request->comment !== null)
         {
-//            dd($request->comment);
             $post->comments()->create([...$data, 'comment_id' => $request->comment, 'user_id' => $request->user()->id]);}
         else {
             $post->comments()->create([...$data, 'user_id' => $request->user()->id]);

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Mail\ContactConfirmation;
+use App\Notifications\ContactConfirmation;
 use App\Mail\ContactMessage;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
 use Spatie\QueryBuilder\AllowedFilter;
 use Spatie\QueryBuilder\QueryBuilder;
+
 
 class PagesController extends Controller
 {
@@ -72,15 +73,15 @@ class PagesController extends Controller
         return view('contact');
     }
 
-    public function contact_mail(Request $request): RedirectResponse
+    public function contact_mail_guest(Request $request): RedirectResponse
     {
         $request->validate([
             //Comments are already handled by Javascript
-            'contact_message' => ['required', 'string'],
-            'contact_email' => ['required', 'string', 'lowercase', 'email', 'max:255'],
+            'contact_message_guest' => ['required', 'string'],
+            'contact_email_guest' => ['required', 'string', 'email', 'max:255'],
             // 'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
-        Notification::route('mail', $request->contact_email)
+        Notification::route('mail', $request->contact_email_guest)
             ->notify(new ContactConfirmation());
 
 //        $to_mail = $request->contact_email;
@@ -90,14 +91,14 @@ class PagesController extends Controller
         return redirect(route('home', absolute: true));
     }
 
-    public function contact_mail_guest(Request $request): RedirectResponse
+    public function contact_mail_auth(Request $request): RedirectResponse
     {
         $request->validate([
             //Comments are already handled by Javascript
-            'contact_message' => ['required', 'string'],
+            'contact_message_auth' => ['required', 'string'],
         ]);
 
-        $request->user()->notify(new ContactConfirmation());
+        auth()->user()->notify(new ContactConfirmation());
         return redirect(route('home', absolute: true));
     }
 }

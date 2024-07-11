@@ -720,7 +720,9 @@ hr {
     height: 90%;
 }
 
-
+.two-sided-container-side form {
+    height: 60%;
+}
 
 .two-sided-container form div {
     display: flex;

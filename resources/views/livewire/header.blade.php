@@ -68,19 +68,19 @@
 
         <ul>
             <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
+                <a href="{{route('home')}}" class="nav-link">Home</a>
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link">Profile</a>
+                <a href="{{route('dashboard')}}" class="nav-link">Profile</a>
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link">About Me</a>
+                <a href="{{route('about')}}" class="nav-link">About Me</a>
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+                <a href="{{route('contact')}}" class="nav-link">Contact</a>
             </li>
         </ul>
     </div>

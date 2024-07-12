@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="verification middleware for commenting">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="added new components">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,15 +216,7 @@
       <workItem from="1720551975805" duration="3318000" />
       <workItem from="1720643234264" duration="4877000" />
       <workItem from="1720722330417" duration="10888000" />
-      <workItem from="1720803849687" duration="2673000" />
-    </task>
-    <task id="LOCAL-00042" summary="CommentBox component">
-      <option name="closed" value="true" />
-      <created>1718495283254</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1718495283254</updated>
+      <workItem from="1720803849687" duration="4669000" />
     </task>
     <task id="LOCAL-00043" summary="working indent in comment component">
       <option name="closed" value="true" />
@@ -612,7 +602,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720734074979</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="added new components">
+      <option name="closed" value="true" />
+      <created>1720817884776</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1720817884776</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -621,7 +619,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="better tag styling" />
     <MESSAGE value="livewire component of tags table" />
     <MESSAGE value="added all necessary components" />
     <MESSAGE value="added all necessary component controllers" />
@@ -646,6 +643,7 @@
     <MESSAGE value="fixed form side on contact" />
     <MESSAGE value="js cleanup" />
     <MESSAGE value="verification middleware for commenting" />
-    <option name="LAST_COMMIT_MESSAGE" value="verification middleware for commenting" />
+    <MESSAGE value="added new components" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new components" />
   </component>
 </project>

@@ -72,6 +72,10 @@
             </li>
 
             <li class="nav-item">
+                <a href="#" class="nav-link">Profile</a>
+            </li>
+
+            <li class="nav-item">
                 <a href="#" class="nav-link">About Me</a>
             </li>
 

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TabsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
@@ -21,6 +22,12 @@ Route::post('contact.mail_guest', [PagesController::class, 'contact_mail_guest']
      return view('dashboard');
  })->middleware(['auth', 'verified'])->name('dashboard');
 
+
+
+Route::get('dashboard/account', [TabsController::class, 'account'])->name('/dashboard/account');
+Route::get('dashboard/profile', [TabsController::class, 'profile'])->name('/dashboard/profile');
+Route::get('dashboard/content', [TabsController::class, 'content'])->name('/dashboard/content');
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -28,5 +35,7 @@ Route::middleware('auth')->group(function () {
 });
 Route::resource('post', PostController::class);
 Route::middleware('auth')->resource('posts.comments', CommentController::class);
+
+
 
 require __DIR__ . '/auth.php';

@@ -438,7 +438,7 @@ li { list-style: none; }
 
 .main {
     background: var(--background-secondary);
-    padding: var(--py) 0;
+    padding: var(--py) var(--py);
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -1151,6 +1151,19 @@ input:checked + .slider:before {
 .header * {
     position: relative;
     z-index: 1;
+}
+
+.horizontal-tabs {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.horizontal-tabs a {
+    margin-right: 1rem;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /* Verify Email */

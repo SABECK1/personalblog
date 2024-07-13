@@ -24,5 +24,6 @@
 
         {{-- Other Javascript Functionality --}}
         <script src="{{ asset('/js/theme-toggle.js') }}" defer></script>
+
     </head>
 </div>

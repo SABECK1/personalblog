@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="AJAX Test for Tabs">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="functioning ajax alongside new blades for tabs">
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard-account.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard-content.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard-profile.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,14 +226,6 @@
       <workItem from="1720643234264" duration="4877000" />
       <workItem from="1720722330417" duration="10888000" />
       <workItem from="1720803849687" duration="13279000" />
-    </task>
-    <task id="LOCAL-00046" summary="changed commentbox to livewire component">
-      <option name="closed" value="true" />
-      <created>1718498527053</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1718498527053</updated>
     </task>
     <task id="LOCAL-00047" summary="changed indent level on commentarea livewire component">
       <option name="closed" value="true" />
@@ -618,7 +611,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720829374989</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="functioning ajax alongside new blades for tabs">
+      <option name="closed" value="true" />
+      <created>1720878585036</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1720878585036</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,7 +628,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added all necessary component controllers" />
     <MESSAGE value="fixed sidebar size" />
     <MESSAGE value="added livewire and debugbar components git" />
     <MESSAGE value="changed articles.blade.php to use livewire components" />
@@ -652,6 +652,7 @@
     <MESSAGE value="added new components" />
     <MESSAGE value="added profile in menu" />
     <MESSAGE value="AJAX Test for Tabs" />
-    <option name="LAST_COMMIT_MESSAGE" value="AJAX Test for Tabs" />
+    <MESSAGE value="functioning ajax alongside new blades for tabs" />
+    <option name="LAST_COMMIT_MESSAGE" value="functioning ajax alongside new blades for tabs" />
   </component>
 </project>

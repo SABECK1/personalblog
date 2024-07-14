@@ -1314,6 +1314,7 @@ input:checked + .slider:before {
 }
 
 /* Dashboard */
+
 .dashboard-sidebar {
     height: 100%;
     width: 18vw;
@@ -1371,4 +1372,19 @@ input:checked + .slider:before {
     font-size: 28px;
     font-weight: 400;
     transition: all ease 0.5s;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard-content{
+    /*position: relative;*/
+    /*left: 250px;*/
+    background-color: var(--background-primary);
+    min-height: 100vh;
+    width: calc(100% - 250px);
+    padding: 10px 14px;
+    transition: ease all .5s;
 }

@@ -9,7 +9,7 @@
 
 
 
-
+<div class="dashboard">
     <div class="dashboard-sidebar" id="dashboard-tabs">
         <div class="menu-items">
             <ul class="nav-links">
@@ -35,9 +35,16 @@
             </ul>
         </div>
     </div>
-    <div class="main" id="tabcontent">
+    <section class="dashboard-content">
+        <div class="top">
+            <i class="fa-solid fa-bars"></i>
+
+            <!--<img src="images/profile.jpg" alt="">-->
+        </div>
 {{--        Will be filled using AJAX using the Tabcontroller --}}
-    </div>
+    </section>
+</div>
+
 
 
 

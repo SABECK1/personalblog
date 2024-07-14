@@ -36,11 +36,6 @@
         </div>
     </div>
     <section class="dashboard-content">
-        <div class="top">
-            <i class="fa-solid fa-bars"></i>
-
-            <!--<img src="images/profile.jpg" alt="">-->
-        </div>
 {{--        Will be filled using AJAX using the Tabcontroller --}}
     </section>
 </div>

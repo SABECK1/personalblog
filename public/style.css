@@ -1316,16 +1316,24 @@ input:checked + .slider:before {
 /* Dashboard */
 
 .dashboard-sidebar {
+    position: relative;
+    top: 4px;
     height: 100%;
     width: 18vw;
     padding: 0.5rem 0.75rem;
     background: var(--background-primary);
     border-right: 1px solid var(--foreground-primary-light);
+    /*border-top: 1px solid var(--foreground-primary-light);*/
     transition: all 0.3s ease;
     margin-top: 0;
+    min-height: 100vh;
+    box-shadow: 5px -4px 15px rgba(0, 0, 0, 0.35);
+    overflow-x: clip;
 }
 
 .dashboard-sidebar .menu-items {
+    position: absolute;
+    top: 0;
     height: calc(100% - 90px);
     display: flex;
     flex-direction: column;
@@ -1377,6 +1385,7 @@ input:checked + .slider:before {
 .dashboard {
     display: flex;
     flex-direction: row;
+    background: var(--background-primary);
 }
 
 .dashboard-content{
@@ -1387,4 +1396,19 @@ input:checked + .slider:before {
     width: calc(100% - 250px);
     padding: 10px 14px;
     transition: ease all .5s;
+}
+
+.dashboard .top{
+    display: flex;
+    width: calc(100% - 250px);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    transition: ease all 0.5s;
+    z-index: 10;
+}
+
+.dashboard.close ~ .dashboard-content .top {
+    left: 73px;
+    width: calc(100% - 73px);
 }

@@ -7,18 +7,37 @@
 <livewire:header/>
 
 
-<div class="container">
 
-<div class="main">
-    <h1>Profile</h1>
-    <div class="horizontal-tabs" id="dashboard-tabs">
-        <a class="{{ request('tab') == 'profile' || !request()->has('tab') ? 'active' : null }}" href="{{route('dashboard', ['tab' => 'profile'])}}" data-url="{{ route('/dashboard/profile') }}">Profile</a>
-        <a class="{{ request('tab') == 'content' ? 'active' : null }}" href="{{route('dashboard', ['tab' => 'content'])}}" data-url="{{ route('/dashboard/content') }}">Content</a>
-        <a class="{{ request('tab') == 'account' ? 'active' : null }}" href="{{route('dashboard', ['tab' => 'account'])}}" data-url="{{ route('/dashboard/account') }}">Account</a>
+
+
+    <div class="dashboard-sidebar" id="dashboard-tabs">
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li>
+                    <a class="{{ request('tab') == 'profile' || !request()->has('tab') ? 'active' : null }}"
+                       href="{{route('dashboard', ['tab' => 'profile'])}}"
+                       data-url="{{ route('/dashboard/profile') }}" >
+                        <i class="fa-solid fa-user"></i>
+                        <span class="link-name">Profile</span>
+                    </a></li>
+                <li><a class="{{ request('tab') == 'content' ? 'active' : null }}"
+                       href="{{route('dashboard', ['tab' => 'content'])}}"
+                       data-url="{{ route('/dashboard/content') }}">
+                        <i class="fa-solid fa-folder-tree"></i>
+                        <span class="link-name">Content</span>
+                    </a></li>
+                <li><a class="{{ request('tab') == 'account' ? 'active' : null }}"
+                       href="{{route('dashboard', ['tab' => 'account'])}}"
+                       data-url="{{ route('/dashboard/account') }}">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span class="link-name">Account</span>
+                    </a></li>
+            </ul>
+        </div>
     </div>
     <div class="main" id="tabcontent">
-
+{{--        Will be filled using AJAX using the Tabcontroller --}}
     </div>
-</div>
-</div>
+
+
 

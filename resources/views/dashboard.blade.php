@@ -35,7 +35,7 @@
             </ul>
         </div>
     </div>
-    <section class="dashboard-content">
+    <section class="dashboard-content" id="tabcontent">
 {{--        Will be filled using AJAX using the Tabcontroller --}}
     </section>
 </div>

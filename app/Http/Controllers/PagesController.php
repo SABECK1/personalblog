@@ -45,7 +45,7 @@ class PagesController extends Controller
             'posts' => QueryBuilder::for(Post::class)->allowedSorts('created_at', 'title')
                 ->allowedFilters([AllowedFilter::exact('categories.category_name'), AllowedFilter::exact('tags.tag_name', null, false)])
                 ->leftJoin('post_tag', 'posts.id', '=', 'post_tag.post_id')
-                ->leftJoin('tags', 'tags.tag_id', '=', 'post_tag.tag_id')
+                ->leftJoin('tags', 'tags.id', '=', 'post_tag.tag_id')
                 ->join('categories', 'posts.category_id', '=', 'categories.id')
                 ->with('user')->paginate(4),
             'categories' => QueryBuilder::for(Category::class)
@@ -55,7 +55,7 @@ class PagesController extends Controller
                 ->get(),
 
             'tags' => QueryBuilder::for(Tag::class)
-                ->leftJoin('post_tag', 'post_tag.tag_id', '=', 'tags.tag_id')
+                ->leftJoin('post_tag', 'post_tag.tag_id', '=', 'tags.id')
                 ->leftJoin('posts', 'posts.id', '=', 'post_tag.post_id')
                 ->selectRaw('tag_name, COUNT(DISTINCT(posts.id)) as tag_count, icon')
                 ->groupby('tag_name', 'icon')

@@ -32,6 +32,12 @@
                         <i class="fa-solid fa-address-card"></i>
                         <span class="link-name">Account</span>
                     </a></li>
+                <li><a class="{{ request('tab') == 'admin' ? 'active' : null }}"
+                       href="{{route('dashboard', ['tab' => 'admin'])}}"
+                       data-url="{{ route('/dashboard/admin') }}">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <span class="link-name">Account</span>
+                    </a></li>
             </ul>
         </div>
     </div>

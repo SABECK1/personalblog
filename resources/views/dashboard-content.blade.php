@@ -1,5 +1,5 @@
 
-<table>
+<table class="table">
     <thead>
     <tr>
         <th>Title</th>
@@ -12,7 +12,7 @@
         <tr>
             <td>{{$post->title}}</td>
             <td>{{$post->category->category_name}}</td>
-            <td>{{$post->tags->tag_name}}</td>
+            <td>@foreach($post->tags as $tag){{$tag->tag_name}} @endforeach</td>
         </tr>
     @endforeach
 </table>

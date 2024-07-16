@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="restructuring of ids">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Working relation of Posts to Tags">
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard-content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard-content.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,15 +225,7 @@
       <workItem from="1720722330417" duration="10888000" />
       <workItem from="1720803849687" duration="13279000" />
       <workItem from="1720965883353" duration="11618000" />
-      <workItem from="1721144311537" duration="4762000" />
-    </task>
-    <task id="LOCAL-00052" summary="added functionality to open replywindow">
-      <option name="closed" value="true" />
-      <created>1718500910284</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1718500910284</updated>
+      <workItem from="1721144311537" duration="5450000" />
     </task>
     <task id="LOCAL-00053" summary="working reply on child comment">
       <option name="closed" value="true" />
@@ -623,7 +611,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721149062515</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="Working relation of Posts to Tags">
+      <option name="closed" value="true" />
+      <created>1721149428993</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1721149428993</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,7 +628,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="media queries" />
     <MESSAGE value="footer queries" />
     <MESSAGE value="fixed up tag and category queries in the articles.blade.php" />
     <MESSAGE value="styling for filter options" />
@@ -657,6 +652,7 @@
     <MESSAGE value="fully fledged out dashboard template" />
     <MESSAGE value="renamed pivot table of tags and posts" />
     <MESSAGE value="restructuring of ids" />
-    <option name="LAST_COMMIT_MESSAGE" value="restructuring of ids" />
+    <MESSAGE value="Working relation of Posts to Tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working relation of Posts to Tags" />
   </component>
 </project>

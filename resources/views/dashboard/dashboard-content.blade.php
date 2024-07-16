@@ -21,8 +21,8 @@
             <td>{{$post->created_at}}</td>
             <td>
 
-                <button class="btn btn-tertiary btn-warning"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
-                <button class="btn btn-tertiary btn-warning"><i class="fa-solid fa-trash-can"></i>Delete</button>
+                <button class="btn btn-tertiary"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                <button class="btn btn-tertiary"><i class="fa-solid fa-trash-can"></i>Delete</button>
 
             </td>
         </tr>

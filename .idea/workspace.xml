@@ -226,15 +226,7 @@
       <workItem from="1720722330417" duration="10888000" />
       <workItem from="1720803849687" duration="13279000" />
       <workItem from="1720965883353" duration="11618000" />
-      <workItem from="1721144311537" duration="17442000" />
-    </task>
-    <task id="LOCAL-00061" summary="fixed tagsquery">
-      <option name="closed" value="true" />
-      <created>1718644589157</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1718644589157</updated>
+      <workItem from="1721144311537" duration="17794000" />
     </task>
     <task id="LOCAL-00062" summary="better tag styling">
       <option name="closed" value="true" />
@@ -620,7 +612,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721164749398</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="fully styled dashboard.blade.php">
+      <option name="closed" value="true" />
+      <created>1721164860941</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1721164860941</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

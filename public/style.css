@@ -983,7 +983,7 @@ tr td:last-child, th:last-child {
     margin-inline: auto;
     box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.15);
 }
-.btn-primary i {
+.btn i {
     color: var(--background-secondary)
 }
 

@@ -1005,8 +1005,8 @@ tr td:last-child, th:last-child {
 
 
 .btn-secondary {
-    background: var(--action-secondary);
-    color: var(--foreground-secondary);
+    background: var(--foreground-secondary);
+    color: var(--background-secondary);
     padding: 0.5rem 1rem;
     border: 3px solid var(--foreground-tertiary);
     display: flex;

@@ -1,4 +1,7 @@
 <h2>Posts</h2>
+@can('create', \App\Models\Post::class)
+<button class="btn btn-tertiary"><i class="fa-solid fa-plus"></i>Create Post</button>
+@endcan
 <div class="table-wrapper">
 <table class="table">
     <thead>

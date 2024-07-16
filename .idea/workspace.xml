@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="fully fledged out dashboard template">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="restructuring of ids">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard-content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard-content.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,22 +229,7 @@
       <workItem from="1720722330417" duration="10888000" />
       <workItem from="1720803849687" duration="13279000" />
       <workItem from="1720965883353" duration="11618000" />
-    </task>
-    <task id="LOCAL-00050" summary="fixed multiple elements when nested comments">
-      <option name="closed" value="true" />
-      <created>1718499707773</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1718499707774</updated>
-    </task>
-    <task id="LOCAL-00051" summary="added functionality to open replywindow">
-      <option name="closed" value="true" />
-      <created>1718500169132</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1718500169132</updated>
+      <workItem from="1721144311537" duration="4762000" />
     </task>
     <task id="LOCAL-00052" summary="added functionality to open replywindow">
       <option name="closed" value="true" />
@@ -619,7 +607,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720980061561</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="renamed pivot table of tags and posts">
+      <option name="closed" value="true" />
+      <created>1721147330438</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1721147330439</updated>
+    </task>
+    <task id="LOCAL-00100" summary="restructuring of ids">
+      <option name="closed" value="true" />
+      <created>1721149062515</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1721149062515</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,8 +632,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="deleted old blades." />
-    <MESSAGE value="fixed categorytable.blade.php styling" />
     <MESSAGE value="media queries" />
     <MESSAGE value="footer queries" />
     <MESSAGE value="fixed up tag and category queries in the articles.blade.php" />
@@ -653,6 +655,8 @@
     <MESSAGE value="Dashboard sidebar" />
     <MESSAGE value="dashboard content" />
     <MESSAGE value="fully fledged out dashboard template" />
-    <option name="LAST_COMMIT_MESSAGE" value="fully fledged out dashboard template" />
+    <MESSAGE value="renamed pivot table of tags and posts" />
+    <MESSAGE value="restructuring of ids" />
+    <option name="LAST_COMMIT_MESSAGE" value="restructuring of ids" />
   </component>
 </project>

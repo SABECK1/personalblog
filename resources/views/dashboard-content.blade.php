@@ -1,1 +1,18 @@
-<p>This is merely the contact</p>
+
+<table>
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Category</th>
+        <th>Tags</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    @foreach($posts as $post )
+        <tr>
+            <td>{{$post->title}}</td>
+            <td>{{$post->category->category_name}}</td>
+            <td>{{$post->tags->tag_name}}</td>
+        </tr>
+    @endforeach
+</table>

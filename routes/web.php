@@ -28,6 +28,7 @@ Route::get('dashboard/account', [TabsController::class, 'account'])->name('/dash
 Route::get('dashboard/profile', [TabsController::class, 'profile'])->name('/dashboard/profile');
 Route::get('dashboard/content', [TabsController::class, 'content'])->name('/dashboard/content');
 Route::get('dashboard/index', [TabsController::class, 'index'])->name('/dashboard/index');
+Route::get('dashboard/admin', [TabsController::class, 'admin'])->name('/dashboard/admin');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

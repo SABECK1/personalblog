@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Working relation of Posts to Tags">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="better table styling">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard-content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard-content.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,15 +227,7 @@
       <workItem from="1720722330417" duration="10888000" />
       <workItem from="1720803849687" duration="13279000" />
       <workItem from="1720965883353" duration="11618000" />
-      <workItem from="1721144311537" duration="5450000" />
-    </task>
-    <task id="LOCAL-00053" summary="working reply on child comment">
-      <option name="closed" value="true" />
-      <created>1718550402979</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1718550402979</updated>
+      <workItem from="1721144311537" duration="11784000" />
     </task>
     <task id="LOCAL-00054" summary="filter out parent comments so they dont get displayed twice on post-show.blade.php">
       <option name="closed" value="true" />
@@ -619,7 +613,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721149428993</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="better table styling">
+      <option name="closed" value="true" />
+      <created>1721150375196</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1721150375196</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,7 +630,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="footer queries" />
     <MESSAGE value="fixed up tag and category queries in the articles.blade.php" />
     <MESSAGE value="styling for filter options" />
     <MESSAGE value="changed queries and migrations to get rid of obsolete date field" />
@@ -653,6 +654,18 @@
     <MESSAGE value="renamed pivot table of tags and posts" />
     <MESSAGE value="restructuring of ids" />
     <MESSAGE value="Working relation of Posts to Tags" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working relation of Posts to Tags" />
+    <MESSAGE value="better table styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="better table styling" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/dashboard-content.blade.php</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

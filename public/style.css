@@ -873,7 +873,7 @@ textarea {
 .table-wrapper {
     border-style: solid;
     border-width: 3px;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow-y: auto;
     margin-bottom: 3vh;
     background-color: var(--background-secondary);
@@ -884,7 +884,7 @@ textarea {
     border-collapse: separate;
     font-size: var(--fs-3);
     table-layout: fixed;
-    padding: 0;
+    padding: 5px;
     background: var(--background-secondary);
     border-spacing: 0 5px;
     width: 100%;
@@ -896,22 +896,18 @@ textarea {
 th,
 td {
     padding: 0.5rem;
-    line-height: 15px;
+    line-height: 1.25rem;
     background: var(--background-primary);
 }
 
-tr {
-    border: solid 1px var(--background-primary);
-    box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05);
-    padding-top: 15px;
-}
 
-tr td:first-child {
+
+tr td:first-child, th:first-child {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-tr td:last-child {
+tr td:last-child, th:last-child {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -1025,7 +1021,7 @@ tr td:last-child {
     color: var(--foreground-secondary);
     padding: 0.5rem 0.5rem;
     border: 3px solid var(--foreground-tertiary);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     font-size: 12px;

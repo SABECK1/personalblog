@@ -29,8 +29,8 @@ class PostPolicy
      */
     public function create(User $user): bool
     {
-        return true;
-//        return $user->role()->role_name === 'ADMIN';
+//        return true;
+        return $user->role->role_name === 'ADMIN';
     }
 
     /**

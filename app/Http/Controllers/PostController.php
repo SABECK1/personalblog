@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Post;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 use App\Models\Comment;
 
@@ -21,7 +23,10 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.post-create', [
+            'categories' => Category::all(),
+            'tags' => Tag::all(),
+        ]);
     }
 
     /**

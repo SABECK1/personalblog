@@ -36,14 +36,23 @@
                        href="{{route('dashboard', ['tab' => 'admin'])}}"
                        data-url="{{ route('/dashboard/admin') }}">
                         <i class="fa-solid fa-screwdriver-wrench"></i>
-                        <span class="link-name">Account</span>
+                        <span class="link-name">Administrator</span>
                     </a></li>
             </ul>
         </div>
     </div>
-    <section class="dashboard-content" id="tabcontent">
+
+
+    <section class="dashboard-content">
+        <div id="precontent">
+
+        </div>
+        <div id="tabcontent">
+
+        </div>
 {{--        Will be filled using AJAX using the Tabcontroller --}}
     </section>
+
 </div>
 
 

@@ -1,6 +1,8 @@
 <h2>Posts</h2>
 @can('create', \App\Models\Post::class)
-<button class="btn btn-tertiary"><i class="fa-solid fa-plus"></i>Create Post</button>
+{{--    <form action="{{route('post.create')}}"  method="GET">--}}
+<button class="btn btn-tertiary" data-url="{{route('post.create')}}" id="create_post_btn"><i class="fa-solid fa-plus"></i>Create Post</button>
+{{--    </form>--}}
 @endcan
 <div class="table-wrapper">
 <table class="table">
@@ -20,10 +22,12 @@
             <td>@foreach($post->tags as $tag){{$tag->tag_name}} @endforeach</td>
             <td>{{$post->created_at}}</td>
             <td>
-
+                <form>
                 <button class="btn btn-tertiary"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                </form>
+                <form>
                 <button class="btn btn-tertiary"><i class="fa-solid fa-trash-can"></i>Delete</button>
-
+                </form>
             </td>
         </tr>
     @endforeach

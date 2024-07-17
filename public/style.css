@@ -1010,9 +1010,9 @@ tr td:last-child, th:last-child {
     color: var(--background-secondary);
     padding: 0.5rem 1rem;
     border: 3px solid var(--foreground-tertiary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
     font-size: 20px;
 }
 
@@ -1022,9 +1022,9 @@ tr td:last-child, th:last-child {
     color: var(--background-secondary);
     padding: 0.5rem 0.5rem;
     border: 3px solid var(--foreground-tertiary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
     font-size: 12px;
     min-width: 7rem;
     min-height: 2rem;
@@ -1032,13 +1032,13 @@ tr td:last-child, th:last-child {
 }
 
 .btn-quarternary {
-    background: var(--action-secondary);
-    color: var(--foreground-secondary);
+    background: var(--foreground-secondary);
+    color: var(--background-secondary);
     padding: 0.3rem 0.3rem;
     border: 3px solid var(--foreground-tertiary);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    /*display: inline-flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
     width: fit-content;
     height: fit-content;
 }

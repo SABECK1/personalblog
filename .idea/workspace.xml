@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="CKEDITOR Integration AJAX">
-      <change afterPath="$PROJECT_DIR$/public/assets/vendor/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/ckeditor5.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/vendor/ckeditor5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/posts/post-create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -237,15 +233,7 @@
       <workItem from="1720965883353" duration="11618000" />
       <workItem from="1721144311537" duration="17984000" />
       <workItem from="1721245052254" duration="5317000" />
-      <workItem from="1721325464194" duration="11895000" />
-    </task>
-    <task id="LOCAL-00070" summary="deleted old blades.">
-      <option name="closed" value="true" />
-      <created>1718661251707</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1718661251707</updated>
+      <workItem from="1721325464194" duration="12722000" />
     </task>
     <task id="LOCAL-00071" summary="fixed categorytable.blade.php styling">
       <option name="closed" value="true" />
@@ -631,7 +619,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721335856099</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="CKEDITOR Integration AJAX">
+      <option name="closed" value="true" />
+      <created>1721343438075</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1721343438075</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -3,6 +3,7 @@
 {{--<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css">--}}
 <link rel="stylesheet" href="{{asset('/assets/vendor/style.css')}}">
 <form action="{{route('post.store')}}" method="POST">
+    @csrf
         <div class="form-wrapper">
             <label for="title">Title:</label>
             <input type="text" id="title" name="postTitle" required>
@@ -27,7 +28,8 @@
                 @endforeach
             </fieldset>
 {{--            <textarea class="textinput" name="postBody"></textarea>--}}
-            <div id="editor"></div>
+{{--            <div id="editor"></div>--}}
+            <textarea name="editor" id="editor"></textarea>
             <button type="submit" class="btn btn-primary">Submit</button>
 
         </div>

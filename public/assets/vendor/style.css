@@ -8,8 +8,8 @@
     width: 100% !important;color: black !important;
 }
 
-.ck > *, .ck {
-    color: black;
+.ck * , .ck {
+    color: unset;
 }
 
 

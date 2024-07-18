@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{{asset('/js/tabcontroller.js')}}">
 {{--<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css">--}}
-<div id="editor"></div>
+
 <form action="{{route('post.store')}}" method="POST">
         <div class="form-wrapper">
             <label for="title">Title:</label>
@@ -26,8 +26,9 @@
                 @endforeach
             </fieldset>
 {{--            <textarea class="textinput" name="postBody"></textarea>--}}
-
+            <div id="editor"></div>
             <button type="submit" class="btn btn-primary">Submit</button>
 
         </div>
 </form>
+<script type="module" src="{{ URL::asset('assets/vendor/ckeditor5.js') }}"></script>

@@ -15,7 +15,7 @@
             }
         }
         </script>
-    <script type="module" src="{{ URL::asset('assets/vendor/ckeditor5.js') }}"></script>
+
 </head>
 <livewire:header/>
 

@@ -100,6 +100,7 @@ const editorConfig = {
         ],
         shouldNotGroupWhenFull: false
     },
+
     plugins: [
         AccessibilityHelp,
         Alignment,
@@ -323,6 +324,12 @@ const editorConfig = {
             }
         ]
     },
+    // fontColor: {
+    //   colors: [{
+    //       color: 'hsl(0,0%,0%)',
+    //       label: 'black'
+    //   }]
+    // },
     table: {
         contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells', 'tableProperties', 'tableCellProperties']
     }

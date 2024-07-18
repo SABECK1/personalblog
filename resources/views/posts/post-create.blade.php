@@ -1,6 +1,7 @@
+<script type="module" src="{{ URL::asset('assets/vendor/ckeditor5.js') }}"></script>
 <link rel="stylesheet" href="{{asset('/js/tabcontroller.js')}}">
 {{--<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css">--}}
-
+<link rel="stylesheet" href="{{asset('/assets/vendor/style.css')}}">
 <form action="{{route('post.store')}}" method="POST">
         <div class="form-wrapper">
             <label for="title">Title:</label>
@@ -31,4 +32,4 @@
 
         </div>
 </form>
-<script type="module" src="{{ URL::asset('assets/vendor/ckeditor5.js') }}"></script>
+

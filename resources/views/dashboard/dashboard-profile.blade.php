@@ -1,1 +1,3 @@
-<p>And this is the Profile</p>
+<body>
+<div id="editor"></div>
+</body>

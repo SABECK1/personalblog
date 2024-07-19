@@ -1,6 +1,6 @@
-<script type="module" src="{{ URL::asset('assets/vendor/ckeditor5.js') }}"></script>
+
 <link rel="stylesheet" href="{{asset('/js/tabcontroller.js')}}">
-<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css">
+{{--<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css">--}}
 <link rel="stylesheet" href="{{asset('/assets/vendor/style.css')}}">
 <form action="{{route('post.store')}}" method="POST">
     @csrf
@@ -29,9 +29,10 @@
             </fieldset>
 {{--            <textarea class="textinput" name="postBody"></textarea>--}}
 {{--            <div id="editor"></div>--}}
-{{--            <textarea name="editor" id="editor"></textarea>--}}
+            <textarea name="editor" id="editor"></textarea>
             <button type="submit" class="btn btn-primary">Submit</button>
 
         </div>
 </form>
+<script type="module" src="{{ URL::asset('assets/vendor/ckeditor5.js') }}"></script>
 

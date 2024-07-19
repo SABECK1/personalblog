@@ -1,4 +1,14 @@
+{{--<script src="{{ asset('/js/tabcontroller.js') }}"></script>--}}
 <h2>Posts</h2>
+@if(session()->has('success'))
+    <div class="message success">
+        {{ session()->get('success') }}
+    </div>
+@elseif(session()->has('error'))
+    <div class="message error">
+        {{ session()->get('error') }}
+    </div>
+@endif
 @can('create', \App\Models\Post::class)
     <form action="{{route('post.create')}}"  method="GET">
 <button class="btn btn-tertiary" data-url="{{route('post.create')}}" id="create_post_btn"><i class="fa-solid fa-plus"></i>Create Post</button>
@@ -22,10 +32,11 @@
             <td>@foreach($post->tags as $tag){{$tag->tag_name}} @endforeach</td>
             <td>{{$post->created_at}}</td>
             <td>
-                <form>
+                <form action="{{route('post.update', $post->id)}}" method="POST">
                 <button class="btn btn-tertiary"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
                 </form>
-                <form>
+                <form action="{{route('post.destroy', $post->id)}}" method="POST">
+                    @method('DELETE')
                 <button class="btn btn-tertiary"><i class="fa-solid fa-trash-can"></i>Delete</button>
                 </form>
             </td>
@@ -60,3 +71,4 @@
         @endforeach
     </table>
 </div>
+<script src="{{ asset('/js/dashboard-content-editor-toggle.js') }}"></script>

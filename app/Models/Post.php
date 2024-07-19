@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
  * @property int $id
  * @property string $title
  * @property string $content
+ * @property string $subtitle
  * @property int $category_id
  * @property string|null $image_path
  * @property string $date

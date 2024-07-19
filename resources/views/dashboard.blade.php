@@ -2,7 +2,7 @@
 <head>
     <link rel="stylesheet" href="{{ asset('style.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="{{ asset('/js/tabcontroller.js') }} " defer></script>
+    <script src="{{ asset('/js/tabcontroller.js') }}"></script>
     <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css" />
     <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5-premium-features/42.0.1/ckeditor5-premium-features.css" />
 
@@ -10,12 +10,10 @@
         {
             "imports": {
                 "ckeditor5": "https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.js",
-                "ckeditor5/": "https://cdn.ckeditor.com/ckeditor5/42.0.1/",
-                "ckeditor5-premium-features": "https://cdn.ckeditor.com/ckeditor5-premium-features/42.0.1/ckeditor5-premium-features.js",
-                "ckeditor5-premium-features/": "https://cdn.ckeditor.com/ckeditor5-premium-features/42.0.1/"
+                "ckeditor5/": "https://cdn.ckeditor.com/ckeditor5/42.0.1/"
             }
         }
-        </script>
+    </script>
 
 </head>
 <livewire:header/>
@@ -58,6 +56,11 @@
 
 
     <section class="dashboard-content">
+        @if(session()->has('success'))
+            <div class="message success">
+                {{ session()->get('success') }}
+            </div>
+        @endif
         <div id="precontent">
 
         </div>
@@ -66,8 +69,8 @@
         </div>
 {{--        Will be filled using AJAX using the Tabcontroller --}}
     </section>
-
 </div>
+<script src="{{ asset('/js/hide_messages.js') }}"></script>
 
 
 

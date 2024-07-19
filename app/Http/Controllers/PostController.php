@@ -7,6 +7,8 @@ use App\Models\Post;
 use App\Models\Tag;
 use Illuminate\Http\Request;
 use App\Models\Comment;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class PostController extends Controller
 {
@@ -34,7 +36,32 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        $request->validate([
+            'postTitle' => ['required', 'string'],
+            'postSubTitle' => ['required', 'string'],
+            'postImage' => ['required', 'image', 'mimes:jpeg,png,jpg,gif,svg', 'max:2048'],
+            'postCategory' => ['required'],
+            'editor' => ['required']
+        ]);
+
+
+        $statement = DB::select("SHOW TABLE STATUS LIKE 'posts'");
+        $nextId = $statement[0]->Auto_increment;
+
+        $imageName = $nextId.'Image.'.$request->postImage->extension();
+        $request->postImage->move(public_path('images/posts'), $imageName);
+        $post = new Post();
+        $post->title = $request->input('postTitle');
+        $post->category_id = $request->input('postCategory');
+        $post->content = $request->input('editor');
+        $post->image_path = 'images/posts/'.$imageName;
+        $post->user_id = Auth::user()->id;
+        $post->subtitle = $request->input('postSubTitle');
+        $post->save();
+
+        return redirect(route('dashboard', ['tab' => 'content']))->with('success', 'Post created');
+
+//        return
     }
 
     /**
@@ -65,7 +92,13 @@ class PostController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $post = Post::whereId($id)->with('tags', 'categories')->first();
+
+
+        return view('posts.post-create', [
+            'categories' => Category::all(),
+            'tags' => Tag::all(),
+        ]);
     }
 
     /**
@@ -73,6 +106,8 @@ class PostController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $post = Post::findOrFail($id);
+        $post->delete();
+        return redirect(route('dashboard', ['tab' => 'content']))->with('success', 'Post deleted');
     }
 }

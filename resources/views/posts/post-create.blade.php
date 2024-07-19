@@ -1,12 +1,14 @@
 
 <link rel="stylesheet" href="{{asset('/js/tabcontroller.js')}}">
-{{--<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css">--}}
+<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css">
 <link rel="stylesheet" href="{{asset('/assets/vendor/style.css')}}">
-<form action="{{route('post.store')}}" method="POST">
+<form action="{{route('post.store')}}" method="POST" enctype="multipart/form-data">
     @csrf
         <div class="form-wrapper">
             <label for="title">Title:</label>
             <input type="text" id="title" name="postTitle" required>
+            <label for="subtitle">Title:</label>
+            <input type="text" id="subtitle" name="postSubTitle" required>
             <label for="imageUpload">Post Image:</label>
             <input type="file" id="imageUpload" name="postImage" accept="image/*" multiple>
 

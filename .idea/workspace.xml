@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="CKEDITOR Integration AJAX">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TabsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/tabcontroller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/dashboard-content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/dashboard-content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/dashboard-profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/dashboard-profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/posts/post-create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

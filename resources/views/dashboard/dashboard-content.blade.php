@@ -1,8 +1,8 @@
 <h2>Posts</h2>
 @can('create', \App\Models\Post::class)
-{{--    <form action="{{route('post.create')}}"  method="GET">--}}
+    <form action="{{route('post.create')}}"  method="GET">
 <button class="btn btn-tertiary" data-url="{{route('post.create')}}" id="create_post_btn"><i class="fa-solid fa-plus"></i>Create Post</button>
-{{--    </form>--}}
+    </form>
 @endcan
 <div class="table-wrapper">
 <table class="table">

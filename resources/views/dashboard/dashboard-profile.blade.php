@@ -1,3 +1,3 @@
 <body>
-<div id="editor"></div>
+test
 </body>

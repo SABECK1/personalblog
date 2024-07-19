@@ -6,13 +6,12 @@ $(document).ready(function() {
     // Get the URL for the active tab content
     let activeTabUrl = activeTab.attr('data-url');
 
-    // This triggers when the tab wasnt clicked but it was routed to using URL
-    // Button already init -> Now handle it
-    handleButtonClick(activeTabUrl);
-
     // Fetch content for initial Tab
     $.get(activeTabUrl, function (data){
         $("#tabcontent").html(data);
+        // This triggers when the tab wasnt clicked but it was routed to using URL
+        // Button already init -> Now handle it
+        handleButtonClick(activeTabUrl);
     });
 
 

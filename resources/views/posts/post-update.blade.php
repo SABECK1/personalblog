@@ -17,8 +17,11 @@
         <label for="category">Category:</label>
         <select id="category" name="postCategory" required>
             <option value="">Select a category</option>
-            @foreach($categories as $category)
-                <option value="{{$category->id}}">{{$category->category_name}}</option>
+            @foreach($all_categories as $category_option)
+                <option value="{{$category_option->id}}"
+                    selected="{{ $category_option->id == $category->id ? 'selected' : '' }}">
+                    {{$category_option->category_name}}
+                </option>
             @endforeach
         </select>
 

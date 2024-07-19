@@ -6,22 +6,9 @@ $(document).ready(function() {
     // Get the URL for the active tab content
     let activeTabUrl = activeTab.attr('data-url');
 
-    // debugger
-    // // Event to inject Content before the main content
-    // // Needs to be set here because the button is loaded in the event above and therefore can only be triggered if it's already loaded
-    // if (activeTabUrl.includes("dashboard/content")) {
-    //     debugger
-    //     let btn = $("#create_post_btn");
-    //     $("#create_post_btn").on('click', function(event) {
-    //         event.preventDefault();
-    //
-    //         // Your existing logic here
-    //         let clickedBtnUrl = $(this).attr('data-url');
-    //         $.get(clickedBtnUrl, function(data) {
-    //             $("#precontent").html(data);
-    //         });
-    //     });
-    // }
+    // This triggers when the tab wasnt clicked but it was routed to using URL
+    // Button already init -> Now handle it
+    handleButtonClick(activeTabUrl);
 
     // Fetch content for initial Tab
     $.get(activeTabUrl, function (data){
@@ -34,43 +21,29 @@ $(document).ready(function() {
     $("#dashboard-tabs a").on('click', function(event) {
        event.preventDefault(); // Prevent loading through laravel routes
        let clickedTabUrl = $(this).attr('data-url');
+
+        debugger
+
        $.get(clickedTabUrl, function (data) {
            $("#tabcontent").html(data);
+           // This will work if the tab is clicked but not if it was routed to via URL
+           // Init Button -> Handle Button
+           handleButtonClick(clickedTabUrl);
        })
     });
 
 });
 
-//     $(document).ready(function() {
-//     // Get the active tab link
-//     var activeTab = $('.nav-tabs .active');
-//
-//     // Get the URL for the active tab content
-//     var activeTabUrl = activeTab.attr('data-url');
-//
-//     // Fetch the content for the active tab via AJAX
-//     $.get(activeTabUrl, function(data) {
-//     $('#' + activeTab.attr('href').slice(1)).html(data);
-// });
-//     debugger
-//     // Listen for the click event on each tab link
-//     $('.nav-tabs a').on('click', function(event) {
-//     // Prevent the default link behavior
-//     event.preventDefault();
-//     debugger
-//
-//     // Get the URL for the selected tab content
-//     var tabUrl = $(this).attr('data-url');
-//
-//     // Fetch the content for the selected tab via AJAX
-//     $.get(tabUrl, function(data) {
-//         debugger
-//     // Update the tab content with the fetched data
-//     $('#' + $(event.target).attr('href').slice(1)).html(data);
-//
-//     // Activate the selected tab
-//     $('.nav-tabs a').removeClass('active');
-//     $(event.target).addClass('active');
-// });
-// });
-// });
+function handleButtonClick(url) {
+    debugger
+    if (url.includes("dashboard/content")) {
+        let btn = $("#create_post_btn");
+        btn.on('click', function (event) {
+            event.preventDefault();
+            let clickedBtnUrl = $(this).attr('data-url');
+            $.get(clickedBtnUrl, function (data) {
+                $("#precontent").html(data);
+            });
+        });
+    }
+}

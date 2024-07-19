@@ -33,9 +33,11 @@
             <td>{{$post->created_at}}</td>
             <td>
                 <form action="{{route('post.update', $post->id)}}" method="POST">
+                    @csrf
                 <button class="btn btn-tertiary"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
                 </form>
                 <form action="{{route('post.destroy', $post->id)}}" method="POST">
+                    @csrf
                     @method('DELETE')
                 <button class="btn btn-tertiary"><i class="fa-solid fa-trash-can"></i>Delete</button>
                 </form>

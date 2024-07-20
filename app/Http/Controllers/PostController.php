@@ -84,11 +84,10 @@ class PostController extends Controller
      */
     public function edit(string $id)
     {
-        $post = Post::whereId($id)->with('tags', 'categories')->first();
-        return view('posts.post-create', [
-            'categories' => $post->categories,
+        $post = Post::whereId($id)->with('tags', 'category')->first();
+        return view('posts.post-update', [
             'all_categories' => Category::all(),
-            'tags' => $post->tags,
+            'all_tags' => Tag::all(),
             'post' => $post,
             'body' => $post->content,
             'title' => $post->title,

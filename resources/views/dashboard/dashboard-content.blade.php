@@ -32,7 +32,7 @@
             <td>@foreach($post->tags as $tag){{$tag->tag_name}} @endforeach</td>
             <td>{{$post->created_at}}</td>
             <td>
-                <form action="{{route('post.edit', $post->id)}}" method="POST">
+                <form action="{{route('post.edit', $post->id)}}" method="GET">
                     @csrf
                 <button class="btn btn-tertiary"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
                 </form>

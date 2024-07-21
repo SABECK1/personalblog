@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Getting Values from saved post while editing">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="delete posts_tags table as it was an obsolete table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/vendor/ckeditor5.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/vendor/ckeditor5.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/tabcontroller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tabcontroller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/dashboard-content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/dashboard-content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/post-create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/posts/post-update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-update.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -240,31 +242,8 @@
       <workItem from="1721245052254" duration="5317000" />
       <workItem from="1721325464194" duration="12722000" />
       <workItem from="1721402594393" duration="6075000" />
-      <workItem from="1721514011176" duration="6668000" />
-    </task>
-    <task id="LOCAL-00078" summary="sorting of articles">
-      <option name="closed" value="true" />
-      <created>1718823801399</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1718823801399</updated>
-    </task>
-    <task id="LOCAL-00079" summary="functioning filters on articles.blade.php">
-      <option name="closed" value="true" />
-      <created>1718827152782</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1718827152782</updated>
-    </task>
-    <task id="LOCAL-00080" summary="filter combination">
-      <option name="closed" value="true" />
-      <created>1718909269842</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1718909269843</updated>
+      <workItem from="1721514011176" duration="7464000" />
+      <workItem from="1721584184626" duration="3224000" />
     </task>
     <task id="LOCAL-00081" summary="clear filter and better styling">
       <option name="closed" value="true" />
@@ -634,7 +613,31 @@
       <option name="project" value="LOCAL" />
       <updated>1721515875769</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="ckeditor5.js integration while editing. TODO: Delete all instances before AJAX call">
+      <option name="closed" value="true" />
+      <created>1721522118493</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1721522118494</updated>
+    </task>
+    <task id="LOCAL-00128" summary="ckeditor5.js integration while editing. TODO: Delete all instances before AJAX call">
+      <option name="closed" value="true" />
+      <created>1721522128362</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1721522128362</updated>
+    </task>
+    <task id="LOCAL-00129" summary="delete posts_tags table as it was an obsolete table">
+      <option name="closed" value="true" />
+      <created>1721585720894</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1721585720895</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,8 +646,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fully fledged out dashboard template" />
-    <MESSAGE value="renamed pivot table of tags and posts" />
     <MESSAGE value="restructuring of ids" />
     <MESSAGE value="Working relation of Posts to Tags" />
     <MESSAGE value="better table styling" />
@@ -668,7 +669,9 @@
     <MESSAGE value="added post-update.blade.php" />
     <MESSAGE value="Fixed bug when using standard navigation that would cause Jquery to throw an error" />
     <MESSAGE value="Getting Values from saved post while editing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Getting Values from saved post while editing" />
+    <MESSAGE value="ckeditor5.js integration while editing. TODO: Delete all instances before AJAX call" />
+    <MESSAGE value="delete posts_tags table as it was an obsolete table" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete posts_tags table as it was an obsolete table" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

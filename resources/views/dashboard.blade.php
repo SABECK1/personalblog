@@ -2,10 +2,8 @@
 <head>
     <link rel="stylesheet" href="{{ asset('style.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="{{ asset('/js/tabcontroller.js') }}"></script>
     <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css" />
     <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5-premium-features/42.0.1/ckeditor5-premium-features.css" />
-
     <script type="importmap">
         {
             "imports": {
@@ -71,6 +69,7 @@
     </section>
 </div>
 <script src="{{ asset('/js/hide_messages.js') }}"></script>
+<script type="module" src="{{ asset('/js/tabcontroller.js') }}"></script>
 
 
 

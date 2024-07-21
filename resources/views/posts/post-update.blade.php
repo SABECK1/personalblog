@@ -1,5 +1,5 @@
 
-<link rel="stylesheet" href="{{asset('/js/tabcontroller.js')}}">
+
 <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css">
 <link rel="stylesheet" href="{{asset('/assets/vendor/style.css')}}">
 {{--{{dd($category)}}--}}
@@ -43,26 +43,28 @@
     </div>
 </form>
 <script type="module" src="{{ URL::asset('assets/vendor/ckeditor5.js') }}"></script>
-<script>
-    $(document).ready(function(){
-        let CKEDITOR=[]
+{{--<script>--}}
+{{--    import { ClassicEditor } from "ckeditor5";--}}
+{{--    $(document).ready(function(){--}}
+{{--        let CKEDITOR=[]--}}
 
-        ClassicEditor.create(document.querySelector('#one')).then(editor => {
-            CKEDITOR["one"] = editor;
-        })
+{{--        ClassicEditor.create(document.querySelector('#one'), editorConfig).then(editor => {--}}
+{{--            CKEDITOR["one"] = editor;--}}
+{{--        })--}}
 
-        ClassicEditor.create(document.querySelector('#two')).then(editor => {
-            CKEDITOR["two"] = editor;
-        })
+{{--        ClassicEditor.create(document.querySelector('#two')).then(editor => {--}}
+{{--            CKEDITOR["two"] = editor;--}}
+{{--        })--}}
 
-        $("form").on('submit',function(e){
-            e.preventDefault();
+{{--        $("form").on('submit',function(e){--}}
+{{--            e.preventDefault();--}}
 
-            CKEDITOR["one"].destroy();
-            CKEDITOR["two"].destroy();
+{{--            CKEDITOR["one"].destroy();--}}
+{{--            CKEDITOR["two"].destroy();--}}
 
-            //Ajax Call or rest of submission goes here
-        });
-    })
-</script>
+{{--            //Ajax Call or rest of submission goes here--}}
+{{--        });--}}
+{{--    })--}}
+{{--</script>--}}
 
+<script type="module" src="{{ asset('/js/tabcontroller.js') }}"></script>

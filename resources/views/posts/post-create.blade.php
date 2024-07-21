@@ -1,5 +1,5 @@
 
-<link rel="stylesheet" href="{{asset('/js/tabcontroller.js')}}">
+
 <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css">
 <link rel="stylesheet" href="{{asset('/assets/vendor/style.css')}}">
 <form action="{{route('post.store')}}" method="POST" enctype="multipart/form-data">
@@ -36,5 +36,5 @@
 
         </div>
 </form>
-<script type="module" src="{{ URL::asset('assets/vendor/ckeditor5.js') }}"></script>
-
+<script type="module" src="{{ asset('assets/vendor/ckeditor5.js') }}"></script>
+<script type="module" src="{{ asset('/js/tabcontroller.js') }}"></script>

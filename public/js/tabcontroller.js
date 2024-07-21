@@ -1,5 +1,8 @@
-
+import {ClassicEditor} from "ckeditor5";
+import {config} from "../assets/vendor/ckeditor5.js";
+let CKEDITOR=[]
 $(document).ready(function() {
+
     // Get the active tab link
     let activeTab = $('#dashboard-tabs .active');
 
@@ -35,6 +38,27 @@ $(document).ready(function() {
 
 });
 
+function setEditor(clickedBtnUrl) {
+    $.get(clickedBtnUrl, function (data) {
+        $("#precontent").html(data);
+        debugger
+        let intializeForm = () => {
+            if(!CKEDITOR["one"]){
+                return;
+            }
+            CKEDITOR["one"].destroy();
+        }
+
+        intializeForm()
+        ClassicEditor.create(document.querySelector('#editor'), config()).then(editor => {
+            CKEDITOR["one"] = editor;
+
+        })
+    });
+
+
+}
+
 function handleButtonClick(url) {
     debugger
     if (url.includes("dashboard/content")) {
@@ -42,18 +66,16 @@ function handleButtonClick(url) {
         create_btn.on('click', function (event) {
             event.preventDefault();
             let clickedBtnUrl = $(this).attr('data-url');
-            $.get(clickedBtnUrl, function (data) {
-                $("#precontent").html(data);
-            });
+            setEditor(clickedBtnUrl)
         });
 
         let edit_btn = $("#edit_post_btn");
         edit_btn.on('click', function (event) {
             event.preventDefault();
             let clickedBtnUrl = $(this).attr('data-url');
-            $.get(clickedBtnUrl, function (data) {
-                $("#precontent").html(data);
-            });
+            setEditor(clickedBtnUrl);
         });
+
+
     }
 }

@@ -1,5 +1,4 @@
-
-let init_data = document.getElementById("editor").value;
+let init_data = 'test';
 
 import {
     ClassicEditor,
@@ -335,3 +334,7 @@ const editorConfig = {
 
 
 // ClassicEditor.create(document.querySelector('#editor'), editorConfig)
+
+export function config(){
+    return editorConfig;
+}

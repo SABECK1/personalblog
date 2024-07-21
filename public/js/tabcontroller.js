@@ -24,9 +24,11 @@ $(document).ready(function() {
         debugger
 
        $.get(clickedTabUrl, function (data) {
+           debugger
            $("#tabcontent").html(data);
            // This will work if the tab is clicked but not if it was routed to via URL
            // Init Button -> Handle Button
+
            handleButtonClick(clickedTabUrl);
        })
     });
@@ -36,8 +38,17 @@ $(document).ready(function() {
 function handleButtonClick(url) {
     debugger
     if (url.includes("dashboard/content")) {
-        let btn = $("#create_post_btn");
-        btn.on('click', function (event) {
+        let create_btn = $("#create_post_btn");
+        create_btn.on('click', function (event) {
+            event.preventDefault();
+            let clickedBtnUrl = $(this).attr('data-url');
+            $.get(clickedBtnUrl, function (data) {
+                $("#precontent").html(data);
+            });
+        });
+
+        let edit_btn = $("#edit_post_btn");
+        edit_btn.on('click', function (event) {
             event.preventDefault();
             let clickedBtnUrl = $(this).attr('data-url');
             $.get(clickedBtnUrl, function (data) {

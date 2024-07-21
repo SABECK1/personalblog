@@ -8,8 +8,8 @@
     <div class="form-wrapper">
         <label for="title">Title:</label>
         <input type="text" id="title" value="{{$post->title}}" name="postTitle" required>
-        <label for="subtitle">Title:</label>
-        <input type="text" id="subtitle" value="{{$post->subTitle}}" name="postSubTitle" required>
+        <label for="subtitle">Subtitle:</label>
+        <input type="text" id="subtitle" value="{{$post->subtitle}}" name="postSubTitle" required>
         <label for="imageUpload">Post Image:</label>
         <input type="file" id="imageUpload" name="postImage" accept="image/*" multiple>
 
@@ -43,4 +43,26 @@
     </div>
 </form>
 <script type="module" src="{{ URL::asset('assets/vendor/ckeditor5.js') }}"></script>
+<script>
+    $(document).ready(function(){
+        let CKEDITOR=[]
+
+        ClassicEditor.create(document.querySelector('#one')).then(editor => {
+            CKEDITOR["one"] = editor;
+        })
+
+        ClassicEditor.create(document.querySelector('#two')).then(editor => {
+            CKEDITOR["two"] = editor;
+        })
+
+        $("form").on('submit',function(e){
+            e.preventDefault();
+
+            CKEDITOR["one"].destroy();
+            CKEDITOR["two"].destroy();
+
+            //Ajax Call or rest of submission goes here
+        });
+    })
+</script>
 

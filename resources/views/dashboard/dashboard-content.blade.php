@@ -34,7 +34,7 @@
             <td>
                 <form action="{{route('post.edit', $post->id)}}" method="GET">
                     @csrf
-                <button class="btn btn-tertiary"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                <button class="btn btn-tertiary" data-url="{{route('post.edit', $post->id)}}" id="edit_post_btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
                 </form>
                 <form action="{{route('post.destroy', $post->id)}}" method="POST">
                     @csrf
@@ -73,4 +73,33 @@
         @endforeach
     </table>
 </div>
-<script src="{{ asset('/js/dashboard-content-editor-toggle.js') }}"></script>
+{{--<script src="{{ asset('/js/dashboard-content-editor-toggle.js') }}"></script>--}}
+<script>
+    import {ClassicEditor} from "ckeditor5";
+    import editorconfig from  ""
+    $(document).ready(function(){
+        let CKEDITOR=[]
+        let intializeForm = () => {
+
+            if(!CKEDITOR["one"] || !CKEDITOR["two"]){
+                return;
+            }
+
+            $("form").on('submit',function(e){
+                e.preventDefault();
+                //Ajax Call goes here
+                CKEDITOR["one"].destroy();
+                CKEDITOR["two"].destroy();
+            });
+        }
+        ClassicEditor.create(document.querySelector('#one')).then(editor => {
+            CKEDITOR["one"] = editor;
+            intializeForm()
+        })
+
+        ClassicEditor.create(document.querySelector('#two')).then(editor => {
+            CKEDITOR["two"] = editor;
+            intializeForm()
+        })
+    })
+</script>

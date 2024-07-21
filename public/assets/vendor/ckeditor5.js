@@ -1,5 +1,5 @@
 
-let init_data = 'TEST';
+let init_data = document.getElementById("editor").value;
 
 import {
     ClassicEditor,
@@ -306,4 +306,32 @@ const editorConfig = {
     }
 };
 
-ClassicEditor.create(document.querySelector('#editor'), editorConfig);
+// const editors = {}; // You can also use new Map() if you use ES6.
+//
+// function createEditor(  ) {
+//     return ClassicEditor
+//         .create( document.getElementById("editor"), editorConfig )
+//         .then( editor => {
+//             editors[ "editor" ] = editor;
+//         } )
+//         .catch( err => console.error( err.stack ) );
+// }
+//
+// function deleteAllEditors() {
+//     Object.keys(editors).forEach(key => {
+//         if (editors[key]) {
+//             editors[key].destroy().then(() => {
+//                 delete editors[key];
+//                 console.log(`Editor destroyed for ${key}`);
+//             });
+//         }
+//     });
+// }
+//
+// deleteAllEditors();
+// createEditor();
+
+// createEditor();
+
+
+// ClassicEditor.create(document.querySelector('#editor'), editorConfig)

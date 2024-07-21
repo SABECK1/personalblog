@@ -1,4 +1,4 @@
-let init_data = 'test';
+// let init_data = 'test';
 
 import {
     ClassicEditor,
@@ -264,8 +264,6 @@ const editorConfig = {
             'resizeImage'
         ]
     },
-    initialData:
-        init_data,
     link: {
         addTargetToExternalLinks: true,
         defaultProtocol: 'https://',
@@ -304,36 +302,6 @@ const editorConfig = {
         contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells', 'tableProperties', 'tableCellProperties']
     }
 };
-
-// const editors = {}; // You can also use new Map() if you use ES6.
-//
-// function createEditor(  ) {
-//     return ClassicEditor
-//         .create( document.getElementById("editor"), editorConfig )
-//         .then( editor => {
-//             editors[ "editor" ] = editor;
-//         } )
-//         .catch( err => console.error( err.stack ) );
-// }
-//
-// function deleteAllEditors() {
-//     Object.keys(editors).forEach(key => {
-//         if (editors[key]) {
-//             editors[key].destroy().then(() => {
-//                 delete editors[key];
-//                 console.log(`Editor destroyed for ${key}`);
-//             });
-//         }
-//     });
-// }
-//
-// deleteAllEditors();
-// createEditor();
-
-// createEditor();
-
-
-// ClassicEditor.create(document.querySelector('#editor'), editorConfig)
 
 export function config(){
     return editorConfig;

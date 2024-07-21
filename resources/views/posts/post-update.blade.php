@@ -2,7 +2,6 @@
 
 <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css">
 <link rel="stylesheet" href="{{asset('/assets/vendor/style.css')}}">
-{{--{{dd($category)}}--}}
 <form action="{{route('post.store')}}" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="form-wrapper">
@@ -35,36 +34,11 @@
                 <label for="tag{{$tag_option->id}}">{{$tag_option->tag_name}}</label><br>
             @endforeach
         </fieldset>
-        {{--            <textarea class="textinput" name="postBody"></textarea>--}}
-        {{--            <div id="editor"></div>--}}
+
         <textarea name="editor" id="editor">{{$post->content}}</textarea>
         <button type="submit" class="btn btn-primary">Submit</button>
 
     </div>
 </form>
-<script type="module" src="{{ URL::asset('assets/vendor/ckeditor5.js') }}"></script>
-{{--<script>--}}
-{{--    import { ClassicEditor } from "ckeditor5";--}}
-{{--    $(document).ready(function(){--}}
-{{--        let CKEDITOR=[]--}}
-
-{{--        ClassicEditor.create(document.querySelector('#one'), editorConfig).then(editor => {--}}
-{{--            CKEDITOR["one"] = editor;--}}
-{{--        })--}}
-
-{{--        ClassicEditor.create(document.querySelector('#two')).then(editor => {--}}
-{{--            CKEDITOR["two"] = editor;--}}
-{{--        })--}}
-
-{{--        $("form").on('submit',function(e){--}}
-{{--            e.preventDefault();--}}
-
-{{--            CKEDITOR["one"].destroy();--}}
-{{--            CKEDITOR["two"].destroy();--}}
-
-{{--            //Ajax Call or rest of submission goes here--}}
-{{--        });--}}
-{{--    })--}}
-{{--</script>--}}
-
+<script type="module" src="{{ asset('assets/vendor/ckeditor5.js') }}"></script>
 <script type="module" src="{{ asset('/js/tabcontroller.js') }}"></script>

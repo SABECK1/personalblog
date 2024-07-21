@@ -46,6 +46,7 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
  */
 class Post extends Model
 {
+    protected $fillable = ['title', 'subtitle', 'image_path', 'content', 'category_id'];
     use HasFactory;
     //BelongsTo -> Gehört zu bestimmten Wert in anderer Tabelle. Diese Tabelle hat Fremdschlüssel, Fremdtabelle nicht
     //HasOne -> Gehört zu bestimmten Wert in anderer Tabelle. Die andere Tabelle besitzt einen Fremdschlüssel.

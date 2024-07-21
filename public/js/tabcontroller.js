@@ -52,7 +52,7 @@ function setEditor(clickedBtnUrl) {
         intializeForm()
         ClassicEditor.create(document.querySelector('#editor'), config()).then(editor => {
             CKEDITOR["one"] = editor;
-            editor.setData()
+            editor.setData(document.getElementById('#editor').value)
         })
     });
 

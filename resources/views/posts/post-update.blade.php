@@ -2,20 +2,21 @@
 
 <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css">
 <link rel="stylesheet" href="{{asset('/assets/vendor/style.css')}}">
-<form action="{{route('post.store')}}" method="POST" enctype="multipart/form-data">
+<form action="{{route('post.update', $post->id)}}" method="POST" enctype="multipart/form-data">
     @csrf
+    @method('PUT')
     <div class="form-wrapper">
         <label for="title">Title:</label>
-        <input type="text" id="title" value="{{$post->title}}" name="postTitle" required>
+        <input type="text" id="title" value="{{$post->title}}" name="title" required>
         <label for="subtitle">Subtitle:</label>
-        <input type="text" id="subtitle" value="{{$post->subtitle}}" name="postSubTitle" required>
+        <input type="text" id="subtitle" value="{{$post->subtitle}}" name="subtitle" required>
         <label for="imageUpload">Post Image:</label>
         <input type="file" id="imageUpload" name="postImage" accept="image/*" multiple>
 
 
 
         <label for="category">Category:</label>
-        <select id="category" name="postCategory" required>
+        <select id="category" name="category_id" required>
             <option value="">Select a category</option>
             @foreach($all_categories as $category_option)
                 <option value="{{$category_option->id}}"
@@ -35,7 +36,7 @@
             @endforeach
         </fieldset>
 
-        <textarea name="editor" id="editor">{{$post->content}}</textarea>
+        <textarea name="content" id="editor">{{$post->content}}</textarea>
         <button type="submit" class="btn btn-primary">Submit</button>
 
     </div>

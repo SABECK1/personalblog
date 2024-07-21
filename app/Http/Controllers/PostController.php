@@ -100,7 +100,39 @@ class PostController extends Controller
      */
     public function update(Request $request, string $id)
     {
+        // Validate the request data
+        $validatedData = $request->validate([
+            'subtitle' => 'required',
+            'title' => 'required',
+            'content' => 'required',
+            'category_id' => 'required',
+            'tags' => 'required',
+        ]);
 
+
+        //If it has an image, overwrite the last one
+        if ($request->hasFile('postImage')) {
+            $imageName = $id.'Image.'.$request->postImage->extension();
+            $request->postImage->move(public_path('images/posts'), $imageName);
+            $validatedData['image_path'] = 'images/posts/'.$imageName;
+        }
+
+
+        // Find the post by ID
+        $post = Post::find($id);
+
+        // Check if the post exists
+        if (!$post) {
+            return redirect()->back()->withErrors(['post_not_found' => 'Post not found.']);
+        }
+
+
+//         Update the post with the validated data
+
+        $post->update($validatedData);
+        $post->tags()->sync($request->input('tags'));
+        // Redirect with a success message
+        return redirect(route('dashboard', ['tab' => 'content']))->with('success', 'Post updated successfully.');
     }
 
     /**

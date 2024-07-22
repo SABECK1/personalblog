@@ -47,6 +47,7 @@ class PagesController extends Controller
                 ->leftJoin('post_tag', 'posts.id', '=', 'post_tag.post_id')
                 ->leftJoin('tags', 'tags.id', '=', 'post_tag.tag_id')
                 ->join('categories', 'posts.category_id', '=', 'categories.id')
+                ->where('title', 'LIKE', '%' . request('search') . '%')
                 ->with('user')->paginate(4),
             'categories' => QueryBuilder::for(Category::class)
                 ->leftJoin('posts', 'posts.category_id', '=', 'categories.id')

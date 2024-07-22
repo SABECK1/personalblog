@@ -51,7 +51,16 @@
                             <button class="btn btn-quarternary btn-warning"><i class="fa-solid fa-filter"></i>
                             </button>
                         </form>
-                @endif
+                    @endif
+                </div>
+
+                    <form action="{{route('posts')}}" method="GET">
+                        <div class="flex-wrapper">
+                    <textarea class="textinput" name="search" placeholder="Search..." style="height: 2.5rem; overflow: hidden; width: 92%;"></textarea>
+                    <button type="submit" class="btn btn-quarternary"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+
             </section>
 
             <h2 class="h1">All Blog Posts</h2>

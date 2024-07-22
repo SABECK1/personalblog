@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Models\Comment;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Gate;
 
 class PostController extends Controller
 {
@@ -140,7 +141,9 @@ class PostController extends Controller
      */
     public function destroy(string $id)
     {
-        $post = Post::findOrFail($id);
+        $post = Post::whereId($id);
+        Gate::authorize('delete', $post);
+
         $post->delete();
         return redirect(route('dashboard', ['tab' => 'content']))->with('success', 'Post deleted');
     }

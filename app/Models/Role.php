@@ -9,7 +9,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Role extends Model
 {
     use HasFactory;
-
+    const ROLE_STANDARD = 'STANDARD';
+    const ROLE_ADMIN = 'ADMIN';
     public function users() : HasMany {
         return $this->hasMany(User::class);
     }

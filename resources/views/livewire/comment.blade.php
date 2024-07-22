@@ -7,7 +7,7 @@
                     <div class="text-wrapper-sm">AUTHOR</div>
                 @endif
 
-                @if ($comment->user->role->id != 1 )
+                @if ($comment->user->role->role_name != \App\Models\Role::ROLE_STANDARD )
                     <div class="text-wrapper-sm">{{ strtoupper($comment->user->role->role_name) }}</div>
                 @endif
 

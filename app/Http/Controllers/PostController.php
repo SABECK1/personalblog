@@ -141,7 +141,7 @@ class PostController extends Controller
      */
     public function destroy(string $id)
     {
-        $post = Post::whereId($id);
+        $post = Post::find($id);
         Gate::authorize('delete', $post);
 
         $post->delete();

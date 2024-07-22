@@ -21,7 +21,7 @@ class CommentFactory extends Factory
         return [
             'user_id' => User::factory(),
             'content' => $this->faker->sentence(),
-            'comment_id' => $this->faker->numberBetween(0, 100),
+//            'comment_id' => 0
 //            'parent_id' => Comment::factory(),
         ];
     }

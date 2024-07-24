@@ -10,7 +10,8 @@ use Illuminate\Support\Facades\Gate;
 use Illuminate\Routing\Controllers\HasMiddleware;
 use Illuminate\Routing\Controllers\Middleware;
 
-class CommentController extends Controller implements HasMiddleware
+class CommentController extends Controller
+//    implements HasMiddleware
 {
 
     public static function middleware(): array
@@ -66,7 +67,7 @@ class CommentController extends Controller implements HasMiddleware
      */
     public function edit(Comment $comment)
     {
-        //
+        return view('comments.comment-update', ['comment' => $comment]);
     }
 
     /**
@@ -74,7 +75,21 @@ class CommentController extends Controller implements HasMiddleware
      */
     public function update(UpdateCommentRequest $request, Comment $comment)
     {
-        //
+
+        Gate::authorize('update', $comment);
+        $validatedData = $request->validate([
+            'content' => 'required'
+        ]);
+
+        // If edited in Comment Section
+        $post = $comment->post()->first();
+        $comment->update($validatedData);
+
+        if(url()->previous() == route('post.show', $post)) {
+            return to_route('post.show', $post)->withFragment('comments');
+        }
+
+        return redirect()->back();
     }
 
     /**

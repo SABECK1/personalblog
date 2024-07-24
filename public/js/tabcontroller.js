@@ -1,5 +1,5 @@
 import {ClassicEditor} from "ckeditor5";
-import {config} from "../assets/vendor/ckeditor5.js";
+import {config, simpleconfig} from "../assets/vendor/ckeditor5.js";
 
 let CKEDITOR = [];
 
@@ -37,7 +37,7 @@ $(document).ready(function() {
 
 });
 
-function setPostEditor(clickedBtnUrl) {
+function setPostEditor(clickedBtnUrl, config) {
     // Show loading icon before setting up the editor
     $('#loading-icon').show();
 
@@ -52,7 +52,7 @@ function setPostEditor(clickedBtnUrl) {
         }
 
         initializeForm();
-        ClassicEditor.create(document.querySelector('#editor'), config()).then(editor => {
+        ClassicEditor.create(document.querySelector('#editor'), config).then(editor => {
             CKEDITOR["one"] = editor;
             debugger
             editor.setData(document.getElementById('editor').value);
@@ -69,21 +69,21 @@ function handleButtonClick(url) {
         create_btn.on('click', function (event) {
             event.preventDefault();
             let clickedBtnUrl = $(this).attr('data-url');
-            setPostEditor(clickedBtnUrl);
+            setPostEditor(clickedBtnUrl, config());
         });
 
         let edit_btn = $("#edit_post_btn");
         edit_btn.on('click', function (event) {
             event.preventDefault();
             let clickedBtnUrl = $(this).attr('data-url');
-            setPostEditor(clickedBtnUrl);
+            setPostEditor(clickedBtnUrl, config());
         });
 
-        // let edit_cmt_btn = $('#edit_cmt_btn');
-        // edit_cmt_btn.on('click', function (event) {
-        //     event.preventDefault();
-        //     let clickedBtnUrl = $(this).attr('data-url');
-        //     setCommentEditor(clickedBtnUrl);
-        // })
+        let edit_cmt_btn = $('#edit_cmt_btn');
+        edit_cmt_btn.on('click', function (event) {
+            event.preventDefault();
+            let clickedBtnUrl = $(this).attr('data-url');
+            setPostEditor(clickedBtnUrl, simpleconfig());
+        })
     }
 }

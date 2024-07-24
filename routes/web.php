@@ -37,6 +37,7 @@ Route::middleware('auth')->group(function () {
 });
 Route::resource('post', PostController::class);
 Route::resource('comment', CommentController::class);
+//Comment Section guarded by auth
 Route::middleware('auth')->resource('posts.comments', CommentController::class);
 
 

@@ -32,10 +32,10 @@
             <td>@foreach($post->tags as $tag){{$tag->tag_name}} @endforeach</td>
             <td>{{$post->created_at}}</td>
             <td>
-                <form action="{{route('post.edit', $post->id)}}" method="GET">
+{{--                <form action="{{route('post.edit', $post->id)}}" method="GET">--}}
                     @csrf
                 <button class="btn btn-tertiary" data-url="{{route('post.edit', $post->id)}}" id="edit_post_btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
-                </form>
+{{--                </form>--}}
                 <form action="{{route('post.destroy', $post->id)}}" method="POST">
                     @csrf
                     @method('DELETE')
@@ -61,7 +61,7 @@
         </thead>
         @foreach($comments as $comment )
             <tr>
-                <td>{{$comment->content}}</td>
+                <td>{{ strip_tags($comment->content) }}</td>
 {{--                {{dd($comment, $comment->post)}}--}}
                 <td><a href="{{route('post.show', $comment->post_id)}}">{{$comment->post->title}}</a></td>
                 <td>{{$comment->likes}}</td>
@@ -69,7 +69,7 @@
                 <td>
                     <form action="{{route('comment.edit', $comment->id)}}" method="GET">
                         @csrf
-                        <button class="btn btn-tertiary" data-url="{{route('post.edit', $post->id)}}" id="edit_post_btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                        <button class="btn btn-tertiary" data-url="{{route('comment.edit', $comment->id)}}" id="edit_cmt_btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
                     </form>
                     <form action="{{route('comment.destroy', $comment->id)}}" method="POST">
                         @csrf

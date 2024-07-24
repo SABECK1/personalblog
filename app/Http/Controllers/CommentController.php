@@ -86,8 +86,18 @@ class CommentController extends Controller implements HasMiddleware
 //        $this->authorize('delete', $comment);
         Gate::authorize('delete', $comment);
 
-        $comment->delete();
 
-        return to_route('post.show', $post)->withFragment('comments');
+        //Comment Destroy can either be called with or without $post.
+        //If it's called without $post, this will throw an error (Dashboard) -> Need to get post of $comment instead
+        if ($post->exists == false) {
+            $post = $comment->post()->first();
+        }
+
+        $comment->delete();
+        if(url()->previous() == route('post.show', $post)) {
+            return to_route('post.show', $post)->withFragment('comments');
+        }
+//        dd('test');
+        return redirect()->back();
     }
 }

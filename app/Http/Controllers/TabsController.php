@@ -37,7 +37,7 @@ class TabsController extends Controller
         return view('dashboard.dashboard-content', [
 
             "posts" => Post::where('user_id', auth()->user()->id)->with('user','tags','category')->latest()->get(),
-            "comments" => Comment::where('user_id', auth()->user()->id)->latest()->get()
+            "comments" => Comment::where('user_id', auth()->user()->id)->with('post')->latest()->get(),
         ]);
     }
 

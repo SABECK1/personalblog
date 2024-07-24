@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="fixed bug that caused ckeditor5.js to not show up after calling it a second time via ajax">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Fixed database seeder to function with key constraints">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TabsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TabsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/tabcontroller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tabcontroller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/post-update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-update.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/dashboard-content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/dashboard-content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +31,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -168,22 +176,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Samue/Desktop/Laravel/personal_blog_new/public/js&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Comment",
+    "last_opened_file_path": "C:/Users/Samue/Desktop/Laravel/personal_blog_new/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Samue\Desktop\Laravel\personal_blog_new\public" />
       <recent name="C:\Users\Samue\Desktop\Laravel\personal_blog_new\public\js" />
       <recent name="C:\Users\Samue\Desktop\Laravel\personal_blog_new\resources\views\components" />
       <recent name="C:\Users\Samue\Desktop\Laravel\personal_blog_new\resources\views\auth" />
@@ -241,79 +250,10 @@
       <workItem from="1721325464194" duration="12722000" />
       <workItem from="1721402594393" duration="6075000" />
       <workItem from="1721514011176" duration="7464000" />
-      <workItem from="1721584184626" duration="6891000" />
-    </task>
-    <task id="LOCAL-00083" summary="New Mail template">
-      <option name="closed" value="true" />
-      <created>1720644990704</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1720644990704</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Fixed ID generation in Seeder">
-      <option name="closed" value="true" />
-      <created>1720647583849</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1720647583849</updated>
-    </task>
-    <task id="LOCAL-00085" summary="Contact for Users and for guests">
-      <option name="closed" value="true" />
-      <created>1720725433713</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1720725433713</updated>
-    </task>
-    <task id="LOCAL-00086" summary="Contact for Users and for guests">
-      <option name="closed" value="true" />
-      <created>1720728611401</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1720728611401</updated>
-    </task>
-    <task id="LOCAL-00087" summary="fixed form side on contact">
-      <option name="closed" value="true" />
-      <created>1720728707206</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1720728707207</updated>
-    </task>
-    <task id="LOCAL-00088" summary="js cleanup">
-      <option name="closed" value="true" />
-      <created>1720731735754</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1720731735754</updated>
-    </task>
-    <task id="LOCAL-00089" summary="verification middleware for commenting">
-      <option name="closed" value="true" />
-      <created>1720733445835</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1720733445835</updated>
-    </task>
-    <task id="LOCAL-00090" summary="verification middleware for commenting">
-      <option name="closed" value="true" />
-      <created>1720734074979</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1720734074979</updated>
-    </task>
-    <task id="LOCAL-00091" summary="added new components">
-      <option name="closed" value="true" />
-      <created>1720817884776</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1720817884776</updated>
+      <workItem from="1721584184626" duration="7267000" />
+      <workItem from="1721663900782" duration="8958000" />
+      <workItem from="1721748561271" duration="599000" />
+      <workItem from="1721774368060" duration="4369000" />
     </task>
     <task id="LOCAL-00092" summary="added profile in menu">
       <option name="closed" value="true" />
@@ -635,7 +575,79 @@
       <option name="project" value="LOCAL" />
       <updated>1721592573329</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="Functioning post editor tool">
+      <option name="closed" value="true" />
+      <created>1721594861574</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1721594861574</updated>
+    </task>
+    <task id="LOCAL-00133" summary="Search function in articles.blade.php">
+      <option name="closed" value="true" />
+      <created>1721669906269</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1721669906269</updated>
+    </task>
+    <task id="LOCAL-00134" summary="Added constants to roles for better consistency in rolenames">
+      <option name="closed" value="true" />
+      <created>1721671671572</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1721671671572</updated>
+    </task>
+    <task id="LOCAL-00135" summary="Updated PostPolicy.php">
+      <option name="closed" value="true" />
+      <created>1721671753135</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1721671753135</updated>
+    </task>
+    <task id="LOCAL-00136" summary="Updated PostController.php to reflect changes to PostPolicy.php">
+      <option name="closed" value="true" />
+      <created>1721671896066</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1721671896066</updated>
+    </task>
+    <task id="LOCAL-00137" summary="Updated PostController.php to reflect changes to PostPolicy.php">
+      <option name="closed" value="true" />
+      <created>1721672315110</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1721672315111</updated>
+    </task>
+    <task id="LOCAL-00138" summary="Added constraints to comments">
+      <option name="closed" value="true" />
+      <created>1721673544708</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1721673544708</updated>
+    </task>
+    <task id="LOCAL-00139" summary="renamed migrations to ensure proper key constraints">
+      <option name="closed" value="true" />
+      <created>1721673819627</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1721673819627</updated>
+    </task>
+    <task id="LOCAL-00140" summary="Fixed database seeder to function with key constraints">
+      <option name="closed" value="true" />
+      <created>1721674141905</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1721674141905</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,14 +656,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Working relation of Posts to Tags" />
-    <MESSAGE value="better table styling" />
-    <MESSAGE value="finished dashboard-content.blade.php" />
-    <MESSAGE value="PostPolicy" />
-    <MESSAGE value="PostPolicy and Create Posts button showing on authorization" />
-    <MESSAGE value="fixed secondary button style" />
-    <MESSAGE value="PostPolicy.php update" />
-    <MESSAGE value="moved files" />
     <MESSAGE value="fully styled dashboard.blade.php" />
     <MESSAGE value="fixed button coloring .btn i" />
     <MESSAGE value="fixed policy on creating comments" />
@@ -669,7 +673,15 @@
     <MESSAGE value="ckeditor5.js integration while editing. TODO: Delete all instances before AJAX call" />
     <MESSAGE value="delete posts_tags table as it was an obsolete table" />
     <MESSAGE value="fixed bug that caused ckeditor5.js to not show up after calling it a second time via ajax" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug that caused ckeditor5.js to not show up after calling it a second time via ajax" />
+    <MESSAGE value="Functioning post editor tool" />
+    <MESSAGE value="Search function in articles.blade.php" />
+    <MESSAGE value="Added constants to roles for better consistency in rolenames" />
+    <MESSAGE value="Updated PostPolicy.php" />
+    <MESSAGE value="Updated PostController.php to reflect changes to PostPolicy.php" />
+    <MESSAGE value="Added constraints to comments" />
+    <MESSAGE value="renamed migrations to ensure proper key constraints" />
+    <MESSAGE value="Fixed database seeder to function with key constraints" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed database seeder to function with key constraints" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

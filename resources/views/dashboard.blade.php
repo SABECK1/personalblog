@@ -59,7 +59,8 @@
                 {{ session()->get('success') }}
             </div>
         @endif
-        <div id="precontent">
+        <div class="loader" id="loading-icon"></div>
+        <div id="postform">
 
         </div>
         <div id="tabcontent">

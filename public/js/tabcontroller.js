@@ -37,7 +37,7 @@ $(document).ready(function() {
 
 });
 
-function setEditor(clickedBtnUrl) {
+function setPostEditor(clickedBtnUrl) {
     // Show loading icon before setting up the editor
     $('#loading-icon').show();
 
@@ -54,7 +54,8 @@ function setEditor(clickedBtnUrl) {
         initializeForm();
         ClassicEditor.create(document.querySelector('#editor'), config()).then(editor => {
             CKEDITOR["one"] = editor;
-            editor.setData(document.getElementById('#editor').value);
+            debugger
+            editor.setData(document.getElementById('editor').value);
 
             // Hide loading icon after the editor is initialized
             $('#loading-icon').hide();
@@ -68,14 +69,21 @@ function handleButtonClick(url) {
         create_btn.on('click', function (event) {
             event.preventDefault();
             let clickedBtnUrl = $(this).attr('data-url');
-            setEditor(clickedBtnUrl);
+            setPostEditor(clickedBtnUrl);
         });
 
         let edit_btn = $("#edit_post_btn");
         edit_btn.on('click', function (event) {
             event.preventDefault();
             let clickedBtnUrl = $(this).attr('data-url');
-            setEditor(clickedBtnUrl);
+            setPostEditor(clickedBtnUrl);
         });
+
+        // let edit_cmt_btn = $('#edit_cmt_btn');
+        // edit_cmt_btn.on('click', function (event) {
+        //     event.preventDefault();
+        //     let clickedBtnUrl = $(this).attr('data-url');
+        //     setCommentEditor(clickedBtnUrl);
+        // })
     }
 }

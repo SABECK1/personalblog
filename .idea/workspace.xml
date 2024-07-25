@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Reduced comment-update.blade.php to only its necessary elements">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="fully functional editing of comments via dashboard using the inbuilt ckeditor5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/CommentPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/CommentPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/ckeditor5.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/vendor/ckeditor5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tabcontroller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tabcontroller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/dashboard-content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/dashboard-content.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/dashboard-profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/dashboard-profile.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,23 +251,7 @@
       <workItem from="1721663900782" duration="8958000" />
       <workItem from="1721748561271" duration="599000" />
       <workItem from="1721774368060" duration="8739000" />
-      <workItem from="1721816325265" duration="11241000" />
-    </task>
-    <task id="LOCAL-00097" summary="dashboard content">
-      <option name="closed" value="true" />
-      <created>1720975414214</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1720975414214</updated>
-    </task>
-    <task id="LOCAL-00098" summary="fully fledged out dashboard template">
-      <option name="closed" value="true" />
-      <created>1720980061561</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1720980061561</updated>
+      <workItem from="1721816325265" duration="16525000" />
     </task>
     <task id="LOCAL-00099" summary="renamed pivot table of tags and posts">
       <option name="closed" value="true" />
@@ -648,7 +629,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721850042613</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="added simpleconfig for comments">
+      <option name="closed" value="true" />
+      <created>1721852019276</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1721852019276</updated>
+    </task>
+    <task id="LOCAL-00147" summary="fully functional editing of comments via dashboard using the inbuilt ckeditor5">
+      <option name="closed" value="true" />
+      <created>1721852038219</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1721852038219</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,8 +654,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="create post input form" />
-    <MESSAGE value="CKEDITOR Integration" />
     <MESSAGE value="CKEDITOR Integration AJAX" />
     <MESSAGE value="Fixed bug when no Role was assigned to member that led to error 500" />
     <MESSAGE value="Working Editor" />
@@ -682,7 +677,9 @@
     <MESSAGE value="Fixed error that caused the loading icon to be displayed indefinitely" />
     <MESSAGE value="Updated UpdateCommentRequest.php to allow the user to edit their own comments" />
     <MESSAGE value="Reduced comment-update.blade.php to only its necessary elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reduced comment-update.blade.php to only its necessary elements" />
+    <MESSAGE value="added simpleconfig for comments" />
+    <MESSAGE value="fully functional editing of comments via dashboard using the inbuilt ckeditor5" />
+    <option name="LAST_COMMIT_MESSAGE" value="fully functional editing of comments via dashboard using the inbuilt ckeditor5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

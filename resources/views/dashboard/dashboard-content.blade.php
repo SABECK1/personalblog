@@ -81,4 +81,4 @@
         @endforeach
     </table>
 </div>
-{{--<script src="{{ asset('/js/dashboard-content-editor-toggle.js') }}"></script>--}}
+

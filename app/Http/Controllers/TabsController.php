@@ -26,9 +26,11 @@ class TabsController extends Controller
 
     public function profile()
     {
-        $data = ['title' => 'About', 'content' => 'Learn more about our company and our team.'];
 
-        return view('dashboard.dashboard-profile', compact('data'));
+        return view('dashboard.dashboard-profile', [
+            'user' => Auth::user(),
+//            'comments' => Comment::where
+        ]);
     }
 
     public function content()

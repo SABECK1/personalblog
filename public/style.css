@@ -823,7 +823,7 @@ textarea {
 
 }
 
-.textinput {
+.textinput, .inline-textinput {
     display: block;
     width: 100%;
     height: 100%;
@@ -832,8 +832,17 @@ textarea {
 
 }
 
-.textinput::placeholder {
+.textinput::placeholder, .inline-textinput::placeholder {
     color: var(--foreground-primary)
+}
+
+.inline-textinput {
+    margin: 0;
+    padding-inline: 5px;
+    overflow: hidden;
+    height: 1.25rem;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 .footer .message {
@@ -1134,6 +1143,7 @@ input:checked + .slider:before {
     color: var(--foreground-primary);
     text-decoration: none;
     text-transform: uppercase;
+    background: var(--background-primary);
 }
 
 #logout-btn:hover {
@@ -1447,9 +1457,18 @@ input:checked + .slider:before {
 
 
 .profile-data {
-    width: calc(100% / 2 - 100px);
+    width: 50%;
 }
 
+.profile-data table {
+    width: 100%;
+    border-spacing: 10px;
+}
+.profile-data table tr td:last-child {
+    width: 1%;
+    white-space: nowrap;
+    border-radius: 50%;
+}
 
 @media (min-width: 1024px) {
 

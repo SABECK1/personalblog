@@ -89,7 +89,7 @@ class CommentController extends Controller
             return to_route('post.show', $post)->withFragment('comments');
         }
 
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Comment edited successfully');
     }
 
     /**
@@ -113,6 +113,6 @@ class CommentController extends Controller
             return to_route('post.show', $post)->withFragment('comments');
         }
 //        dd('test');
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Comment deleted successfully');
     }
 }

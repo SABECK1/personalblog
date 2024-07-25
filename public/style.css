@@ -1271,57 +1271,6 @@ input:checked + .slider:before {
 }
 
 
-@media (min-width: 1024px) {
-
-    :root {
-
-        /**
-         * typography
-         */
-
-        --fs-base: 1rem;
-        --fs-1: 3rem;
-
-    }
-
-    .header .flex-wrapper {
-        display: flex;
-        gap: 30px;
-    }
-
-    .header .btn-group {
-        display: none;
-    }
-
-    .header .mobile-nav {
-        display: none;
-    }
-
-    .desktop-nav {
-        display:     flex;
-        align-items: center;
-        gap: 30px;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .sidebar-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        height: 100%;
-        max-width: 20%;
-        margin-right: 5%;
-    }
-
-    .blog-card-body {
-        font-size: var(--fs-3);
-    }
-
-    .title {
-        font-size: var(--fs-3);
-    }
-}
 
 /* Dashboard */
 
@@ -1386,10 +1335,11 @@ input:checked + .slider:before {
     justify-content: center;
 }
 
-.menu-items li a .link-name{
+.menu-items li a .link-name {
     font-size: 28px;
     font-weight: 400;
     transition: all ease 0.5s;
+    display: none;
 }
 
 .dashboard {
@@ -1465,3 +1415,107 @@ input:checked + .slider:before {
     margin-bottom: 5px;
 }
 
+.dashboard-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+}
+
+.dashboard-boxes .box {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    background: var(--accent);
+    width: calc(100% / 3 - 45px);
+    text-wrap: nowrap;
+}
+
+.box * {
+    white-space: nowrap;
+    font-size: var(--fs-1);
+    font-weight: 500;
+    color: var(--foreground-primary);
+    width: fit-content;
+}
+.box span {
+    font-size: calc(var(--fs-2)*2);
+}
+
+
+.profile-data {
+    width: calc(100% / 2 - 100px);
+}
+
+
+@media (min-width: 1024px) {
+
+    :root {
+
+        /**
+         * typography
+         */
+
+        --fs-base: 1rem;
+        --fs-1: 3rem;
+
+    }
+
+    .header .flex-wrapper {
+        display: flex;
+        gap: 30px;
+    }
+
+    .header .btn-group {
+        display: none;
+    }
+
+    .header .mobile-nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        display:     flex;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .sidebar-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        max-width: 20%;
+        margin-right: 5%;
+    }
+
+    .blog-card-body {
+        font-size: var(--fs-3);
+    }
+
+    .title {
+        font-size: var(--fs-3);
+    }
+    .menu-items li a .link-name{
+        display: block;
+    }
+}
+
+@media (max-width: 780px) {
+    .dashboard-content .dashboard-boxes .box {
+        width: calc(100% / 2 - 15px);
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 560px) {
+    .dashboard-content .dashboard-boxes .box {
+        width: 100%;
+        margin-top: 15px;
+    }
+}

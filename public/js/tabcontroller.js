@@ -63,6 +63,66 @@ function setPostEditor(clickedBtnUrl, config) {
     });
 }
 
+
+function sendDataViaAjax(data) {
+    // Example AJAX call using Fetch API
+    debugger
+    $.ajax('profile', { // Replace with your actual endpoint URL
+        type: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content') // CSRF token for Laravel
+        },
+        data: {
+            '_method': 'PATCH',
+            'name' : 'TEST',
+        }
+            // JSON.stringify(data)
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+}
+
+// Function to toggle readonly state
+function toggleReadonly(targetId, sender) {
+    let textarea = document.querySelector(`[name="${targetId}"]`);
+    if (textarea.disabled) {
+        textarea.removeAttribute('disabled');
+        textarea.focus();
+    } else {
+        textarea.setAttribute('disabled', 'true');
+        let formData = new FormData(document.getElementById("editProfileForm"));
+        // Select only text input fields within the form
+        let textInputs = document.querySelectorAll('#editProfileForm input[type="text"]');
+        textInputs.forEach(input => {
+            let name = input.name;
+            let value = input.value;
+            !value ? formData.append(name, '') : formData.append(name, value);
+        });
+        // // Collect form data
+
+        formData.append('_method', 'PATCH');
+        // Convert FormData to JSON if needed
+        let jsonData = {};
+        formData.forEach((value, key) => {
+            jsonData[key] = value;
+        });
+
+        // Submit form programmatically
+        // document.getElementById("editProfileForm").submit();
+
+        // Handle AJAX request
+        sendDataViaAjax(jsonData);
+    }
+}
+
+// Add click event listeners to each button
+
 function handleButtonClick(url) {
     if (url.includes("dashboard/content")) {
         let create_btn = $("#create_post_btn");
@@ -85,5 +145,19 @@ function handleButtonClick(url) {
             let clickedBtnUrl = $(this).attr('data-url');
             setPostEditor(clickedBtnUrl, simpleconfig());
         })
+    }
+    else if (url.includes("dashboard/profile")) {
+        let buttons = document.querySelectorAll('.edit-button');
+
+        buttons.forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                // Get the target ID from the button's data attribute
+                let targetId = button.getAttribute('data-toggle-target');
+                // Toggle the readonly state for the associated textarea
+                toggleReadonly(targetId, button );
+            });
+        });
     }
 }

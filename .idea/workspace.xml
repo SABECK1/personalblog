@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="dashboard-profile.blade.php">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Updated Footer Routes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TabsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TabsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ProfileUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ProfileUpdateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/dashboard-content-editor-toggle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/tabcontroller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tabcontroller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/dashboard-profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/dashboard-profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/post-update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-update.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,23 +256,7 @@
       <workItem from="1721748561271" duration="599000" />
       <workItem from="1721774368060" duration="8739000" />
       <workItem from="1721816325265" duration="16525000" />
-      <workItem from="1721913346322" duration="8699000" />
-    </task>
-    <task id="LOCAL-00101" summary="Working relation of Posts to Tags">
-      <option name="closed" value="true" />
-      <created>1721149428993</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1721149428993</updated>
-    </task>
-    <task id="LOCAL-00102" summary="better table styling">
-      <option name="closed" value="true" />
-      <created>1721150375196</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1721150375196</updated>
+      <workItem from="1721913346322" duration="22025000" />
     </task>
     <task id="LOCAL-00103" summary="finished dashboard-content.blade.php">
       <option name="closed" value="true" />
@@ -646,7 +634,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721871186146</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="Design of Profile">
+      <option name="closed" value="true" />
+      <created>1721935571429</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1721935571430</updated>
+    </task>
+    <task id="LOCAL-00151" summary="Updated Footer Routes">
+      <option name="closed" value="true" />
+      <created>1721943818278</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1721943818278</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -655,8 +659,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Fixed bug when no Role was assigned to member that led to error 500" />
-    <MESSAGE value="Working Editor" />
     <MESSAGE value="fixed bug when initiating editor while being rerouted" />
     <MESSAGE value="added post-update.blade.php" />
     <MESSAGE value="Fixed bug when using standard navigation that would cause Jquery to throw an error" />
@@ -680,7 +682,9 @@
     <MESSAGE value="added simpleconfig for comments" />
     <MESSAGE value="fully functional editing of comments via dashboard using the inbuilt ckeditor5" />
     <MESSAGE value="dashboard-profile.blade.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="dashboard-profile.blade.php" />
+    <MESSAGE value="Design of Profile" />
+    <MESSAGE value="Updated Footer Routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Footer Routes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

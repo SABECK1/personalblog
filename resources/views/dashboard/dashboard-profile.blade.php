@@ -16,20 +16,26 @@
     </div>
 </div>
 
-{{--<div class=""--}}
+<form action="{{route("profile.update")}}" method="POST" id="editProfileForm">
+    @csrf
+    @method('PATCH')
 <div class="profile-data">
 <div class="table-wrapper">
     <table>
         <tr>
-            <td>Username:</td>
-            <td><textarea name="username" class="inline-textinput editable-textarea" data-toggle-target="username" disabled>{{$user->name}}</textarea></td>
+            <td><label for="name">Username:</label></td>
             <td>
-                <button type="submit" class="btn btn-quarternary edit-button" data-toggle-target="username"><i class="fa-solid fa-pen-to-square"></i></button>
+                <input type="text" id="test" name="name" class="inline-textinput editable-textarea" data-toggle-target="name" disabled value="{{$user->name}}">
+            </td>
+            <td>
+                <button type="submit" class="btn btn-quarternary edit-button" data-toggle-target="name"><i class="fa-solid fa-pen-to-square"></i></button>
             </td>
         </tr>
         <tr>
-            <td>Email:</td>
-            <td><textarea name="email" class="inline-textinput editable-textarea" data-toggle-target="email" disabled>{{$user->email}}</textarea></td>
+            <td><label for="email">Email:</label></td>
+            <td>
+                <input type="text" id="email" name="email" class="inline-textinput editable-textarea" data-toggle-target="email" disabled value="{{$user->email}}">
+            </td>
             <td>
                 <button type="submit" class="btn btn-quarternary edit-button" data-toggle-target="email"><i class="fa-solid fa-pen-to-square"></i></button>
             </td>
@@ -37,30 +43,6 @@
     </table>
 </div>
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Select all edit buttons
-        debugger
-        var buttons = document.querySelectorAll('.edit-button');
-
-        // Function to toggle readonly state
-        function toggleReadonly(targetId) {
-            var textarea = document.querySelector(`[name="${targetId}"]`);
-            if (textarea.readOnly) {
-                textarea.removeAttribute('readonly');
-            } else {
-                textarea.setAttribute('readonly', '');
-            }
-        }
-
-        // Add click event listeners to each button
-        buttons.forEach(function(button) {
-            button.addEventListener('click', function() {
-                // Get the target ID from the button's data attribute
-                var targetId = button.getAttribute('data-toggle-target');
-                // Toggle the readonly state for the associated textarea
-                toggleReadonly(targetId);
-            });
-        });
-    });
-</script>
+    <button type="submit">test</button>
+</form>
+<script type="module" src="{{ asset('/js/tabcontroller.js') }}"></script>

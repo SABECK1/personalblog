@@ -2,6 +2,15 @@
 
 <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css">
 <link rel="stylesheet" href="{{asset('/assets/vendor/style.css')}}">
+@if(session()->has('success'))
+    <div class="message success">
+        {{ session()->get('success') }}
+    </div>
+@elseif(session()->has('error'))
+    <div class="message error">
+        {{ session()->get('error') }}
+    </div>
+@endif
 <form action="{{route('post.update', $post->id)}}" method="POST" enctype="multipart/form-data">
     @csrf
     @method('PUT')

@@ -54,7 +54,6 @@ function setPostEditor(clickedBtnUrl, config) {
         initializeForm();
         ClassicEditor.create(document.querySelector('#editor'), config).then(editor => {
             CKEDITOR["one"] = editor;
-            debugger
             editor.setData(document.getElementById('editor').value);
 
             // Hide loading icon after the editor is initialized
@@ -66,26 +65,30 @@ function setPostEditor(clickedBtnUrl, config) {
 
 function sendDataViaAjax(data) {
     // Example AJAX call using Fetch API
-    debugger
-    $.ajax('profile', { // Replace with your actual endpoint URL
-        type: 'PATCH',
+    console.log(data);
+    $.ajax({
+        method: "PATCH",
         headers: {
-            'Content-Type': 'application/json',
-            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content') // CSRF token for Laravel
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+            'X-HTTP-Method-Override': 'PATCH',
+            'Content-Type': 'application/json'
         },
-        data: {
-            '_method': 'PATCH',
-            'name' : 'TEST',
-        }
-            // JSON.stringify(data)
-    })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Success:', data);
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
+        url: '/profile',
+        data: JSON.stringify(data), // Example data
+        cache: false,
+        contentType: false,
+        processData: false,
+        success: function (response) {
+            console.log(response);
+            return false;
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.error("AJAX request failed:", textStatus, errorThrown);
+            console.error("Server response:", jqXHR.responseText);
+            // Handle the error appropriately, e.g., display an error message to the user
+        },
+    });
+
 }
 
 // Function to toggle readonly state
@@ -97,6 +100,9 @@ function toggleReadonly(targetId, sender) {
     } else {
         textarea.setAttribute('disabled', 'true');
         let formData = new FormData(document.getElementById("editProfileForm"));
+
+
+        formData.append('_method', 'PATCH');
         // Select only text input fields within the form
         let textInputs = document.querySelectorAll('#editProfileForm input[type="text"]');
         textInputs.forEach(input => {
@@ -106,7 +112,7 @@ function toggleReadonly(targetId, sender) {
         });
         // // Collect form data
 
-        formData.append('_method', 'PATCH');
+
         // Convert FormData to JSON if needed
         let jsonData = {};
         formData.forEach((value, key) => {

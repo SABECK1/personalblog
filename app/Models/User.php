@@ -5,6 +5,7 @@ namespace App\Models;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\belongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -42,6 +43,20 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function role() : belongsTo {
         return $this->belongsTo(Role::class);
+    }
+
+    public function likes() : belongsToMany {
+        return $this->belongsToMany(Comment::class, 'likes', 'user_id', 'comment_id');
+    }
+
+    public function hasLikedComment(Comment $comment) : bool
+    {
+        return $this->likes()->where('comment_id', $comment->id)->exists();
+    }
+
+    public function likeComment(Comment $comment)
+    {
+        $this->likes()->sync(array($comment->id));
     }
 
     /**

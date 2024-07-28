@@ -14,6 +14,8 @@
                 {{ $comment->user->name }}  {{ $comment->created_at->diffForHumans() }}
             </div>
             <div class="btn-group">
+                <button wire:click="add_like" class="btn btn-quarternary"><i class="fa-regular fa-thumbs-up"></i>{{$current_likes}}</button>
+
                 <button wire:click="toggle_visibility" class="btn btn-quarternary"><i class="fa fa-reply"
                                                                                                   aria-hidden="true"> Reply</i>
                 </button>
@@ -35,6 +37,7 @@
         <p>{{ $comment->content }}</p>
     </ul>
 </div>
+    {{$current_likes}}
     @if($show_replyarea)
     <livewire:commentarea :post="$post" :comment="$comment" :indent="$indent_level" />
     @endif

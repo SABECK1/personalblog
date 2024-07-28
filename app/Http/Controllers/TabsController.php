@@ -30,10 +30,10 @@ class TabsController extends Controller
 
         return view('dashboard.dashboard-profile', [
             'user' => Auth::user(),
-            'likes' => DB::table('comments')
-                ->select(DB::raw('SUM(likes) as like_count'))
-                ->where('user_id', Auth::user()->id)
-                ->first()->like_count,
+            'likes' => DB::table('likes')
+            ->select(DB::raw('COUNT(*) as like_count'))
+            ->join('comments', 'comments.id', '=', 'likes.comment_id')
+            ->where('comments.user_id', '=', Auth::user()->id)->first()->like_count,
             'comments' => DB::table('comments')
             ->select(DB::raw('COUNT(*) as comment_count'))
             ->where('user_id', Auth::user()->id)
@@ -45,9 +45,9 @@ class TabsController extends Controller
     {
 
         return view('dashboard.dashboard-content', [
-
+            "user" => User::whereId(Auth::user()->id)->with('likes')->first(),
             "posts" => Post::where('user_id', auth()->user()->id)->with('user','tags','category')->latest()->get(),
-            "comments" => Comment::where('user_id', auth()->user()->id)->with('post')->latest()->get(),
+            "comments" => Comment::where('user_id', auth()->user()->id)->with('post')->latest()->get()
         ]);
     }
 

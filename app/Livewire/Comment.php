@@ -10,6 +10,7 @@ class Comment extends Component
     public $post;
     public $indent_level;
     public $show_replyarea = false;
+    public $current_likes;
 
     /**
      * Create a new component instance.
@@ -20,6 +21,7 @@ class Comment extends Component
         $this->comment = $comment;
         $this->post = $post;
         $this->indent_level = $indent;
+        $this->current_likes = $comment->likes;
     }
 
     public function render()
@@ -34,5 +36,10 @@ class Comment extends Component
         } else {
             return $this->redirect(route('login'));
         }
+    }
+
+    public function add_like()
+    {
+        $this->current_likes = $this->current_likes + 1;
     }
 }

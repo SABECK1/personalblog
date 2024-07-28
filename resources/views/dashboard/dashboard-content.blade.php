@@ -82,3 +82,24 @@
     </table>
 </div>
 
+
+<h2>Liked Comments</h2>
+<div class="table-wrapper">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Comment</th>
+            <th>Author</th>
+            <th>Post</th>
+        </tr>
+        </thead>
+        @foreach($user->likes as $like)
+            <tr>
+                <td>{{$like->content}}</td>
+                <td>{{$like->user->name}}</td>
+                <td><a href="{{route('post.show', $like->post_id)}}">{{$like->post->title}}</a></td>
+            </tr>
+        @endforeach
+    </table>
+</div>
+

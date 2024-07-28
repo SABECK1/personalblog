@@ -20,7 +20,7 @@ return new class extends Migration
             $table->foreignIdFor(Post::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(User::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(Comment::class)->nullable()->constrained()->onDelete('cascade');
-            $table->bigInteger('likes')->default(0);
+//            $table->bigInteger('likes')->default(0);
             $table->string('content')->nullable();
             $table->timestamps();
         });

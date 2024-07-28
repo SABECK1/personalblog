@@ -11,12 +11,6 @@
         <textarea class="textinput" placeholder="{{ $placeholder }}" name="content"></textarea>
         <div class="flex-wrapper">
             <button type="submit" class="btn btn-tertiary">Submit</button>
-            {{--                        Show markdown preview:--}}
-            {{--                        <label class="switch">--}}
-            {{--                            <input type="checkbox" checked>--}}
-            {{--                            <span class="slider round"></span>--}}
-            {{--                        </label>--}}
-
         </div>
     </form>
 </div>

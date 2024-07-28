@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Ajax call to profile route. -&gt; Still needs to be fixed">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Update of Username and Email now possible">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tabcontroller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tabcontroller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,15 +252,8 @@
       <workItem from="1721774368060" duration="8739000" />
       <workItem from="1721816325265" duration="16525000" />
       <workItem from="1721913346322" duration="22065000" />
-      <workItem from="1722004745488" duration="12485000" />
-    </task>
-    <task id="LOCAL-00104" summary="PostPolicy">
-      <option name="closed" value="true" />
-      <created>1721161413731</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1721161413731</updated>
+      <workItem from="1722004745488" duration="13324000" />
+      <workItem from="1722186755659" duration="1269000" />
     </task>
     <task id="LOCAL-00105" summary="PostPolicy and Create Posts button showing on authorization">
       <option name="closed" value="true" />
@@ -647,7 +639,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721949234639</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="Update of Username and Email now possible">
+      <option name="closed" value="true" />
+      <created>1722033569293</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1722033569294</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +656,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added post-update.blade.php" />
     <MESSAGE value="Fixed bug when using standard navigation that would cause Jquery to throw an error" />
     <MESSAGE value="Getting Values from saved post while editing" />
     <MESSAGE value="ckeditor5.js integration while editing. TODO: Delete all instances before AJAX call" />
@@ -681,7 +680,8 @@
     <MESSAGE value="Design of Profile" />
     <MESSAGE value="Updated Footer Routes" />
     <MESSAGE value="Ajax call to profile route. -&gt; Still needs to be fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajax call to profile route. -&gt; Still needs to be fixed" />
+    <MESSAGE value="Update of Username and Email now possible" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update of Username and Email now possible" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

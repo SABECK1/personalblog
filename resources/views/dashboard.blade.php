@@ -15,10 +15,6 @@
 
 </head>
 <livewire:header/>
-
-
-
-
 <div class="dashboard">
     <div class="dashboard-sidebar" id="dashboard-tabs">
         <div class="menu-items">

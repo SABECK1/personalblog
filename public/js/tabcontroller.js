@@ -97,10 +97,11 @@ function toggleReadonly(targetId, sender) {
     if (textarea.disabled) {
         textarea.removeAttribute('disabled');
         textarea.focus();
+        sender.firstElementChild.className = 'fa-solid fa-floppy-disk';
     } else {
         textarea.setAttribute('disabled', 'true');
         let formData = new FormData(document.getElementById("editProfileForm"));
-
+        sender.firstElementChild.className = 'fa-solid fa-pen-to-square';
 
         formData.append('_method', 'PATCH');
         // Select only text input fields within the form
@@ -162,7 +163,7 @@ function handleButtonClick(url) {
                 // Get the target ID from the button's data attribute
                 let targetId = button.getAttribute('data-toggle-target');
                 // Toggle the readonly state for the associated textarea
-                toggleReadonly(targetId, button );
+                toggleReadonly(targetId, button);
             });
         });
     }

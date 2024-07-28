@@ -43,6 +43,5 @@
     </table>
 </div>
 </div>
-    <button type="submit">test</button>
 </form>
 <script type="module" src="{{ asset('/js/tabcontroller.js') }}"></script>

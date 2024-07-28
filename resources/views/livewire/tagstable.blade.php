@@ -5,7 +5,7 @@
         <div class="flex-wrapper">
             @foreach ($tags as $tag)
                 <div class="text-wrapper-sm text-sm">
-                    {{ $tag->tag_name }}
+                    <a href="{{url()->query('/posts?'.request()->getQueryString(), ['filter[tags.tag_name]' => $tag->tag_name])}}">{{$tag->tag_name }}</a>
                 </div>
             @endforeach
         </div>

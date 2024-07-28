@@ -13,7 +13,7 @@
             @foreach ($categories as $category)
                 <tr>
                     <td class='icon-column'><i class='{{ $category->icon }}'></i></td>
-                    <td>{{ $category->category_name }}</td>
+                    <td><a href="{{url()->query('/posts?'.request()->getQueryString(), ['filter[categories.category_name]' => $category->category_name])}}">{{$category->category_name }}</a></td>
                     <td class='table-count'>{{ $category->category_count }}</td>
                 </tr>
             @endforeach

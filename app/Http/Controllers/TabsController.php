@@ -7,6 +7,7 @@ use App\Models\Post;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class TabsController extends Controller
 {
@@ -29,7 +30,14 @@ class TabsController extends Controller
 
         return view('dashboard.dashboard-profile', [
             'user' => Auth::user(),
-//            'comments' => Comment::where
+            'likes' => DB::table('comments')
+                ->select(DB::raw('SUM(likes) as like_count'))
+                ->where('user_id', Auth::user()->id)
+                ->first()->like_count,
+            'comments' => DB::table('comments')
+            ->select(DB::raw('COUNT(*) as comment_count'))
+            ->where('user_id', Auth::user()->id)
+            ->first()->comment_count
         ]);
     }
 

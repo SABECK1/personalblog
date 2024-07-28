@@ -2,17 +2,17 @@
     <div class="box">
         <i class="fa-solid fa-thumbs-up"></i>
         Total Likes
-        <span>20</span>
+        <span>{{$likes}}</span>
     </div>
     <div class="box">
         <i class="fa-solid fa-clock"></i>
         Member since
-        <span>11:30</span>
+        <span>{{$user->created_at->todatestring()}}</span>
     </div>
     <div class="box">
         <i class="fa-solid fa-comment"></i>
         Comments
-        <span>5</span>
+        <span>{{$comments}}</span>
     </div>
 </div>
 

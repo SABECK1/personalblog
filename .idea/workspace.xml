@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Allowed filtering through sidebar tables">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Updated icons on profile change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/tabcontroller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/tabcontroller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TabsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TabsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/dashboard-profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/dashboard-profile.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,15 +253,7 @@
       <workItem from="1721816325265" duration="16525000" />
       <workItem from="1721913346322" duration="22065000" />
       <workItem from="1722004745488" duration="13324000" />
-      <workItem from="1722186755659" duration="2535000" />
-    </task>
-    <task id="LOCAL-00108" summary="moved files">
-      <option name="closed" value="true" />
-      <created>1721164728387</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1721164728387</updated>
+      <workItem from="1722186755659" duration="4780000" />
     </task>
     <task id="LOCAL-00109" summary="fully styled dashboard.blade.php">
       <option name="closed" value="true" />
@@ -647,7 +639,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722188440460</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="Updated icons on profile change">
+      <option name="closed" value="true" />
+      <created>1722190639993</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1722190639993</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +656,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="ckeditor5.js integration while editing. TODO: Delete all instances before AJAX call" />
     <MESSAGE value="delete posts_tags table as it was an obsolete table" />
     <MESSAGE value="fixed bug that caused ckeditor5.js to not show up after calling it a second time via ajax" />
     <MESSAGE value="Functioning post editor tool" />
@@ -681,7 +680,8 @@
     <MESSAGE value="Update of Username and Email now possible" />
     <MESSAGE value="Quick little fix for theme toggle button" />
     <MESSAGE value="Allowed filtering through sidebar tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Allowed filtering through sidebar tables" />
+    <MESSAGE value="Updated icons on profile change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated icons on profile change" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

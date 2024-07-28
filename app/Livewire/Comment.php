@@ -2,6 +2,8 @@
 
 namespace App\Livewire;
 
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class Comment extends Component
@@ -21,7 +23,7 @@ class Comment extends Component
         $this->comment = $comment;
         $this->post = $post;
         $this->indent_level = $indent;
-        $this->current_likes = $comment->likes;
+        $this->current_likes = $comment->likes->count();
     }
 
     public function render()
@@ -40,6 +42,15 @@ class Comment extends Component
 
     public function add_like()
     {
-        $this->current_likes = $this->current_likes + 1;
+
+        $user = User::whereId(Auth::id())->first();
+        if ($user->hasLikedComment($this->comment)) {
+            $user->unlikeComment($this->comment);
+            $this->current_likes =- 1;
+        }
+        else {
+            $user->likeComment($this->comment);
+            $this->current_likes =+ 1;
+        }
     }
 }

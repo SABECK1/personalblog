@@ -64,7 +64,7 @@
                 <td>{{ strip_tags($comment->content) }}</td>
 {{--                {{dd($comment, $comment->post)}}--}}
                 <td><a href="{{route('post.show', $comment->post_id)}}">{{$comment->post->title}}</a></td>
-                <td>{{$comment->likes}}</td>
+                <td>{{$comment->likes->count()}}</td>
                 <td>{{$comment->created_at}}</td>
                 <td>
                     <form action="{{route('comment.edit', $comment->id)}}" method="GET">
@@ -95,7 +95,7 @@
         </thead>
         @foreach($user->likes as $like)
             <tr>
-                <td>{{$like->content}}</td>
+                <td>{{strip_tags($like->content)}}</td>
                 <td>{{$like->user->name}}</td>
                 <td><a href="{{route('post.show', $like->post_id)}}">{{$like->post->title}}</a></td>
             </tr>

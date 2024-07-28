@@ -39,6 +39,10 @@ class Comment extends Model
     public function post() : BelongsTo {
         return $this->BelongsTo(Post::class);
     }
+    public function likes() : hasMany
+    {
+        return $this->hasMany(Like::class);
+    }
 
 
     public function replies() : hasMany {

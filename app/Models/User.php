@@ -51,12 +51,21 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function hasLikedComment(Comment $comment) : bool
     {
-        return $this->likes()->where('comment_id', $comment->id)->exists();
+        return $this->likes()->where('likes.comment_id', $comment->id)->exists();
     }
 
     public function likeComment(Comment $comment)
     {
-        $this->likes()->sync(array($comment->id));
+        if (!$this->hasLikedComment($comment)) {
+            $this->likes()->attach($comment->id);
+        }
+    }
+
+    public function unlikeComment(Comment $comment)
+    {
+        if($this->hasLikedComment($comment)) {
+            $this->likes()->detach($comment->id);
+        }
     }
 
     /**

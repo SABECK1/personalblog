@@ -37,7 +37,7 @@
         <p>{{ $comment->content }}</p>
     </ul>
 </div>
-    {{$current_likes}}
+
     @if($show_replyarea)
     <livewire:commentarea :post="$post" :comment="$comment" :indent="$indent_level" />
     @endif

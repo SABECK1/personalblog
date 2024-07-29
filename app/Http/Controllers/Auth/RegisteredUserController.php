@@ -10,6 +10,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
 use Illuminate\Support\Facades\Mail;
@@ -31,13 +32,17 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
-        $request->validate([
+        $validator = Validator::make($request->all(), [
             //Comments are already handled by Javascript
             'name' => ['required', 'string', 'max:255', 'unique:'.User::class],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
+            // Don't know about the password, but should be fine with Justvalidate
             // 'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
-        // dd("test");
+
+        if ($validator->fails()) {
+            return redirect()->route('register')->withErrors($validator)->withInput();
+        };
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,

@@ -25,7 +25,6 @@ class Comment extends Component
         $this->indent_level = $indent;
         $this->current_likes = $comment->likes->count();
 
-        $this->middleware('auth')->only(['add_like']);
     }
 
     public function render()
@@ -44,15 +43,25 @@ class Comment extends Component
 
     public function add_like()
     {
+//        return $this->redirect(route('login'));
+        // If not logged in
+        if (!auth()->check()) {
+            return $this->redirect(route('login'));
+        }
 
+        // If not verified
         $user = User::whereId(Auth::id())->first();
+        if(!$user->hasVerifiedEmail()){
+            return $this->redirect(route('login'));
+        };
         if ($user->hasLikedComment($this->comment)) {
             $user->unlikeComment($this->comment);
-            $this->current_likes =- 1;
+//            $this->current_likes =- 1;
         }
         else {
             $user->likeComment($this->comment);
-            $this->current_likes =+ 1;
+//            $this->current_likes =+ 1;
         }
+        $this->current_likes = $this->comment->likes->count();
     }
 }

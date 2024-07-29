@@ -19,6 +19,7 @@
                         <h2 class="title">
                             Register
                         </h2>
+
                         <form action="{{ route('register') }}" method="POST" id="registerform" novalidate>
                             @csrf
                             @if ($errors->any() and Request::is('register'))

@@ -54,6 +54,19 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->likes()->where('likes.comment_id', $comment->id)->exists();
     }
 
+    public function likeComment(Comment $comment)
+    {
+        if (!$this->hasLikedComment($comment)) {
+            $this->likes()->attach($comment->id);
+        }
+    }
+
+    public function unlikeComment(Comment $comment)
+    {
+        if($this->hasLikedComment($comment)) {
+            $this->likes()->detach($comment->id);
+        }
+    }
 
     /**
      * The attributes that are mass assignable.

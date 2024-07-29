@@ -11,7 +11,7 @@ use Illuminate\Routing\Controllers\HasMiddleware;
 use Illuminate\Routing\Controllers\Middleware;
 
 class CommentController extends Controller
-//    implements HasMiddleware
+    implements HasMiddleware
 {
 
     public static function middleware(): array

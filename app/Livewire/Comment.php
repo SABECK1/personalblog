@@ -24,6 +24,8 @@ class Comment extends Component
         $this->post = $post;
         $this->indent_level = $indent;
         $this->current_likes = $comment->likes->count();
+
+        $this->middleware('auth')->only(['add_like']);
     }
 
     public function render()

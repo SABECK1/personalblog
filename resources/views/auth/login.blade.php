@@ -3,6 +3,11 @@
 @section('content')
     <script src="{{ asset('/js/validation_auth.js') }} " defer></script>
     <body class="light-theme">
+    @if ($errors->any())
+        {!! implode('', $errors->all('<div class="message error">:message</div>')) !!}
+    @elseif (session()->has('status'))
+        <div class="message success">{{ session()->get('status') }}</div>
+    @endif
 
         <div class="form-template">
             <section class="container">
@@ -22,9 +27,6 @@
 
                         <form action="{{ route('register') }}" method="POST" id="registerform" novalidate>
                             @csrf
-                            @if ($errors->any() and Request::is('register'))
-                                {!! implode('', $errors->all('<div class="error">:message</div>')) !!}
-                            @endif
                             <div>
                                 <input type="email" class="textinput email" placeholder="E-Mail" name="email"
                                     id="register_email">
@@ -50,11 +52,6 @@
                         </h2>
                         <form action="{{ route('login.store') }}" method="POST" id="loginform">
                             @csrf
-                            @if ($errors->any() and Request::is('login'))
-                                {!! implode('', $errors->all('<div class="error">:message</div>')) !!}
-                            @elseif (session()->has('status'))
-                                <div class="success">{{ session()->get('status') }}</div>
-                            @endif
                             <div>
                                 <input type="text" class="textinput" placeholder="Email/Username" name="loginkey"
                                     id="login_username" value="{{ old('loginkey') }}">

@@ -114,6 +114,7 @@ class PostController extends Controller
 
 
         if ($validator->fails()){
+//            return redirect(route('dashboard', ['tab' => 'content']))->with('error', 'Post updated successfully.');
             return redirect()->back()->withErrors($validator);
         }
 

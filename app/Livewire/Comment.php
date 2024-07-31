@@ -23,7 +23,7 @@ class Comment extends Component
         $this->comment = $comment;
         $this->post = $post;
         $this->indent_level = $indent;
-        $this->current_likes = $comment->likes->count();
+        $this->current_likes = $comment->likes()->count();
 
     }
 

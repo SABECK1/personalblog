@@ -416,7 +416,7 @@ const simpleeditorConfig = {
     placeholder: 'Type or paste your content here!'
 };
 
-ClassicEditor.create(document.querySelector('#editor'), editorConfig);
+// ClassicEditor.create(document.querySelector('#editor'), editorConfig);
 
 
 export function config(){

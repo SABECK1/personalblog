@@ -1,6 +1,18 @@
 @extends('layouts.template')
 
 @section('content')
+    <head>
+        <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css" />
+        <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5-premium-features/42.0.1/ckeditor5-premium-features.css" />
+        <script type="importmap">
+            {
+                "imports": {
+                    "ckeditor5": "https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.js",
+                    "ckeditor5/": "https://cdn.ckeditor.com/ckeditor5/42.0.1/"
+                }
+            }
+        </script>
+    </head>
     <div class="main">
         <div class="container">
             <div class="article-container">
@@ -74,6 +86,7 @@
             });
         });
     </script>
+    <script type="module" src="{{ asset('/js/commenteditor.js') }}"></script>
 @endsection
 
 

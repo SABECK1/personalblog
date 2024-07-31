@@ -8,9 +8,11 @@
         @if($comment !== null)
             <input type="hidden" name="comment" value="{{ $comment->id }}">
         @endif
-        <textarea class="textinput" placeholder="{{ $placeholder }}" name="content"></textarea>
+        <textarea class="textinput" placeholder="{{ $placeholder }}" name="content" id="editor"></textarea>
         <div class="flex-wrapper">
             <button type="submit" class="btn btn-tertiary">Submit</button>
         </div>
     </form>
 </div>
+
+

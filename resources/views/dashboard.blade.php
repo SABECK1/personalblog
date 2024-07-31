@@ -65,7 +65,6 @@
 {{--        Will be filled using AJAX using the Tabcontroller --}}
     </section>
 </div>
-<script src="{{ asset('/js/hide_messages.js') }}"></script>
 <script type="module" src="{{ asset('/js/tabcontroller.js') }}"></script>
 
 

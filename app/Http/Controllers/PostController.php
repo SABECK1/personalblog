@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Post;
 use App\Models\Tag;
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\Comment;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Validator;
 
 class PostController extends Controller
 {
@@ -101,14 +103,19 @@ class PostController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        // Validate the request data
-        $validatedData = $request->validate([
+
+        $validator = Validator::make($request->all(), [
             'subtitle' => 'required',
             'title' => 'required',
             'content' => 'required',
             'category_id' => 'required',
             'tags' => 'required',
         ]);
+
+
+        if ($validator->fails()){
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
 
 
         //If it has an image, overwrite the last one

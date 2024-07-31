@@ -24,6 +24,6 @@
 
         {{-- Other Javascript Functionality --}}
         <script src="{{ asset('/js/theme-toggle.js') }}" defer></script>
-
+        <script src="{{ asset('/js/hide_messages.js') }}"></script>
     </head>
 </div>

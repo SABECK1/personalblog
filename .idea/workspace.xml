@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Implemented hasMiddleware to only allow comments on verified email">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Fixed error message display">
+      <change afterPath="$PROJECT_DIR$/public/images/posts/31Image.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/commenteditor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/likecontroller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Livewire/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/PostPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/PostPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/vendor/ckeditor5.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/vendor/ckeditor5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/commentarea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/commentarea.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/htmlhead.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/htmlhead.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,22 +267,8 @@
       <workItem from="1722004745488" duration="13324000" />
       <workItem from="1722186755659" duration="13107000" />
       <workItem from="1722279838704" duration="3100000" />
-    </task>
-    <task id="LOCAL-00113" summary="fixed button styling to allow inline display">
-      <option name="closed" value="true" />
-      <created>1721246445686</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1721246445686</updated>
-    </task>
-    <task id="LOCAL-00114" summary="fixed button styling to allow inline display">
-      <option name="closed" value="true" />
-      <created>1721246533662</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1721246533662</updated>
+      <workItem from="1722368427142" duration="5914000" />
+      <workItem from="1722454211680" duration="1432000" />
     </task>
     <task id="LOCAL-00115" summary="fixed post creating on role admin">
       <option name="closed" value="true" />
@@ -653,7 +646,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722287522453</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="Like with auth and verification Gateway">
+      <option name="closed" value="true" />
+      <created>1722289750649</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1722289750649</updated>
+    </task>
+    <task id="LOCAL-00163" summary="Fixed error message display">
+      <option name="closed" value="true" />
+      <created>1722373600718</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1722373600719</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,8 +672,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added constants to roles for better consistency in rolenames" />
-    <MESSAGE value="Updated PostPolicy.php" />
     <MESSAGE value="Updated PostController.php to reflect changes to PostPolicy.php" />
     <MESSAGE value="Added constraints to comments" />
     <MESSAGE value="renamed migrations to ensure proper key constraints" />
@@ -688,7 +695,9 @@
     <MESSAGE value="Display of liked comments, total amount of likes gotten" />
     <MESSAGE value="Fixed redirect after wrong registration" />
     <MESSAGE value="Implemented hasMiddleware to only allow comments on verified email" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented hasMiddleware to only allow comments on verified email" />
+    <MESSAGE value="Like with auth and verification Gateway" />
+    <MESSAGE value="Fixed error message display" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed error message display" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

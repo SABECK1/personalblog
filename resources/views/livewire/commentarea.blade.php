@@ -1,4 +1,4 @@
-<div class="comment" style="left: {{ 1.5 * $indent_level }}%;width: calc(100% - {{ 1.5 * $indent_level }}%)">
+<div class="comment" id="@if($comment !== null){{$comment->id}}@endif" style="left: {{ 1.5 * $indent_level }}%;display: @if($comment !== null) none @endif;width: calc(100% - {{ 1.5 * $indent_level }}%)">
 {{--    {{dd($post,$comment_replied_to}}--}}
     <form action="{{ route('posts.comments.store', $post) }}" method="POST">
         @csrf
@@ -8,7 +8,7 @@
         @if($comment !== null)
             <input type="hidden" name="comment" value="{{ $comment->id }}">
         @endif
-        <textarea class="editor textinput" placeholder="{{ $placeholder }}" name="content" id="editor"></textarea>
+        <textarea class="editor textinput" placeholder="{{ $placeholder }}" name="content" id="editor @if($comment !== null) {{$comment->id}} @endif"></textarea>
         <div class="flex-wrapper">
             <button type="submit" class="btn btn-tertiary">Submit</button>
         </div>

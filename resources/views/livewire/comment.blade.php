@@ -16,7 +16,7 @@
             <div class="btn-group">
                 <button wire:click="add_like" class="btn btn-quarternary"><i class="fa-regular fa-thumbs-up"></i>{{$current_likes}}</button>
 
-                <button wire:click="toggle_visibility" class="btn btn-quarternary"><i class="fa fa-reply"
+                <button onclick="hideElement({{$comment->id}})" class="btn btn-quarternary"><i class="fa fa-reply"
                                                                                                   aria-hidden="true"> Reply</i>
                 </button>
                 <form
@@ -38,8 +38,18 @@
     </ul>
 </div>
 
-    @if($show_replyarea)
+{{--    @if($show_replyarea)--}}
     <livewire:commentarea :post="$post" :comment="$comment" :indent="$indent_level" />
-    @endif
+{{--    @endif--}}
+    <script>
+        function hideElement(elementToHideId) {
+            let element = document.getElementById(elementToHideId);
+            if (element.style.display === 'none') {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
 </div>
 

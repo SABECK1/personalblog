@@ -12,6 +12,7 @@
 
         {{-- Vanilla CSS Stylesheet --}}
         <link rel="stylesheet" href="{{ asset('style.css') }}">
+        <link rel="stylesheet" href="{{asset('/assets/vendor/style.css')}}">
 
         {{-- Google Fonts --}}
         <link rel="preconnect" href="https://fonts.googleapis.com">

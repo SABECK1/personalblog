@@ -52,8 +52,8 @@
     <section class="dashboard-content">
         @if ($errors->any())
             {!! implode('', $errors->all('<div class="message error">:message</div>')) !!}
-        @elseif (session()->has('status'))
-            <div class="message success">{{ session()->get('status') }}</div>
+        @elseif (session()->has('success'))
+            <div class="message success">{{ session()->get('success') }}</div>
         @endif
         <div class="loader" id="loading-icon"></div>
         <div id="postform">

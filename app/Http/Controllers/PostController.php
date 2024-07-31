@@ -138,7 +138,7 @@ class PostController extends Controller
 
 //         Update the post with the validated data
 
-        $post->update($validatedData);
+        $post->update($validator->validated());
         $post->tags()->sync($request->input('tags'));
         // Redirect with a success message
         return redirect(route('dashboard', ['tab' => 'content']))->with('success', 'Post updated successfully.');

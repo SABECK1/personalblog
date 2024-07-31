@@ -54,6 +54,11 @@
             <div class="message success">
                 {{ session()->get('success') }}
             </div>
+        @elseif(session()->has('error'))
+            <div class="message error">
+                {{ session()->get('error') }}
+            </div>
+        @endif
         @endif
         <div class="loader" id="loading-icon"></div>
         <div id="postform">

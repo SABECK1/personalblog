@@ -1,14 +1,5 @@
 {{--<script src="{{ asset('/js/tabcontroller.js') }}"></script>--}}
 <h2>Posts</h2>
-@if(session()->has('success'))
-    <div class="message success">
-        {{ session()->get('success') }}
-    </div>
-@elseif(session()->has('error'))
-    <div class="message error">
-        {{ session()->get('error') }}
-    </div>
-@endif
 @can('create', \App\Models\Post::class)
     <form action="{{route('post.create')}}"  method="GET">
 <button class="btn btn-tertiary" data-url="{{route('post.create')}}" id="create_post_btn"><i class="fa-solid fa-plus"></i>Create Post</button>

@@ -78,6 +78,7 @@ class PostController extends Controller
     public function show(Post $post)
     {
         return view('posts.post-show', [
+            'user' => User::whereId(Auth::id())->first(),
             'post' => $post,
             'categories' => $post->categories,
             'comments' => $post->comments()->whereNull('comment_id')->latest()->with('replies')->paginate(10),

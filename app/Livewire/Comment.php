@@ -14,6 +14,7 @@ class Comment extends Component
     public $indent_level;
     public $show_replyarea = false;
     public $current_likes;
+    public $user;
 
     /**
      * Create a new component instance.
@@ -25,7 +26,7 @@ class Comment extends Component
         $this->post = $post;
         $this->indent_level = $indent;
         $this->current_likes = $comment->likes()->count();
-
+        $this->user = User::whereId(Auth::id())->first();
     }
 
     public function render()

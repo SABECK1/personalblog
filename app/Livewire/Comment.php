@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\User;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
@@ -63,5 +64,9 @@ class Comment extends Component
 //            $this->current_likes =+ 1;
         }
         $this->current_likes = $this->comment->likes->count();
+    }
+
+    public function html(): Attribute {
+        return Attribute::get(fn () => str($this->comment->content)->markdown());
     }
 }

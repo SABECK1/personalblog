@@ -34,7 +34,7 @@
             </div>
         </div>
         <hr class="solid">
-        <p>{{ $comment->content }}</p>
+        <p>{!! $comment->html !!}</p>
     </ul>
 </div>
 

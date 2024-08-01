@@ -9,7 +9,7 @@
                 {{ $post->title }}
             </div>
         </h3>
-        <section class="blog-card-body">{{ Str::substr($post->content, 0, 150).'...' }}</section>
+        <section class="blog-card-body">{{ Str::substr(strip_tags($post->content), 0, 150).'...' }}</section>
         <p class="text-tiny"><time>
                 {{ $post->created_at }}
             </time><i class="fa-solid fa-clock"></i></p>

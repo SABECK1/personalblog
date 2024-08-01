@@ -79,7 +79,7 @@
                                         {{ $post->title }}
                                     </div>
                                 </h3>
-                                {{ Str::substr($post->content, 0, 150) }}
+                                {{ Str::substr(strip_tags($post->content), 0, 150) }}
                                 <p class="text-tiny">
                                     <time>
                                         {{ $post->created_at }}

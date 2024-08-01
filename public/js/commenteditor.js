@@ -5,7 +5,7 @@ const elements = document.querySelectorAll('[id^="editor"]');
 debugger
 function initEditor(element) {
     const id = element.id; // Get the element's ID
-    const inputId = 'input' + id.slice(5); // Construct the input field's ID based on the element's ID
+    // const inputId = 'input' + id.slice(5); // Construct the input field's ID based on the element's ID
 
     // Create the editor and set its data
     ClassicEditor.create(element, simpleconfig()).then(editor => {

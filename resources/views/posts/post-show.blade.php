@@ -4,6 +4,7 @@
     <head>
         <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css" />
         <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5-premium-features/42.0.1/ckeditor5-premium-features.css" />
+        <script src="{{ asset('/js/commentarea-toggle.js') }}"></script>
         <script type="importmap">
             {
                 "imports": {
@@ -59,20 +60,7 @@
         </div>
     </div>
     <script>
-        function toggleElement() {
-            const paragraph = document
-                .getElementById('myparagraph');
-            const currentVisibility = window
-                .getComputedStyle(paragraph).visibility;
-
-            if (currentVisibility === 'hidden') {
-                paragraph.style.visibility = 'visible';
-            } else {
-                paragraph.style.visibility = 'hidden';
-            }
-        }
-    </script>
-    <script>
+        // Copy URL Button Logic
         document.addEventListener('DOMContentLoaded', function () {
             const copyUrlBtn = document.getElementById('copy-url-btn');
 

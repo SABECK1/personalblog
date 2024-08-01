@@ -16,9 +16,12 @@
             <div class="btn-group">
                 <button wire:click="add_like" class="btn btn-quarternary">@if($user->hasLikedComment($comment)) <i class="fa-solid fa-thumbs-up"></i> @else <i class="fa-regular fa-thumbs-up"></i> @endif{{$current_likes}}</button>
 
-                <button onclick="hideElement({{$comment->id}})" class="btn btn-quarternary"><i class="fa fa-reply"
-                                                                                                  aria-hidden="true"> Reply</i>
-                </button>
+                <button onclick="setForm({{$comment->id}}, '{{ route('posts.comments.store', $post) }}')" class="btn btn-quarternary"><i class="fa fa-reply" aria-hidden="true"> Reply</i> </button>
+
+                @can('update', $comment)
+                    <button onclick="setForm({{$comment->id}}, '{{ route('posts.comments.update', ['post' => $post, 'comment' => $comment]) }}')" class="btn btn-quarternary"><i class="fa-solid fa-pen-to-square"> Edit</i></button>
+                @endcan
+
                 <form
                     action="{{ route('posts.comments.destroy', ['post' => $post, 'comment' => $comment]) }}"
                     method="POST">
@@ -41,15 +44,8 @@
 {{--    @if($show_replyarea)--}}
     <livewire:commentarea :post="$post" :comment="$comment" :indent="$indent_level" />
 {{--    @endif--}}
-    <script>
-        function hideElement(elementToHideId) {
-            let element = document.getElementById(elementToHideId);
-            if (element.style.display === 'none') {
-                element.style.display = "block";
-            } else {
-                element.style.display = "none";
-            }
-        }
-    </script>
+
+
+
 </div>
 

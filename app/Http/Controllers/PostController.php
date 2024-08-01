@@ -39,13 +39,18 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $validator = Validator::make($request->all(), [
             'postTitle' => ['required', 'string'],
             'postSubTitle' => ['required', 'string'],
             'postImage' => ['required', 'image', 'mimes:jpeg,png,jpg,gif,svg', 'max:2048'],
             'postCategory' => ['required'],
             'editor' => ['required']
         ]);
+
+        if ($validator->fails()){
+            return redirect(route('dashboard', ['tab' => 'content']))->withErrors($validator)->withInput();
+//            return redirect()->back()->withErrors($validator);
+        }
 
 
         $statement = DB::select("SHOW TABLE STATUS LIKE 'posts'");
@@ -114,8 +119,8 @@ class PostController extends Controller
 
 
         if ($validator->fails()){
-//            return redirect(route('dashboard', ['tab' => 'content']))->with('error', 'Post updated successfully.');
-            return redirect()->back()->withErrors($validator);
+            return redirect(route('dashboard', ['tab' => 'content']))->withErrors($validator)->withInput();
+//            return redirect()->back()->withErrors($validator);
         }
 
 
@@ -139,7 +144,7 @@ class PostController extends Controller
 //         Update the post with the validated data
 
         $post->update($validator->validated());
-        $post->tags()->sync($request->input('tags'));
+        $post->tags()->attach($request->input('tags'));
         // Redirect with a success message
         return redirect(route('dashboard', ['tab' => 'content']))->with('success', 'Post updated successfully.');
     }

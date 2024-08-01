@@ -10,7 +10,7 @@
             <label for="subtitle">Title:</label>
             <input type="text" id="subtitle" name="postSubTitle" required>
             <label for="imageUpload">Post Image:</label>
-            <input type="file" id="imageUpload" name="postImage" accept="image/*" multiple>
+            <input type="file" id="imageUpload" name="postImage" accept="image/*" multiple required>
 
 
 

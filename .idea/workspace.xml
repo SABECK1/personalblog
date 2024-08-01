@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="changed redirect route after failed authentication attempt" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="stripped html tags in articles.blade.php and blog_card.blade.php">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -256,15 +258,7 @@
       <workItem from="1722279838704" duration="3100000" />
       <workItem from="1722368427142" duration="5914000" />
       <workItem from="1722454211680" duration="3409000" />
-      <workItem from="1722537778730" duration="2366000" />
-    </task>
-    <task id="LOCAL-00121" summary="Working Editor">
-      <option name="closed" value="true" />
-      <created>1721375213298</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1721375213298</updated>
+      <workItem from="1722537778730" duration="2689000" />
     </task>
     <task id="LOCAL-00122" summary="fixed bug when initiating editor while being rerouted">
       <option name="closed" value="true" />
@@ -650,7 +644,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722541595016</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="stripped html tags in articles.blade.php and blog_card.blade.php">
+      <option name="closed" value="true" />
+      <created>1722542145268</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1722542145268</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,7 +662,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added loading icon for ajax call" />
     <MESSAGE value="added function to delete comment from dashboard" />
     <MESSAGE value="Fixed error that caused the loading icon to be displayed indefinitely" />
     <MESSAGE value="Updated UpdateCommentRequest.php to allow the user to edit their own comments" />
@@ -685,7 +686,8 @@
     <MESSAGE value="better error handling" />
     <MESSAGE value="New editor with better performance in comments -&gt; TODO: edit comments" />
     <MESSAGE value="changed redirect route after failed authentication attempt" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed redirect route after failed authentication attempt" />
+    <MESSAGE value="stripped html tags in articles.blade.php and blog_card.blade.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="stripped html tags in articles.blade.php and blog_card.blade.php" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

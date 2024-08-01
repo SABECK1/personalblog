@@ -32,7 +32,7 @@ class AuthenticatedSessionController extends Controller
             // Regenerate the session ID after successful authentication
             $request->session()->regenerate();
         } catch (\Illuminate\Validation\ValidationException $e) {
-            return redirect()->back()->withInput()->withErrors($e->errors());
+            return redirect()->route('login')->withInput()->withErrors($e->errors());
         }
         return redirect()->back();
     }

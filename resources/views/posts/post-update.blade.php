@@ -1,7 +1,3 @@
-
-
-{{--<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css">--}}
-{{--<link rel="stylesheet" href="{{asset('/assets/vendor/style.css')}}">--}}
 @if(session()->has('success'))
     <div class="message success">
         {{ session()->get('success') }}

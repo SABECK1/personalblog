@@ -1,4 +1,3 @@
-{{--<script src="{{ asset('/js/tabcontroller.js') }}"></script>--}}
 <h2>Posts</h2>
 @can('create', \App\Models\Post::class)
     <form action="{{route('post.create')}}"  method="GET">

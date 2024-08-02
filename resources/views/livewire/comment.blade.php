@@ -14,7 +14,7 @@
                 {{ $comment->user->name }}  {{ $comment->created_at->diffForHumans() }}
             </div>
             <div class="btn-group">
-                <button wire:click="add_like" class="btn btn-quarternary">@if($user->hasLikedComment($comment)) <i class="fa-solid fa-thumbs-up"></i> @else <i class="fa-regular fa-thumbs-up"></i> @endif{{$current_likes}}</button>
+                <button wire:click="add_like" class="btn btn-quarternary">@if($user && $user->hasLikedComment($comment)) <i class="fa-solid fa-thumbs-up"></i> @else <i class="fa-regular fa-thumbs-up"></i> @endif{{$current_likes}}</button>
 
                 <button onclick="setForm({{$comment->id}}, '{{ route('posts.comments.store', $post) }}')" class="btn btn-quarternary"><i class="fa fa-reply" aria-hidden="true"> Reply</i> </button>
 

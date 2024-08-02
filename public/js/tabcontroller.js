@@ -139,18 +139,23 @@ function handleButtonClick(url) {
             setPostEditor(clickedBtnUrl, config());
         });
 
-        let edit_btn = $("#edit_post_btn");
-        edit_btn.on('click', function (event) {
-            event.preventDefault();
-            let clickedBtnUrl = $(this).attr('data-url');
-            setPostEditor(clickedBtnUrl, config());
-        });
+        let edit_post_btns = document.querySelectorAll('.edit_post_btn');
+        edit_post_btns.forEach(function (button) {
+            button.addEventListener('click', function (event){
+                event.preventDefault();
+                let clickedBtnUrl = $(this).attr('data-url');
+                setPostEditor(clickedBtnUrl, config());
+            })
+        })
 
-        let edit_cmt_btn = $('#edit_cmt_btn');
-        edit_cmt_btn.on('click', function (event) {
-            event.preventDefault();
-            let clickedBtnUrl = $(this).attr('data-url');
-            setPostEditor(clickedBtnUrl, simpleconfig());
+        // let edit_cmt_btn = $('#edit_cmt_btn');
+        let edit_cmt_btns = document.querySelectorAll('.edit_cmt_btn');
+        edit_cmt_btns.forEach(function (button) {
+            button.addEventListener('click', function (event){
+                event.preventDefault();
+                let clickedBtnUrl = $(this).attr('data-url');
+                setPostEditor(clickedBtnUrl, simpleconfig());
+            })
         })
     }
     else if (url.includes("dashboard/profile")) {

@@ -24,7 +24,7 @@
             <td>
 {{--                <form action="{{route('post.edit', $post->id)}}" method="GET">--}}
                     @csrf
-                <button class="btn btn-tertiary" data-url="{{route('post.edit', $post->id)}}" id="edit_post_btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                <button class="edit_post_btn btn btn-tertiary" data-url="{{route('post.edit', $post->id)}}"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
 {{--                </form>--}}
                 <form action="{{route('post.destroy', $post->id)}}" method="POST">
                     @csrf
@@ -59,7 +59,7 @@
                 <td>
                     <form action="{{route('comment.edit', $comment->id)}}" method="GET">
                         @csrf
-                        <button class="btn btn-tertiary" data-url="{{route('comment.edit', $comment->id)}}" id="edit_cmt_btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                        <button class="edit_cmt_btn btn btn-tertiary" data-url="{{route('comment.edit', $comment->id)}}"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
                     </form>
                     <form action="{{route('comment.destroy', $comment->id)}}" method="POST">
                         @csrf

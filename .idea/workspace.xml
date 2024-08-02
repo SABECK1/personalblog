@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="fixed error for unauth sessions">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="EventListener for Editing/Replying for CKEDITORInstance Access">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/commentarea-toggle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/commentarea-toggle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/commenteditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/commenteditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/dashboard-content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/dashboard-content.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/comment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/comment.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/commentarea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/commentarea.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/post-update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/post-update.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,15 +260,7 @@
       <workItem from="1722368427142" duration="5914000" />
       <workItem from="1722454211680" duration="3409000" />
       <workItem from="1722537778730" duration="7610000" />
-      <workItem from="1722624735211" duration="8119000" />
-    </task>
-    <task id="LOCAL-00127" summary="ckeditor5.js integration while editing. TODO: Delete all instances before AJAX call">
-      <option name="closed" value="true" />
-      <created>1721522118493</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1721522118494</updated>
+      <workItem from="1722624735211" duration="9427000" />
     </task>
     <task id="LOCAL-00128" summary="ckeditor5.js integration while editing. TODO: Delete all instances before AJAX call">
       <option name="closed" value="true" />
@@ -659,7 +646,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722629292902</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="EventListener for Editing/Replying for CKEDITORInstance Access">
+      <option name="closed" value="true" />
+      <created>1722639091509</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1722639091509</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,7 +664,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fully functional editing of comments via dashboard using the inbuilt ckeditor5" />
     <MESSAGE value="dashboard-profile.blade.php" />
     <MESSAGE value="Design of Profile" />
     <MESSAGE value="Updated Footer Routes" />
@@ -694,7 +688,8 @@
     <MESSAGE value="Like icon change" />
     <MESSAGE value="Change form on reply/edit" />
     <MESSAGE value="fixed error for unauth sessions" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed error for unauth sessions" />
+    <MESSAGE value="EventListener for Editing/Replying for CKEDITORInstance Access" />
+    <option name="LAST_COMMIT_MESSAGE" value="EventListener for Editing/Replying for CKEDITORInstance Access" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

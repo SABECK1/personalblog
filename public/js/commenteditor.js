@@ -23,9 +23,9 @@ function initEditor(element) {
     });
 }
 elements.forEach(initEditor);
-export function hideElement(elementToHideId) {
+export function hideElement(comment_id) {
     // ElementToHideID is the ID given to the whole commentarea through the comment->id
-    let element = document.getElementById(elementToHideId);
+    let element = document.getElementById(comment_id);
     if (element.style.display === 'none') {
         element.style.display = "block";
     } else {
@@ -33,10 +33,10 @@ export function hideElement(elementToHideId) {
     }
 }
 // If edit button is pushed the action should be set to edit, when using reply the action should be set to store
-export function setForm(elementToHideId, action, submitText) {
-    hideElement(elementToHideId);
+export function setForm(comment_id, action, submitText) {
+    hideElement(comment_id);
     // Now we need to get the Form that is the parent of the commentarea
-    let commentarea = document.getElementById(elementToHideId);
+    let commentarea = document.getElementById(comment_id);
     let associatedForm = commentarea.parentElement;
 
     // Now we set the action to the desired outcome
@@ -46,10 +46,14 @@ export function setForm(elementToHideId, action, submitText) {
     submitButton.textContent = submitText;
 
     // If reply, then the text needs to be empty
+    let editor = CKEDITOR[`editor${comment_id}`]
     if (submitText === 'Reply') {
-        debugger
-        let editor = document.getElementById(`editor${elementToHideId}`)
-        editor.value = '';
+        editor.setData('');
     }
+    else if (submitText === 'Edit') {
+        let editorTextArea = document.getElementById(`editor${comment_id}`);
+        editor.setData(editorTextArea.value);
+    }
+
 
 }

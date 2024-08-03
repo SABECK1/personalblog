@@ -496,6 +496,7 @@ li { list-style: none; }
     box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05);
     transition: 0.25s ease;
     display: grid;
+    grid-auto-rows: minmax(150px, auto);
     grid-template-columns: 1fr 2fr;
     gap: 20px;
     cursor: pointer;
@@ -532,11 +533,9 @@ li { list-style: none; }
 
 
 .blog-image {
+    height: 100%;
     width: 100%;
-    object-fit: cover;
-    max-height: 100%;
-    margin-right: 20px;
-    grid-column: 1;
+    object-fit: contain;
 }
 
 .blog-details {

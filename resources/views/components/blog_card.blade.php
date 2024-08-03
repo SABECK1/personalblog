@@ -1,5 +1,5 @@
 <div class="blog-card" onclick="goToUrl('{{ route('post.show', $post) }}', event)">
-    <img class="blog-image" src="{{ asset('images/posts/'.$post->image_path) }}" alt="Post Image">
+    <img class="blog-image" src="{{ asset($post->image_path) }}" alt="Post Image">
     <div class="blog-details">
         <div class="blog-topic text-tiny" onclick="goToUrl('{{ route('posts') }}', event)">
             {{ $post->category->category_name }}

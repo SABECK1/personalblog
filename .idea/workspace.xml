@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Working edit comment in comment section TODO: update commenteditor.js so that the put method is only used on update">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Added middlewares to all dashboard routes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/blog_card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/blog_card.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,15 +262,7 @@
       <workItem from="1722454211680" duration="3409000" />
       <workItem from="1722537778730" duration="7610000" />
       <workItem from="1722624735211" duration="14422000" />
-      <workItem from="1722686473677" duration="2710000" />
-    </task>
-    <task id="LOCAL-00131" summary="fixed bug that caused ckeditor5.js to not show up after calling it a second time via ajax">
-      <option name="closed" value="true" />
-      <created>1721592573329</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1721592573329</updated>
+      <workItem from="1722686473677" duration="6519000" />
     </task>
     <task id="LOCAL-00132" summary="Functioning post editor tool">
       <option name="closed" value="true" />
@@ -654,7 +648,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722645045926</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="Added middlewares to all dashboard routes">
+      <option name="closed" value="true" />
+      <created>1722689958419</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1722689958419</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +666,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Ajax call to profile route. -&gt; Still needs to be fixed" />
     <MESSAGE value="Update of Username and Email now possible" />
     <MESSAGE value="Quick little fix for theme toggle button" />
     <MESSAGE value="Allowed filtering through sidebar tables" />
@@ -689,7 +690,8 @@
     <MESSAGE value="Content copy when editing" />
     <MESSAGE value="Fixed Bug that caused only the first element in dashboard to be edited" />
     <MESSAGE value="Working edit comment in comment section TODO: update commenteditor.js so that the put method is only used on update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working edit comment in comment section TODO: update commenteditor.js so that the put method is only used on update" />
+    <MESSAGE value="Added middlewares to all dashboard routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added middlewares to all dashboard routes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

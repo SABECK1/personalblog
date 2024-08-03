@@ -24,11 +24,11 @@ Route::post('contact.mail_guest', [PagesController::class, 'contact_mail_guest']
 
 
 
-Route::get('dashboard/account', [TabsController::class, 'account'])->name('/dashboard/account');
-Route::get('dashboard/profile', [TabsController::class, 'profile'])->name('/dashboard/profile');
-Route::get('dashboard/content', [TabsController::class, 'content'])->name('/dashboard/content');
-Route::get('dashboard/index', [TabsController::class, 'index'])->name('/dashboard/index');
-Route::get('dashboard/admin', [TabsController::class, 'admin'])->name('/dashboard/admin');
+Route::get('dashboard/account', [TabsController::class, 'account'])->name('/dashboard/account')->middleware(['auth', 'verified']);
+Route::get('dashboard/profile', [TabsController::class, 'profile'])->name('/dashboard/profile')->middleware(['auth', 'verified']);
+Route::get('dashboard/content', [TabsController::class, 'content'])->name('/dashboard/content')->middleware(['auth', 'verified']);
+Route::get('dashboard/index', [TabsController::class, 'index'])->name('/dashboard/index')->middleware(['auth', 'verified']);
+Route::get('dashboard/admin', [TabsController::class, 'admin'])->name('/dashboard/admin')->middleware(['auth', 'verified']);
 
 Route::middleware('auth')->group(function () {
 //    Route::get('profile', [ProfileController::class, 'edit'])->name('profile.edit');

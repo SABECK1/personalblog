@@ -72,10 +72,13 @@ class CommentController extends Controller
 
     /**
      * Update the specified resource in storage.
+     * For the routing $post is needed in the comment section -> see route posts.comments.update
+     * In the dashboard edits are managed via the comments.update route, meaning no post is needed there
+     * Theoretically for the CommentSection there wouldn't be a need to use the post as well but who cares?
      */
-    public function update(UpdateCommentRequest $request, Comment $comment)
+    public function update(UpdateCommentRequest $request, Post $post = null, Comment $comment)
     {
-
+//        dd($comment);
         Gate::authorize('update', $comment);
         $validatedData = $request->validate([
             'content' => 'required'

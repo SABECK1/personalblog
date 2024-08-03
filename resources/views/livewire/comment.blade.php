@@ -3,11 +3,10 @@
         document.addEventListener('DOMContentLoaded', () => {
             // Dynamically import setForm when the DOM is fully loaded
             import('{{asset('/js/commenteditor.js')}}').then(({setForm}) => {
-                // Assuming $comment->id and $post are available in your JavaScript context
+
                 const commentId = {{$comment->id}};
                 const postUrl = "{{ route('posts.comments.store', $post) }}";
                 const editUrl = "{{ route('posts.comments.update', ['post' => $post, 'comment' => $comment]) }}";
-
                 // Find the button and attach an event listener
                 const replyButton = document.getElementById('reply{{$comment->id}}');
                 if (replyButton !== null) {

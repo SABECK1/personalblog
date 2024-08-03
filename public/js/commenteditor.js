@@ -39,6 +39,13 @@ export function setForm(comment_id, action, submitText) {
     let commentarea = document.getElementById(comment_id);
     let associatedForm = commentarea.parentElement;
 
+    //If we edit the form we need to append a _method field
+    let method = document.createElement("input");
+    method.type = "hidden";
+    method.value = 'PUT';
+    method.name = '_method';
+    associatedForm.appendChild(method);
+
     // Now we set the action to the desired outcome
     associatedForm.action = action;
 

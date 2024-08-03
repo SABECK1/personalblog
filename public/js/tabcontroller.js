@@ -63,6 +63,10 @@ function setPostEditor(clickedBtnUrl, config) {
 }
 
 
+// Mainly used for the Profile, where it should be possible to edit the user profile via ajax
+// This is just because it should be possible to use the buttons not only as submits but also as edit toggles
+// Alternative approach was to use another button/submit the form using submit(). This was not possible due to the edits not being reflected on submit in the html
+// Therefore data needed to be sent via ajax since html was empty
 function sendDataViaAjax(data) {
     // Example AJAX call using Fetch API
     console.log(data);

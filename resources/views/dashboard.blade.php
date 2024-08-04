@@ -36,14 +36,14 @@
                        href="{{route('dashboard', ['tab' => 'account'])}}"
                        data-url="{{ route('/dashboard/account') }}">
                         <i class="fa-solid fa-address-card"></i>
-                        <span class="link-name">Account</span>
+                        <span class="link-name">Password</span>
                     </a></li>
-                <li><a class="{{ request('tab') == 'admin' ? 'active' : null }}"
-                       href="{{route('dashboard', ['tab' => 'admin'])}}"
-                       data-url="{{ route('/dashboard/admin') }}">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                        <span class="link-name">Administrator</span>
-                    </a></li>
+{{--                <li><a class="{{ request('tab') == 'admin' ? 'active' : null }}"--}}
+{{--                       href="{{route('dashboard', ['tab' => 'admin'])}}"--}}
+{{--                       data-url="{{ route('/dashboard/admin') }}">--}}
+{{--                        <i class="fa-solid fa-screwdriver-wrench"></i>--}}
+{{--                        <span class="link-name">Administrator</span>--}}
+{{--                    </a></li>--}}
             </ul>
         </div>
     </div>

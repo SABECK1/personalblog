@@ -20,9 +20,7 @@ class TabsController extends Controller
 
     public function account()
     {
-        $data = ['title' => 'Home', 'content' => 'Welcome to our home page!'];
-
-        return view('dashboard.dashboard-account', compact('data'));
+        return view('dashboard.dashboard-account');
     }
 
     public function profile()

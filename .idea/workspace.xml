@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Published Dockerfiles" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Changing Railway nixpacks" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -260,31 +260,7 @@
       <workItem from="1722624735211" duration="14422000" />
       <workItem from="1722686473677" duration="6519000" />
       <workItem from="1722783141921" duration="6691000" />
-      <workItem from="1722890344653" duration="2093000" />
-    </task>
-    <task id="LOCAL-00138" summary="Added constraints to comments">
-      <option name="closed" value="true" />
-      <created>1721673544708</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1721673544708</updated>
-    </task>
-    <task id="LOCAL-00139" summary="renamed migrations to ensure proper key constraints">
-      <option name="closed" value="true" />
-      <created>1721673819627</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1721673819627</updated>
-    </task>
-    <task id="LOCAL-00140" summary="Fixed database seeder to function with key constraints">
-      <option name="closed" value="true" />
-      <created>1721674141905</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1721674141905</updated>
+      <workItem from="1722890344653" duration="2407000" />
     </task>
     <task id="LOCAL-00141" summary="Added loading icon for ajax call">
       <option name="closed" value="true" />
@@ -654,7 +630,31 @@
       <option name="project" value="LOCAL" />
       <updated>1722891719504</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="Changing Railway nixpacks">
+      <option name="closed" value="true" />
+      <created>1722893107275</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1722893107275</updated>
+    </task>
+    <task id="LOCAL-00188" summary="Changing Railway nixpacks">
+      <option name="closed" value="true" />
+      <created>1722893118747</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1722893118747</updated>
+    </task>
+    <task id="LOCAL-00189" summary="Changing Railway nixpacks">
+      <option name="closed" value="true" />
+      <created>1722893124094</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1722893124094</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +664,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Display of total comments and likes on profile page" />
     <MESSAGE value="Display of liked comments, total amount of likes gotten" />
     <MESSAGE value="Fixed redirect after wrong registration" />
     <MESSAGE value="Implemented hasMiddleware to only allow comments on verified email" />
@@ -689,7 +688,8 @@
     <MESSAGE value="Added docker-compose.yml file for example purposes" />
     <MESSAGE value="Updated Header" />
     <MESSAGE value="Published Dockerfiles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Published Dockerfiles" />
+    <MESSAGE value="Changing Railway nixpacks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing Railway nixpacks" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

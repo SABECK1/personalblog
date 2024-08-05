@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Password Change now possible in dashboard.blade.php">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Updated Header">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/header.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,30 +262,7 @@
       <workItem from="1722624735211" duration="14422000" />
       <workItem from="1722686473677" duration="6519000" />
       <workItem from="1722783141921" duration="6691000" />
-    </task>
-    <task id="LOCAL-00133" summary="Search function in articles.blade.php">
-      <option name="closed" value="true" />
-      <created>1721669906269</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1721669906269</updated>
-    </task>
-    <task id="LOCAL-00134" summary="Added constants to roles for better consistency in rolenames">
-      <option name="closed" value="true" />
-      <created>1721671671572</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1721671671572</updated>
-    </task>
-    <task id="LOCAL-00135" summary="Updated PostPolicy.php">
-      <option name="closed" value="true" />
-      <created>1721671753135</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1721671753135</updated>
+      <workItem from="1722890344653" duration="1258000" />
     </task>
     <task id="LOCAL-00136" summary="Updated PostController.php to reflect changes to PostPolicy.php">
       <option name="closed" value="true" />
@@ -656,7 +632,31 @@
       <option name="project" value="LOCAL" />
       <updated>1722786424636</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="Added docker-compose.yml file for example purposes">
+      <option name="closed" value="true" />
+      <created>1722890520903</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1722890520903</updated>
+    </task>
+    <task id="LOCAL-00183" summary="Updated Header">
+      <option name="closed" value="true" />
+      <created>1722890528824</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1722890528824</updated>
+    </task>
+    <task id="LOCAL-00184" summary="Updated Header">
+      <option name="closed" value="true" />
+      <created>1722891109009</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1722891109009</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,8 +666,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Quick little fix for theme toggle button" />
-    <MESSAGE value="Allowed filtering through sidebar tables" />
     <MESSAGE value="Updated icons on profile change" />
     <MESSAGE value="Display of total comments and likes on profile page" />
     <MESSAGE value="Display of liked comments, total amount of likes gotten" />
@@ -691,7 +689,9 @@
     <MESSAGE value="Working edit comment in comment section TODO: update commenteditor.js so that the put method is only used on update" />
     <MESSAGE value="Added middlewares to all dashboard routes" />
     <MESSAGE value="Password Change now possible in dashboard.blade.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Password Change now possible in dashboard.blade.php" />
+    <MESSAGE value="Added docker-compose.yml file for example purposes" />
+    <MESSAGE value="Updated Header" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Header" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

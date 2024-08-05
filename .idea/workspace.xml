@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Updated Header">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Published Dockerfiles" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -262,23 +260,7 @@
       <workItem from="1722624735211" duration="14422000" />
       <workItem from="1722686473677" duration="6519000" />
       <workItem from="1722783141921" duration="6691000" />
-      <workItem from="1722890344653" duration="1258000" />
-    </task>
-    <task id="LOCAL-00136" summary="Updated PostController.php to reflect changes to PostPolicy.php">
-      <option name="closed" value="true" />
-      <created>1721671896066</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1721671896066</updated>
-    </task>
-    <task id="LOCAL-00137" summary="Updated PostController.php to reflect changes to PostPolicy.php">
-      <option name="closed" value="true" />
-      <created>1721672315110</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1721672315111</updated>
+      <workItem from="1722890344653" duration="2093000" />
     </task>
     <task id="LOCAL-00138" summary="Added constraints to comments">
       <option name="closed" value="true" />
@@ -656,7 +638,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722891109009</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="Published Dockerfiles">
+      <option name="closed" value="true" />
+      <created>1722891708586</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1722891708586</updated>
+    </task>
+    <task id="LOCAL-00186" summary="Published Dockerfiles">
+      <option name="closed" value="true" />
+      <created>1722891719504</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1722891719504</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,7 +664,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated icons on profile change" />
     <MESSAGE value="Display of total comments and likes on profile page" />
     <MESSAGE value="Display of liked comments, total amount of likes gotten" />
     <MESSAGE value="Fixed redirect after wrong registration" />
@@ -691,7 +688,8 @@
     <MESSAGE value="Password Change now possible in dashboard.blade.php" />
     <MESSAGE value="Added docker-compose.yml file for example purposes" />
     <MESSAGE value="Updated Header" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Header" />
+    <MESSAGE value="Published Dockerfiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Published Dockerfiles" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

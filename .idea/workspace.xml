@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Changing Railway nixpacks" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Published Dockerfiles" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,10 +24,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Comment" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -261,30 +262,6 @@
       <workItem from="1722686473677" duration="6519000" />
       <workItem from="1722783141921" duration="6691000" />
       <workItem from="1722890344653" duration="2407000" />
-    </task>
-    <task id="LOCAL-00141" summary="Added loading icon for ajax call">
-      <option name="closed" value="true" />
-      <created>1721779540390</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1721779540390</updated>
-    </task>
-    <task id="LOCAL-00142" summary="added function to delete comment from dashboard">
-      <option name="closed" value="true" />
-      <created>1721779555526</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1721779555526</updated>
-    </task>
-    <task id="LOCAL-00143" summary="Fixed error that caused the loading icon to be displayed indefinitely">
-      <option name="closed" value="true" />
-      <created>1721817946777</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1721817946777</updated>
     </task>
     <task id="LOCAL-00144" summary="Updated UpdateCommentRequest.php to allow the user to edit their own comments">
       <option name="closed" value="true" />
@@ -654,17 +631,76 @@
       <option name="project" value="LOCAL" />
       <updated>1722893124094</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="Published Dockerfiles">
+      <option name="closed" value="true" />
+      <created>1722966371059</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1722966371059</updated>
+    </task>
+    <task id="LOCAL-00191" summary="Published Dockerfiles">
+      <option name="closed" value="true" />
+      <created>1722966470361</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1722966470361</updated>
+    </task>
+    <task id="LOCAL-00192" summary="Published Dockerfiles">
+      <option name="closed" value="true" />
+      <created>1722966475009</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1722966475009</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="4f00cfb5-75bf-42fa-8a7a-4f150d0b749a" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="4f00cfb5-75bf-42fa-8a7a-4f150d0b749a">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Display of liked comments, total amount of likes gotten" />
     <MESSAGE value="Fixed redirect after wrong registration" />
     <MESSAGE value="Implemented hasMiddleware to only allow comments on verified email" />
     <MESSAGE value="Like with auth and verification Gateway" />
@@ -687,9 +723,10 @@
     <MESSAGE value="Password Change now possible in dashboard.blade.php" />
     <MESSAGE value="Added docker-compose.yml file for example purposes" />
     <MESSAGE value="Updated Header" />
-    <MESSAGE value="Published Dockerfiles" />
     <MESSAGE value="Changing Railway nixpacks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changing Railway nixpacks" />
+    <MESSAGE value="Published DOckerfiles" />
+    <MESSAGE value="Published Dockerfiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Published Dockerfiles" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

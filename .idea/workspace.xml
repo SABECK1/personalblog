@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Published Dockerfiles">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Access Permissions">
       <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +177,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging master",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/Samue/Desktop/Laravel/personal_blog_new",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -202,6 +203,10 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
+      <method v="2" />
+    </configuration>
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
       <method v="2" />
@@ -666,7 +671,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Allowed filtering through sidebar tables" />
     <MESSAGE value="Updated icons on profile change" />
     <MESSAGE value="Display of total comments and likes on profile page" />
     <MESSAGE value="Display of liked comments, total amount of likes gotten" />
@@ -691,7 +695,8 @@
     <MESSAGE value="Added middlewares to all dashboard routes" />
     <MESSAGE value="Password Change now possible in dashboard.blade.php" />
     <MESSAGE value="Published Dockerfiles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Published Dockerfiles" />
+    <MESSAGE value="Access Permissions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Access Permissions" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

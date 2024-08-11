@@ -2,11 +2,20 @@ services:
 
     laravel-docker:
         container_name: laravel-docker
-        build: .
-        volumes:
-            - /var/www/html
+        build:
+            context: .
+            target: php
+            args:
+                - APP_ENV=${APP_ENV}
+                - CONTAINER_ROLE=app
+        environment:
+            - APP_ENV=${APP_ENV}
         ports:
-            - 9000:80
+            - 8000:8000
+        working_dir: /var/www
+        depends_on:
+            - mysql_db
+            - phpmyadmin
 
     mysql_db:
         container_name: laravel-mysql
@@ -27,3 +36,4 @@ services:
             - 9001:80
         environment:
             - PMA_ARBITRARY=1
+

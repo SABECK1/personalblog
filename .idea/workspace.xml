@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Access Permissions">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Docker Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
@@ -178,7 +177,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Samue/Desktop/Laravel/personal_blog_new",
+    "last_opened_file_path": "C:/Users/Samue/Desktop/Laravel/personal_blog_new_laravel",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -191,6 +190,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Samue\Desktop\Laravel\personal_blog_new_laravel" />
       <recent name="C:\Users\Samue\Desktop\Laravel\personal_blog_new\public" />
       <recent name="C:\Users\Samue\Desktop\Laravel\personal_blog_new\public\js" />
       <recent name="C:\Users\Samue\Desktop\Laravel\personal_blog_new\resources\views\components" />
@@ -268,30 +268,6 @@
       <workItem from="1722624735211" duration="14422000" />
       <workItem from="1722686473677" duration="6519000" />
       <workItem from="1722783141921" duration="6691000" />
-    </task>
-    <task id="LOCAL-00133" summary="Search function in articles.blade.php">
-      <option name="closed" value="true" />
-      <created>1721669906269</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1721669906269</updated>
-    </task>
-    <task id="LOCAL-00134" summary="Added constants to roles for better consistency in rolenames">
-      <option name="closed" value="true" />
-      <created>1721671671572</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1721671671572</updated>
-    </task>
-    <task id="LOCAL-00135" summary="Updated PostPolicy.php">
-      <option name="closed" value="true" />
-      <created>1721671753135</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1721671753135</updated>
     </task>
     <task id="LOCAL-00136" summary="Updated PostController.php to reflect changes to PostPolicy.php">
       <option name="closed" value="true" />
@@ -661,7 +637,31 @@
       <option name="project" value="LOCAL" />
       <updated>1722786424636</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="Heroku">
+      <option name="closed" value="true" />
+      <created>1723386358574</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1723386358574</updated>
+    </task>
+    <task id="LOCAL-00183" summary="Heroku">
+      <option name="closed" value="true" />
+      <created>1723386367166</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1723386367166</updated>
+    </task>
+    <task id="LOCAL-00184" summary="Docker Update">
+      <option name="closed" value="true" />
+      <created>1723389444981</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1723389444982</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,8 +671,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated icons on profile change" />
-    <MESSAGE value="Display of total comments and likes on profile page" />
     <MESSAGE value="Display of liked comments, total amount of likes gotten" />
     <MESSAGE value="Fixed redirect after wrong registration" />
     <MESSAGE value="Implemented hasMiddleware to only allow comments on verified email" />
@@ -694,9 +692,11 @@
     <MESSAGE value="Working edit comment in comment section TODO: update commenteditor.js so that the put method is only used on update" />
     <MESSAGE value="Added middlewares to all dashboard routes" />
     <MESSAGE value="Password Change now possible in dashboard.blade.php" />
-    <MESSAGE value="Published Dockerfiles" />
     <MESSAGE value="Access Permissions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Access Permissions" />
+    <MESSAGE value="Published Dockerfiles" />
+    <MESSAGE value="Heroku" />
+    <MESSAGE value="Docker Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker Update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

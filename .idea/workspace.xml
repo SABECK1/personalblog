@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Docker Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,22 +267,6 @@
       <workItem from="1722624735211" duration="14422000" />
       <workItem from="1722686473677" duration="6519000" />
       <workItem from="1722783141921" duration="6691000" />
-    </task>
-    <task id="LOCAL-00136" summary="Updated PostController.php to reflect changes to PostPolicy.php">
-      <option name="closed" value="true" />
-      <created>1721671896066</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1721671896066</updated>
-    </task>
-    <task id="LOCAL-00137" summary="Updated PostController.php to reflect changes to PostPolicy.php">
-      <option name="closed" value="true" />
-      <created>1721672315110</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1721672315111</updated>
     </task>
     <task id="LOCAL-00138" summary="Added constraints to comments">
       <option name="closed" value="true" />
@@ -661,7 +644,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723389444982</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="Docker Update">
+      <option name="closed" value="true" />
+      <created>1723390536763</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1723390536764</updated>
+    </task>
+    <task id="LOCAL-00186" summary="Docker Update">
+      <option name="closed" value="true" />
+      <created>1723390661544</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1723390661545</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

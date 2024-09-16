@@ -7,11 +7,11 @@ services:
             target: php
             args:
                 - APP_ENV=${APP_ENV}
-                - CONTAINER_ROLE=app
         environment:
             - APP_ENV=${APP_ENV}
+            - CONTAINER_ROLE=app
         ports:
-            - ${PORT}
+            - 8000:8000
         working_dir: /var/www
         depends_on:
             - mysql_db
@@ -29,6 +29,8 @@ services:
             MYSQL_ALLOW_EMPTY_PASSWORD: 1
         ports:
             - 3306:3306
+        volumes:
+            - db-data:/var/lib/mysql
 
     phpmyadmin:
         image: phpmyadmin:latest
@@ -37,3 +39,7 @@ services:
         environment:
             - PMA_ARBITRARY=1
 
+
+
+volumes:
+    db-data: ~

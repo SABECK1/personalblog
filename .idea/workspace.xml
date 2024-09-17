@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Docker Update">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Working Docker">
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/personal_blog_new.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/personal_blog_new.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/hero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,26 +179,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Samue/Desktop/Laravel/personal_blog_new_laravel/public/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2024.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Samue/Desktop/Laravel/personal_blog_new_laravel&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2024.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Samue\Desktop\Laravel\personal_blog_new_laravel\public\images" />
       <recent name="C:\Users\Samue\Desktop\Laravel\personal_blog_new_laravel" />
+      <recent name="C:\Users\Samue\Desktop\Laravel\personal_blog_new_laravel\public\images" />
       <recent name="C:\Users\Samue\Desktop\Laravel\personal_blog_new\public" />
       <recent name="C:\Users\Samue\Desktop\Laravel\personal_blog_new\public\js" />
       <recent name="C:\Users\Samue\Desktop\Laravel\personal_blog_new\resources\views\components" />
@@ -270,15 +273,8 @@
       <workItem from="1722686473677" duration="6519000" />
       <workItem from="1722783141921" duration="6691000" />
       <workItem from="1726161788292" duration="205000" />
-      <workItem from="1726516705452" duration="3576000" />
-    </task>
-    <task id="LOCAL-00139" summary="renamed migrations to ensure proper key constraints">
-      <option name="closed" value="true" />
-      <created>1721673819627</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1721673819627</updated>
+      <workItem from="1726516705452" duration="6881000" />
+      <workItem from="1726595012282" duration="2835000" />
     </task>
     <task id="LOCAL-00140" summary="Fixed database seeder to function with key constraints">
       <option name="closed" value="true" />
@@ -664,7 +660,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723392434942</updated>
     </task>
-    <option name="localTasksCounter" value="188" />
+    <task id="LOCAL-00188" summary="Working Docker">
+      <option name="closed" value="true" />
+      <created>1726520426632</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1726520426632</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,7 +678,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Display of liked comments, total amount of likes gotten" />
     <MESSAGE value="Fixed redirect after wrong registration" />
     <MESSAGE value="Implemented hasMiddleware to only allow comments on verified email" />
     <MESSAGE value="Like with auth and verification Gateway" />
@@ -699,7 +702,8 @@
     <MESSAGE value="Published Dockerfiles" />
     <MESSAGE value="Heroku" />
     <MESSAGE value="Docker Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Docker Update" />
+    <MESSAGE value="Working Docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working Docker" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

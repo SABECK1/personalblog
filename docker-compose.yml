@@ -29,8 +29,8 @@ services:
             MYSQL_ALLOW_EMPTY_PASSWORD: 1
         ports:
             - 3306:3306
-        volumes:
-            - db-data:/var/lib/mysql
+#        volumes:
+#            - db-data:/var/lib/mysql
 
     phpmyadmin:
         image: phpmyadmin:latest
@@ -40,6 +40,6 @@ services:
             - PMA_ARBITRARY=1
 
 
-
-volumes:
-    db-data: ~
+#
+#volumes:
+#    db-data: ~

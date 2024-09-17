@@ -435,6 +435,12 @@ li { list-style: none; }
     font-weight: inherit;
 }
 
+.img-box img {
+    border: 6px solid var(--foreground-primary);
+    border-radius: 20%;
+    height: 450px;
+}
+
 .hero .container {
     display: grid;
     gap: 50px;

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Working Docker" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Added Contact Mail" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -265,23 +265,7 @@
       <workItem from="1726161788292" duration="205000" />
       <workItem from="1726516705452" duration="6881000" />
       <workItem from="1726595012282" duration="4936000" />
-      <workItem from="1726755496728" duration="5497000" />
-    </task>
-    <task id="LOCAL-00145" summary="Reduced comment-update.blade.php to only its necessary elements">
-      <option name="closed" value="true" />
-      <created>1721850042613</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1721850042613</updated>
-    </task>
-    <task id="LOCAL-00146" summary="added simpleconfig for comments">
-      <option name="closed" value="true" />
-      <created>1721852019276</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1721852019276</updated>
+      <workItem from="1726755496728" duration="6466000" />
     </task>
     <task id="LOCAL-00147" summary="fully functional editing of comments via dashboard using the inbuilt ckeditor5">
       <option name="closed" value="true" />
@@ -659,7 +643,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726762658325</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="Working Docker">
+      <option name="closed" value="true" />
+      <created>1726762869330</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1726762869330</updated>
+    </task>
+    <task id="LOCAL-00195" summary="Added Contact Mail">
+      <option name="closed" value="true" />
+      <created>1726769593834</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1726769593834</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -680,7 +680,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed redirect after wrong registration" />
     <MESSAGE value="Implemented hasMiddleware to only allow comments on verified email" />
     <MESSAGE value="Like with auth and verification Gateway" />
     <MESSAGE value="Fixed error message display" />
@@ -705,7 +704,8 @@
     <MESSAGE value="Heroku" />
     <MESSAGE value="Docker Update" />
     <MESSAGE value="Working Docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working Docker" />
+    <MESSAGE value="Added Contact Mail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Contact Mail" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

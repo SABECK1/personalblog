@@ -8,7 +8,7 @@
                 <div class="h1">
                     Hi, I'm <b><a href="#" class="accent_link">Samuel Beck</a></b>,
                 </div>
-                Junior ABAP-Developer, Python and C++ enthusiast
+                Junior ABAP-Developer, Python and PHP enthusiast
                 and the self-proclaimed author of <b>this blog!</b>
             </div>
 

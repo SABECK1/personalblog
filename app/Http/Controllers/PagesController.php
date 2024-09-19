@@ -90,7 +90,7 @@ class PagesController extends Controller
         return redirect(route('home', absolute: true));
     }
 
-    public function contact_mail_auth(Request $request, User $user): RedirectResponse
+    public function contact_mail_auth(Request $request): RedirectResponse
     {
         $request->validate([
             //Comments are already handled by Javascript
@@ -98,7 +98,7 @@ class PagesController extends Controller
         ]);
 
         auth()->user()->notify(new ContactConfirmation());
-        Mail::to(getenv('MAIL_USERNAME'))->send(new ContactMessage($user->email, $request->contact_message_auth));
+        Mail::to(getenv('MAIL_USERNAME'))->send(new ContactMessage($request->user()->email, $request->contact_message_auth));
         return redirect(route('home', absolute: true));
     }
 }

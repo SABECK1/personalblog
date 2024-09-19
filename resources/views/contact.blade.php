@@ -36,7 +36,7 @@
                         </form>
                         @endguest
                         @auth
-                            <form action="{{ route('contact.mail'), $user }}" method="POST" id="contactform_auth">
+                            <form action="{{ route('contact.mail'), \Illuminate\Support\Facades\Auth::getUser() }}" method="POST" id="contactform_auth">
                                 @csrf
                                 @if ($errors->any())
                                     {!! implode('', $errors->all('<div class="error">:message</div>')) !!}

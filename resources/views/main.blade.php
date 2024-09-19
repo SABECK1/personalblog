@@ -27,7 +27,7 @@
                     <div class="blog-card-group">
                         @foreach ($posts as $post)
                             <x-blog_card :post="$post"/>
-                            @endforeach
+                        @endforeach
                             <button class="btn btn-primary load-more" onclick="goToUrl('{{ route('posts') }}')">See More</button>
                     </div>
 

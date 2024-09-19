@@ -67,27 +67,28 @@
             <section class="container">
                 <div class="blog-card-group">
                     @foreach ($posts as $post)
-                        <div class="blog-card" onclick="goToUrl('{{ route('post.show', $post) }}')">
-                            <img class="blog-image" src="{{ asset('images/posts/' . $post->image_path) }}"
-                                 alt="Post Image">
-                            <div class="blog-details">
-                                <div class="blog-topic text-tiny" onclick="goToUrl('{{ route('posts') }}')">
-                                    {{ $post->category->category_name }}
-                                </div>
-                                <h3>
-                                    <div class="title">
-                                        {{ $post->title }}
-                                    </div>
-                                </h3>
-                                {{ Str::substr(strip_tags($post->content), 0, 150) }}
-                                <p class="text-tiny">
-                                    <time>
-                                        {{ $post->created_at }}
-                                    </time>
-                                    <i class="fa-solid fa-clock"></i>
-                                </p>
-                            </div>
-                        </div>
+                            <x-blog_card :post="$post"/>
+{{--                        <div class="blog-card" onclick="goToUrl('{{ route('post.show', $post) }}')">--}}
+{{--                            <img class="blog-image" src="{{ asset('images/posts/' . $post->image_path) }}"--}}
+{{--                                 alt="Post Image">--}}
+{{--                            <div class="blog-details">--}}
+{{--                                <div class="blog-topic text-tiny" onclick="goToUrl('{{ route('posts') }}')">--}}
+{{--                                    {{ $post->category->category_name }}--}}
+{{--                                </div>--}}
+{{--                                <h3>--}}
+{{--                                    <div class="title">--}}
+{{--                                        {{ $post->title }}--}}
+{{--                                    </div>--}}
+{{--                                </h3>--}}
+{{--                                {{ Str::substr(strip_tags($post->content), 0, 150) }}--}}
+{{--                                <p class="text-tiny">--}}
+{{--                                    <time>--}}
+{{--                                        {{ $post->created_at }}--}}
+{{--                                    </time>--}}
+{{--                                    <i class="fa-solid fa-clock"></i>--}}
+{{--                                </p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     @endforeach
                     <div class="paginate-links">{{ $posts->links('vendor.pagination.custom_pagination') }}</div>
                 </div>

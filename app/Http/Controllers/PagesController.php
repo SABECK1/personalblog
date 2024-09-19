@@ -85,12 +85,12 @@ class PagesController extends Controller
         Notification::route('mail', $request->contact_email_guest)
             ->notify(new ContactConfirmation());
 
-        Mail::to(getenv('MAIL_USERNAME'))->send(new ContactMessage($request->contact_email_guest, $request->contact_message));
+        Mail::to(getenv('MAIL_USERNAME'))->send(new ContactMessage($request->contact_email_guest, $request->contact_message_guest));
 //        Mail::to($to_mail)->send(new ContactConfirmation());
         return redirect(route('home', absolute: true));
     }
 
-    public function contact_mail_auth(Request $request): RedirectResponse
+    public function contact_mail_auth(Request $request, User $user): RedirectResponse
     {
         $request->validate([
             //Comments are already handled by Javascript
@@ -98,6 +98,7 @@ class PagesController extends Controller
         ]);
 
         auth()->user()->notify(new ContactConfirmation());
+        Mail::to(getenv('MAIL_USERNAME'))->send(new ContactMessage($user->email, $request->contact_message_auth));
         return redirect(route('home', absolute: true));
     }
 }

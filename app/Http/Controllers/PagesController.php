@@ -87,7 +87,7 @@ class PagesController extends Controller
 
 //        $to_mail = $request->contact_email;
 //
-//        Mail::to(getenv('MAIL_USERNAME'))->send(new ContactMessage($request->contact_email, $request->contact_message));
+        Mail::to(getenv('MAIL_USERNAME'))->send(new ContactMessage($request->contact_email_guest, $request->contact_message));
 //        Mail::to($to_mail)->send(new ContactConfirmation());
         return redirect(route('home', absolute: true));
     }

@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Working Docker">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/personal_blog_new_laravel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/personal_blog_new.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/personal_blog_new.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,23 +267,7 @@
       <workItem from="1726161788292" duration="205000" />
       <workItem from="1726516705452" duration="6881000" />
       <workItem from="1726595012282" duration="4936000" />
-      <workItem from="1726755496728" duration="292000" />
-    </task>
-    <task id="LOCAL-00142" summary="added function to delete comment from dashboard">
-      <option name="closed" value="true" />
-      <created>1721779555526</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1721779555526</updated>
-    </task>
-    <task id="LOCAL-00143" summary="Fixed error that caused the loading icon to be displayed indefinitely">
-      <option name="closed" value="true" />
-      <created>1721817946777</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1721817946777</updated>
+      <workItem from="1726755496728" duration="5152000" />
     </task>
     <task id="LOCAL-00144" summary="Updated UpdateCommentRequest.php to allow the user to edit their own comments">
       <option name="closed" value="true" />
@@ -665,7 +645,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726610012233</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="Working Docker">
+      <option name="closed" value="true" />
+      <created>1726755986469</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1726755986469</updated>
+    </task>
+    <task id="LOCAL-00192" summary="Working Docker">
+      <option name="closed" value="true" />
+      <created>1726755991004</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1726755991004</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

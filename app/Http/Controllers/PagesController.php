@@ -85,8 +85,6 @@ class PagesController extends Controller
         Notification::route('mail', $request->contact_email_guest)
             ->notify(new ContactConfirmation());
 
-//        $to_mail = $request->contact_email;
-//
         Mail::to(getenv('MAIL_USERNAME'))->send(new ContactMessage($request->contact_email_guest, $request->contact_message));
 //        Mail::to($to_mail)->send(new ContactConfirmation());
         return redirect(route('home', absolute: true));

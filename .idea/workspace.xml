@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Working Docker">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Working Docker" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -267,15 +265,7 @@
       <workItem from="1726161788292" duration="205000" />
       <workItem from="1726516705452" duration="6881000" />
       <workItem from="1726595012282" duration="4936000" />
-      <workItem from="1726755496728" duration="5152000" />
-    </task>
-    <task id="LOCAL-00144" summary="Updated UpdateCommentRequest.php to allow the user to edit their own comments">
-      <option name="closed" value="true" />
-      <created>1721850025340</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1721850025340</updated>
+      <workItem from="1726755496728" duration="5497000" />
     </task>
     <task id="LOCAL-00145" summary="Reduced comment-update.blade.php to only its necessary elements">
       <option name="closed" value="true" />
@@ -661,11 +651,30 @@
       <option name="project" value="LOCAL" />
       <updated>1726755991004</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="Working Docker">
+      <option name="closed" value="true" />
+      <created>1726762658324</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1726762658325</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />

@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Requests\Auth;
-use Debugbar;
 use Illuminate\Auth\Events\Lockout;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
@@ -39,8 +38,6 @@ class LoginRequest extends FormRequest
      */
     public function authenticate(): void
     {
-        // Debugbar::info($object);
-        Debugbar::info("Authenticating: ");
         $this->ensureIsNotRateLimited();
 
         $login_type = filter_var($this->input('loginkey'), FILTER_VALIDATE_EMAIL )

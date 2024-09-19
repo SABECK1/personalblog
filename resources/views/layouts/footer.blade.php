@@ -35,7 +35,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('contact.mail_guest') }}">
+                    <a href="{{ route('contact') }}">
                         Contact
                     </a>
                 </li>

@@ -3,11 +3,11 @@
         <div class="footer-section about">
             <h2 class="logo-text"><span>Samuel Beck</span></h2>
             <br>
-            <p>Welcome to my personal Blog, where I write about stuff I learned that I'd probably forget otherwise! ;)
+            <p>Welcome to my Blog, where I write about stuff I learned that I'd probably forget otherwise!
             </p>
             <div class="contact">
-                <span><i class="fas fa-phone">&nbsp; +49 32168</i></span>
-                <span><i class="fas fa-envelope">&nbsp; bs@gmail.com</i></span>
+                <span><i class="fas fa-phone">&nbsp; +49 123456789</i></span>
+                <span><i class="fas fa-envelope">&nbsp; test@gmail.com</i></span>
             </div>
         </div>
         <div class="footer-section links">

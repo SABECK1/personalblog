@@ -35,16 +35,24 @@ export function hideElement(comment_id) {
 // If edit button is pushed the action should be set to edit, when using reply the action should be set to store
 export function setForm(comment_id, action, submitText) {
     hideElement(comment_id);
+    debugger
     // Now we need to get the Form that is the parent of the commentarea
     let commentarea = document.getElementById(comment_id);
     let associatedForm = commentarea.parentElement;
 
-    //If we edit the form we need to append a _method field
-    let method = document.createElement("input");
-    method.type = "hidden";
-    method.value = 'PUT';
-    method.name = '_method';
-    associatedForm.appendChild(method);
+    // //If we edit the form we need to append a _method field
+    // let methods = associatedForm.getElementsByName('_method')
+    // while (methods.length > 0) {
+    //     methods[0].remove();
+    // }
+    debugger
+    if (submitText === 'Edit') {
+        let method = document.createElement("input");
+        method.type = "hidden";
+        method.value = 'PUT'; //TODO: Müsste wahrscheinlich rausgenommen werden, da The PUT method is not supported for route posts/1/comments. Supported methods: GET, HEAD, POST.
+        method.name = '_method';
+        associatedForm.appendChild(method);
+    };
 
     // Now we set the action to the desired outcome
     associatedForm.action = action;

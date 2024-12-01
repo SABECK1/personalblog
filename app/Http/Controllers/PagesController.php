@@ -92,6 +92,8 @@ class PagesController extends Controller
 
     public function contact_mail_auth(Request $request): RedirectResponse
     {
+
+//        $request->user()->sendEmailVerificationNotification();
         $request->validate([
             //Comments are already handled by Javascript
             'contact_message_auth' => ['required', 'string'],

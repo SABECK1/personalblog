@@ -4,7 +4,7 @@
     <head>
         <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css" />
         <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5-premium-features/42.0.1/ckeditor5-premium-features.css" />
-        <script src="{{ asset('/js/commentarea-toggle.js') }}"></script>
+{{--        <script src="{{ asset('/js/commentarea-toggle.js') }}"></script>--}}
         <script type="importmap">
             {
                 "imports": {

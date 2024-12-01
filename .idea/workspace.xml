@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Fixed Error in Footer" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Footer Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/EmailVerificationNotificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/EmailVerificationNotificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/commenteditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/commenteditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/comment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/comment.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -267,14 +274,18 @@
       <workItem from="1726595012282" duration="4936000" />
       <workItem from="1726755496728" duration="8697000" />
       <workItem from="1726920221701" duration="340000" />
-    </task>
-    <task id="LOCAL-00154" summary="Quick little fix for theme toggle button">
-      <option name="closed" value="true" />
-      <created>1722188288716</created>
-      <option name="number" value="00154" />
-      <option name="presentableId" value="LOCAL-00154" />
-      <option name="project" value="LOCAL" />
-      <updated>1722188288716</updated>
+      <workItem from="1727002874056" duration="1315000" />
+      <workItem from="1727114950064" duration="24000" />
+      <workItem from="1729108777065" duration="3202000" />
+      <workItem from="1729368252449" duration="2349000" />
+      <workItem from="1729748157384" duration="903000" />
+      <workItem from="1729749412364" duration="358000" />
+      <workItem from="1729795780318" duration="956000" />
+      <workItem from="1731094961322" duration="1792000" />
+      <workItem from="1731566200755" duration="808000" />
+      <workItem from="1732827056679" duration="4496000" />
+      <workItem from="1732971875748" duration="2327000" />
+      <workItem from="1733006510833" duration="2360000" />
     </task>
     <task id="LOCAL-00155" summary="Quick little fix for theme toggle button">
       <option name="closed" value="true" />
@@ -660,7 +671,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726779144119</updated>
     </task>
-    <option name="localTasksCounter" value="203" />
+    <task id="LOCAL-00203" summary="Footer Changes">
+      <option name="closed" value="true" />
+      <created>1727002938001</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
+      <option name="project" value="LOCAL" />
+      <updated>1727002938003</updated>
+    </task>
+    <option name="localTasksCounter" value="204" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -681,7 +700,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="moved error messages in dashboard.blade.php" />
     <MESSAGE value="better error handling" />
     <MESSAGE value="New editor with better performance in comments -&gt; TODO: edit comments" />
     <MESSAGE value="changed redirect route after failed authentication attempt" />
@@ -706,7 +724,8 @@
     <MESSAGE value="Get User for Contact" />
     <MESSAGE value="Fixed Error on Post&gt;Edit" />
     <MESSAGE value="Fixed Error in Footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Error in Footer" />
+    <MESSAGE value="Footer Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Footer Changes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

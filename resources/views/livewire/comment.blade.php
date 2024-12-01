@@ -3,7 +3,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             // Dynamically import setForm when the DOM is fully loaded
             import('{{asset('/js/commenteditor.js')}}').then(({setForm}) => {
-
+                debugger
                 const commentId = {{$comment->id}};
                 const postUrl = "{{ route('posts.comments.store', $post) }}";
                 const editUrl = "{{ route('posts.comments.update', ['post' => $post, 'comment' => $comment]) }}";
@@ -68,11 +68,7 @@
     </ul>
 </div>
 
-{{--    @if($show_replyarea)--}}
     <livewire:commentarea :post="$post" :comment="$comment" :indent="$indent_level" />
-{{--    @endif--}}
-
-
 
 </div>
 

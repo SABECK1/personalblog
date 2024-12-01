@@ -64,6 +64,12 @@ class PagesController extends Controller
 
         ]);
     }
+
+    public function projects() {
+        $curl = curl_init();
+
+        return view('projects');
+    }
     public function about()
     {
         return view('about');

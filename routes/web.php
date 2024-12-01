@@ -15,6 +15,7 @@ Route::get('/', [PagesController::class, 'main'])->name('home');
 Route::get('posts', [PagesController::class, 'posts'])->name('posts');
 Route::get('about', [PagesController::class, 'about'])->name('about');
 Route::get('contact', [PagesController::class, 'contact'])->name('contact');
+Route::get('projects', [PagesController::class, 'projects'])->name('projects');
 Route::post('contact.mail', [PagesController::class, 'contact_mail_auth'])->name('contact.mail');
 Route::post('contact.mail_guest', [PagesController::class, 'contact_mail_guest'])->name('contact.mail_guest');
 

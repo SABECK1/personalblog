@@ -4,10 +4,494 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Footer Changes">
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Removed Hero Banner and centered important divs on main.blade.php">
+      <change afterPath="$PROJECT_DIR$/resources/views/projects.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/personal_blog_new.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/personal_blog_new.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/SECURITY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/config/debugbar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/database/migrations/2014_12_01_120000_create_phpdebugbar_storage_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Console/ClearCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Controllers/AssetController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Controllers/BaseController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Controllers/CacheController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Controllers/OpenHandlerController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Controllers/TelescopeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/CacheCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/EventCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/FilesCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/GateCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/JobsCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/LaravelCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/LivewireCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/LogsCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/ModelsCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/MultiAuthCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/QueryCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/RequestCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/RouteCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/SessionCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataCollector/ViewCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataFormatter/QueryFormatter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DataFormatter/SimpleFormatter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/DebugbarViewEngine.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Facade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Facades/Debugbar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/JavascriptRenderer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/LaravelDebugbar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/LumenServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Middleware/DebugbarEnabled.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Resources/cache/widget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Resources/laravel-debugbar-dark-mode-media-end.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Resources/laravel-debugbar-dark-mode-media-start.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Resources/laravel-debugbar-dark-mode.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Resources/laravel-debugbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/ServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Storage/FilesystemStorage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Storage/SocketStorage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Support/Clockwork/ClockworkCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Support/Clockwork/Converter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/SymfonyHttpDriver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Twig/Extension/Debug.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Twig/Extension/Dump.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/Twig/Extension/Stopwatch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/debugbar-routes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/src/helpers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/config/livewire.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/dist/livewire.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/dist/livewire.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/dist/livewire.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/dist/livewire.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/dist/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attribute.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/Computed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/Isolate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/Js.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/Layout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/Lazy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/Locked.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/Modelable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/On.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/Reactive.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/Renderless.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/Rule.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/Session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/Title.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/Url.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Attributes/Validate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Component.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentHook.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/ComponentHookRegistry.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Concerns/InteractsWithProperties.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Drawer/BaseUtils.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Drawer/ImplicitRouteBinding.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Drawer/Regexes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Drawer/Utils.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/EventBus.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Exceptions/BypassViewHandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Exceptions/ComponentAttributeMissingOnDynamicComponentException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Exceptions/ComponentNotFoundException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Exceptions/EventHandlerDoesNotExist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Exceptions/LivewirePageExpiredBecauseNewDeploymentHasSignificantEnoughChanges.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Exceptions/MethodNotFoundException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Exceptions/MissingRulesException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Exceptions/NonPublicComponentMethodCall.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Exceptions/PropertyNotFoundException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Exceptions/PublicPropertyNotFoundException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Exceptions/RootTagMissingFromViewException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportAttributes/Attribute.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportAttributes/AttributeCollection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportAttributes/AttributeLevel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportAttributes/HandlesAttributes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportAttributes/SupportAttributes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportAutoInjectedAssets/SupportAutoInjectedAssets.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportBladeAttributes/SupportBladeAttributes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportChecksumErrorDebugging/SupportChecksumErrorDebugging.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportComputed/BaseComputed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportComputed/CannotCallComputedDirectlyException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportComputed/SupportLegacyComputedPropertySyntax.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/AttributeCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/ComponentParser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/ComponentParserFromExistingComponent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/CopyCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/CpCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/DeleteCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/FileManipulationCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/FormCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/LayoutCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/MakeCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/MakeLivewireCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/MoveCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/MvCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/PublishCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/RmCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/S3CleanupCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/StubsCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/TouchCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/AddLiveModifierToEntangleDirectives.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/AddLiveModifierToWireModelDirectives.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/ChangeDefaultLayoutView.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/ChangeDefaultNamespace.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/ChangeForgetComputedToUnset.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/ChangeLazyToBlurModifierOnWireModelDirectives.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/ChangeTestAssertionMethods.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/ChangeWireLoadDirectiveToWireInit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/ClearViewCache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/RemoveDeferModifierFromEntangleDirectives.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/RemoveDeferModifierFromWireModelDirectives.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/RemovePrefetchModifierFromWireClickDirective.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/RemovePreventModifierFromWireSubmitDirective.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/ReplaceEmitWithDispatch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/ReplaceTemporaryUploadedFileNamespace.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/RepublishNavigation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/ThirdPartyUpgradeNotice.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/UpgradeAlpineInstructions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/UpgradeConfigInstructions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/UpgradeIntroduction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/Upgrade/UpgradeStep.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/UpgradeCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/livewire.attribute.stub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/livewire.form.stub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/livewire.inline.stub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/livewire.layout.stub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/livewire.pest.stub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/livewire.stub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/livewire.test.stub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/livewire.view.stub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/Commands/the-tao.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportConsoleCommands/SupportConsoleCommands.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/HandlesDisablingBackButtonCache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/SupportDisablingBackButtonCache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportEntangle/SupportEntangle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportEvents/BaseOn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportEvents/Event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportEvents/HandlesEvents.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportEvents/SupportEvents.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportEvents/TestsEvents.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportEvents/fake-echo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileDownloads/SupportFileDownloads.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileDownloads/TestsFileDownloads.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileUploads/FileNotPreviewableException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileUploads/FilePreviewController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileUploads/FileUploadConfiguration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileUploads/FileUploadController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileUploads/FileUploadSynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileUploads/GenerateSignedUploadUrl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileUploads/MissingFileUploadsTraitException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileUploads/S3DoesntSupportMultipleFileUploads.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileUploads/SupportFileUploads.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileUploads/TemporaryUploadedFile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileUploads/WithFileUploads.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileUploads/browser_test_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFileUploads/browser_test_image_big.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFormObjects/Form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFormObjects/FormObjectSynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFormObjects/HandlesFormObjects.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportFormObjects/SupportFormObjects.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportIsolating/BaseIsolate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportIsolating/SupportIsolating.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportJsEvaluation/BaseJs.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportJsEvaluation/HandlesJsEvaluation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportJsEvaluation/SupportJsEvaluation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportLazyLoading/BaseLazy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportLazyLoading/SupportLazyLoading.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportLegacyModels/CannotBindToModelDataWithoutValidationRuleException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportLegacyModels/EloquentCollectionSynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportLegacyModels/EloquentModelSynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportLegacyModels/SupportLegacyModels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportLifecycleHooks/DirectlyCallingLifecycleHooksNotAllowedException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportLifecycleHooks/SupportLifecycleHooks.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportLocales/SupportLocales.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportLockedProperties/BaseLocked.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportLockedProperties/CannotUpdateLockedPropertyException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportModels/EloquentCollectionSynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportModels/ModelSynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportModels/SupportModels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportMorphAwareIfStatement/SupportMorphAwareIfStatement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportMultipleRootElementDetection/MultipleRootElementsDetectedException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportMultipleRootElementDetection/SupportMultipleRootElementDetection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportNavigate/SupportNavigate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportNavigate/test-views/changed-layout.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportNavigate/test-views/changed-tracked-layout.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportNavigate/test-views/layout-with-navigate-outside.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportNavigate/test-views/layout.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportNavigate/test-views/navbar-sidebar.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportNavigate/test-views/test-navigate-asset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportNavigate/test-views/tracked-layout.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportNestedComponentListeners/SupportNestedComponentListeners.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportNestingComponents/SupportNestingComponents.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportPageComponents/BaseLayout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportPageComponents/BaseTitle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportPageComponents/HandlesPageComponents.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportPageComponents/MissingLayoutException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportPageComponents/PageComponentConfig.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportPageComponents/SupportPageComponents.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportPagination/HandlesPagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportPagination/PaginationUrl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportPagination/SupportPagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportPagination/WithoutUrlPagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportPagination/views/bootstrap.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportPagination/views/simple-bootstrap.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportPagination/views/simple-tailwind.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportPagination/views/tailwind.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportQueryString/BaseUrl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportQueryString/SupportQueryString.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportReactiveProps/BaseReactive.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportReactiveProps/CannotMutateReactivePropException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportReactiveProps/SupportReactiveProps.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportRedirects/HandlesRedirects.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportRedirects/Redirector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportRedirects/SupportRedirects.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportRedirects/TestsRedirects.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportScriptsAndAssets/SupportScriptsAndAssets.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportScriptsAndAssets/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportSession/BaseSession.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportStreaming/HandlesStreaming.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportStreaming/SupportStreaming.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportTeleporting/SupportTeleporting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportTesting/ComponentState.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportTesting/DuskBrowserMacros.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportTesting/DuskTestable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportTesting/InitialRender.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportTesting/MakesAssertions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportTesting/Render.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportTesting/RequestBroker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportTesting/ShowDuskComponent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportTesting/SubsequentRender.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportTesting/SupportTesting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportTesting/Testable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportValidation/BaseRule.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportValidation/BaseValidate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportValidation/HandlesValidation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportValidation/SupportValidation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportValidation/TestsValidation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportWireLoading/browser_test_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportWireModelingNestedComponents/BaseModelable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportWireModelingNestedComponents/SupportWireModelingNestedComponents.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportWireables/SupportWireables.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Features/SupportWireables/WireableSynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/ImplicitlyBoundMethod.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Livewire.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/LivewireManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/LivewireServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/CompileLivewireTags/CompileLivewireTags.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/CompileLivewireTags/LivewireTagPrecompiler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/ComponentRegistry.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/DataStore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/DeterministicBladeKeys.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendBlade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/FrontendAssets/FrontendAssets.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/BaseRenderless.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/Checksum.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/ComponentContext.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/CorruptComponentPayloadException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/HandleComponents.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/Synthesizers/ArraySynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/Synthesizers/CarbonSynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/Synthesizers/CollectionSynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/Synthesizers/EnumSynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/Synthesizers/FloatSynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/Synthesizers/IntSynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/Synthesizers/StdClassSynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/Synthesizers/StringableSynth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/Synthesizers/Synth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleComponents/ViewContext.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/HandleRequests/HandleRequests.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/Mechanism.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/PersistentMiddleware/PersistentMiddleware.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Mechanisms/RenderComponent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Pipe.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Transparency.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/WireDirective.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Wireable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/WithFileUploads.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/WithPagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/WithoutUrlPagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/Wrapped.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/src/helpers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/CacheCacheCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/DoctrineCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/MonologCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/NamespacedTwigProfileCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/Propel2Collector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/PropelCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/SlimCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/SwiftMailer/SwiftLogCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/SwiftMailer/SwiftMailCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/Symfony/SymfonyMailCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/DebugTwigExtension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/DumpTwigExtension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/MeasureTwigExtension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/MeasureTwigNode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/MeasureTwigTokenParser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/TimeableTwigExtensionProfiler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/TraceableTwigEnvironment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/TraceableTwigTemplate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/Twig/TwigCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Bridge/TwigProfileCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/AggregatedCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/AssetProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/ConfigCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/DataCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/DataCollectorInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/ExceptionsCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/LocalizationCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/MemoryCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/MessagesAggregateInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/MessagesCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/ObjectCountCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/PDO/PDOCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/PDO/TraceablePDO.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/PDO/TraceablePDOStatement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/PDO/TracedStatement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/PhpInfoCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/Renderable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/RequestDataCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataCollector/TimeDataCollector.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataFormatter/DataFormatter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataFormatter/DataFormatterInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataFormatter/DebugBarVarDumper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataFormatter/HasDataFormatter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataFormatter/HasXdebugLinks.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DataFormatter/VarDumper/DebugBarHtmlDumper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DebugBar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/DebugBarException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/HttpDriverInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/JavascriptRenderer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/OpenHandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/PhpHttpDriver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/RequestIdGenerator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/RequestIdGeneratorInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/debugbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/debugbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/openhandler.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/openhandler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/highlightjs/highlight.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/highlightjs/styles/github.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/widgets.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/widgets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/widgets/mails/widget.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/widgets/mails/widget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/widgets/sqlqueries/widget.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/widgets/sqlqueries/widget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/widgets/templates/widget.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Resources/widgets/templates/widget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/StandardDebugBar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Storage/FileStorage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Storage/MemcachedStorage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Storage/PdoStorage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Storage/RedisStorage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Storage/StorageInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/Storage/pdo_storage_schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-package-tools/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-package-tools/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-package-tools/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-package-tools/src/Commands/InstallCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-package-tools/src/Exceptions/InvalidPackage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-package-tools/src/Package.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-package-tools/src/PackageServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/.github/FUNDING.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/.github/ISSUE_TEMPLATE/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/.github/dependabot.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/.github/workflows/dependabot-auto-merge.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/.github/workflows/php-cs-fixer.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/.github/workflows/phpstan.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/.github/workflows/run-tests.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/.github/workflows/update-changelog.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/.php_cs.dist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/.phpunit.cache/test-results" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/UPGRADING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/config/query-builder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/database/factories/AppendModelFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/database/factories/SoftDeleteModelFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/database/factories/TestModelFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/about-us.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/advanced-usage/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/advanced-usage/extending-query-builder.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/advanced-usage/front-end-implementation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/advanced-usage/multi-value-delimiter.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/advanced-usage/pagination.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/features/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/features/filtering.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/features/including-relationships.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/features/selecting-fields.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/features/sorting.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/installation-setup.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/introduction.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/questions-issues.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/requirements.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/docs/support-us.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/phpstan-baseline.neon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/phpstan.neon.dist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/AllowedFilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/AllowedInclude.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/AllowedSort.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Concerns/AddsFieldsToQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Concerns/AddsIncludesToQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Concerns/FiltersQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Concerns/SortsQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Enums/SortDirection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Exceptions/AllowedFieldsMustBeCalledBeforeAllowedIncludes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Exceptions/InvalidAppendQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Exceptions/InvalidDirection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Exceptions/InvalidFieldQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Exceptions/InvalidFilterQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Exceptions/InvalidFilterValue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Exceptions/InvalidIncludeQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Exceptions/InvalidQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Exceptions/InvalidSortQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Exceptions/UnknownIncludedFieldsQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Filters/Filter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Filters/FiltersBeginsWithStrict.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Filters/FiltersCallback.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Filters/FiltersEndsWithStrict.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Filters/FiltersExact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Filters/FiltersPartial.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Filters/FiltersScope.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Filters/FiltersTrashed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Includes/IncludeInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Includes/IncludedCallback.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Includes/IncludedCount.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Includes/IncludedExists.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Includes/IncludedRelationship.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/QueryBuilder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/QueryBuilderRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/QueryBuilderServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Sorts/Sort.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Sorts/SortsCallback.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/spatie/laravel-query-builder/src/Sorts/SortsField.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,11 +639,7 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
-      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
-      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
-      <path value="$PROJECT_DIR$/vendor/spatie/laravel-package-tools" />
-      <path value="$PROJECT_DIR$/vendor/spatie/laravel-query-builder" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -283,15 +763,7 @@
       <workItem from="1732827056679" duration="4496000" />
       <workItem from="1732971875748" duration="2327000" />
       <workItem from="1733006510833" duration="2360000" />
-      <workItem from="1733073810444" duration="1814000" />
-    </task>
-    <task id="LOCAL-00155" summary="Quick little fix for theme toggle button">
-      <option name="closed" value="true" />
-      <created>1722188294627</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1722188294627</updated>
+      <workItem from="1733073810444" duration="4137000" />
     </task>
     <task id="LOCAL-00156" summary="Allowed filtering through sidebar tables">
       <option name="closed" value="true" />
@@ -677,7 +1149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727002938003</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="Removed Hero Banner and centered important divs on main.blade.php">
+      <option name="closed" value="true" />
+      <created>1733077208153</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1733077208153</updated>
+    </task>
+    <option name="localTasksCounter" value="205" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -698,7 +1178,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="better error handling" />
     <MESSAGE value="New editor with better performance in comments -&gt; TODO: edit comments" />
     <MESSAGE value="changed redirect route after failed authentication attempt" />
     <MESSAGE value="stripped html tags in articles.blade.php and blog_card.blade.php" />
@@ -723,7 +1202,8 @@
     <MESSAGE value="Fixed Error on Post&gt;Edit" />
     <MESSAGE value="Fixed Error in Footer" />
     <MESSAGE value="Footer Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Footer Changes" />
+    <MESSAGE value="Removed Hero Banner and centered important divs on main.blade.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed Hero Banner and centered important divs on main.blade.php" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

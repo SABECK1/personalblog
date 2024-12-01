@@ -8,6 +8,7 @@
                 <a href="{{ route('posts') }}" class="">Posts</a>
 {{--                <a href="{{ route('about') }}" class="">About</a>--}}
                 <a href="{{ route('contact') }}" class="">Contact</a>
+                <a href="{{ route('projects') }}" class="">Projects</a>
             </div>
 
             <div class='flex-wrapper navbar'>

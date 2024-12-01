@@ -39,6 +39,4 @@
             <button class="btn btn-primary load-more" onclick="goToUrl('{{ route('posts') }}')">See More</button>
         </div>
     </div>
-
-    </main>
 @endsection

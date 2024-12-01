@@ -65,10 +65,20 @@ class PagesController extends Controller
         ]);
     }
 
-    public function projects() {
-        $curl = curl_init();
+    public function projects(Request $request) {
+        $cURLConnection = curl_init();
+        $authorization = "Authorization: Bearer ".getenv('GITHUB_AUTHORIZATION');
+        curl_setopt($cURLConnection, CURLOPT_HTTPHEADER, array('Content-Type: application/json' , $authorization ));
+        curl_setopt($cURLConnection, CURLOPT_URL, 'https://api.github.com/user/repos');
+        curl_setopt($cURLConnection, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($cURLConnection, CURLOPT_HTTPAUTH, CURLAUTH_BEARER);
+        curl_setopt($cURLConnection, CURLOPT_USERAGENT, $request->header('User-Agent'));
 
-        return view('projects');
+        $repos = curl_exec($cURLConnection);
+        curl_close($cURLConnection);
+
+        $jsonArrayResponse = json_decode($repos);
+        return view('projects', ['response' => $jsonArrayResponse, 'repos' => $repos]);
     }
     public function about()
     {

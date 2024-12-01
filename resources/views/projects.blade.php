@@ -8,10 +8,10 @@
             <h2 class="h1">Interesting Projects</h2>
             <section class="container">
                 <div class="blog-card-group">
-                    {{dd($response)}}
-{{--                    @foreach ($posts as $post)--}}
-{{--                        <x-blog_card :post="$post"/>--}}
-{{--                    @endforeach--}}
+{{--                    {{dd($response)}}--}}
+                    @foreach ($response as $project)
+                        <x-Project :project="$project"/>
+                    @endforeach
                 </div>
             </section>
         </div>

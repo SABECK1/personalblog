@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components;
+namespace App\Livewire;
 
 use Closure;
 use Illuminate\Contracts\View\View;
@@ -22,6 +22,6 @@ class blog_card extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.blog_card');
+        return view('livewire.blog_card');
     }
 }

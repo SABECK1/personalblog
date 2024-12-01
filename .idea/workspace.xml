@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Footer Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/EmailVerificationNotificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/EmailVerificationNotificationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/commenteditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/commenteditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/comment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/comment.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,6 +283,7 @@
       <workItem from="1732827056679" duration="4496000" />
       <workItem from="1732971875748" duration="2327000" />
       <workItem from="1733006510833" duration="2360000" />
+      <workItem from="1733073810444" duration="1814000" />
     </task>
     <task id="LOCAL-00155" summary="Quick little fix for theme toggle button">
       <option name="closed" value="true" />

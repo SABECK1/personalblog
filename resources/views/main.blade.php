@@ -12,11 +12,11 @@
                 and the self-proclaimed author of <b>this blog!</b>
             </div>
 
-            <div class="hero_right">
-                <div class="img-box">
-                    <img src="{{ asset('images/hero.png') }}" alt="Samuel Beck" class="hero_img">
-                </div>
-            </div>
+{{--            <div class="hero_right">--}}
+{{--                <div class="img-box">--}}
+{{--                    <img src="{{ asset('images/hero.png') }}" alt="Samuel Beck" class="hero_img">--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
     </div>
 
@@ -28,15 +28,15 @@
                         @foreach ($posts as $post)
                             <x-blog_card :post="$post"/>
                         @endforeach
-                            <button class="btn btn-primary load-more" onclick="goToUrl('{{ route('posts') }}')">See More</button>
                     </div>
 
                     <div class="sidebar-container">
                     <livewire:categorytable :categories="$categories"/>
                     <livewire:tagstable :tags="$tags"/>
                     </div>
-            </section>
 
+            </section>
+            <button class="btn btn-primary load-more" onclick="goToUrl('{{ route('posts') }}')">See More</button>
         </div>
     </div>
 

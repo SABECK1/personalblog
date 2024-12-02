@@ -29,7 +29,7 @@
                                 <script>
                                     setTimeout(function() {
                                         window.location.href = {{ route('home') }}
-                                    }, 3000); // 2 second
+                                    }, 3000);
                                 </script>
                             @endif
                             <div>

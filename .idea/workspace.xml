@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Visualization of Projects on project.blade.php">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Fixed theme toggle" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -282,15 +279,7 @@
       <workItem from="1732971875748" duration="2327000" />
       <workItem from="1733006510833" duration="2360000" />
       <workItem from="1733073810444" duration="7450000" />
-      <workItem from="1733171634233" duration="284000" />
-    </task>
-    <task id="LOCAL-00159" summary="Display of liked comments, total amount of likes gotten">
-      <option name="closed" value="true" />
-      <created>1722199691304</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1722199691304</updated>
+      <workItem from="1733171634233" duration="628000" />
     </task>
     <task id="LOCAL-00160" summary="Fixed redirect after wrong registration">
       <option name="closed" value="true" />
@@ -676,7 +665,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733093963535</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="Fixed theme toggle">
+      <option name="closed" value="true" />
+      <created>1733172016654</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1733172016656</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -697,7 +694,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="better validation in post creation" />
     <MESSAGE value="markdown display of comments" />
     <MESSAGE value="Like icon change" />
     <MESSAGE value="Change form on reply/edit" />
@@ -722,7 +718,8 @@
     <MESSAGE value="Added Projects Page" />
     <MESSAGE value="GET-Request Github" />
     <MESSAGE value="Visualization of Projects on project.blade.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Visualization of Projects on project.blade.php" />
+    <MESSAGE value="Fixed theme toggle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed theme toggle" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

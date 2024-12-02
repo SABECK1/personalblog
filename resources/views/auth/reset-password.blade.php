@@ -1,7 +1,7 @@
 @extends('layouts.template')
 
 @section('content')
-
+    <script src="{{ asset('/js/validation_reset_password.js') }} " defer></script>
     <body class="light-theme">
 
         <div class="form-template">

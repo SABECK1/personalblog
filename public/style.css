@@ -491,6 +491,8 @@ li { list-style: none; }
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100%
+;
 }
 
 .blog-card .h3 {
@@ -540,7 +542,7 @@ li { list-style: none; }
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120vh;
+    /*height: 120vh;*/
 }
 
 #blog-form {

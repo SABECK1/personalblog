@@ -80,6 +80,7 @@ class PagesController extends Controller
         $jsonArrayResponse = json_decode($repos);
         return view('projects', ['response' => $jsonArrayResponse, 'repos' => $repos]);
     }
+
     public function about()
     {
         return view('about');

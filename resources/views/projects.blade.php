@@ -10,7 +10,9 @@
                 <div class="blog-card-group">
 {{--                    {{dd($response)}}--}}
                     @foreach ($response as $project)
+                        @if(!$project->private and !$project->fork)
                         <x-Project :project="$project"/>
+                        @endif
                     @endforeach
                 </div>
             </section>

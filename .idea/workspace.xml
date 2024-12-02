@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Added Validation to reset-password.blade.php">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/NewPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/NewPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/reset-password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/reset-password.blade.php" afterDir="false" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Fixed Password Reset">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,15 +281,10 @@
       <workItem from="1732971875748" duration="2327000" />
       <workItem from="1733006510833" duration="2360000" />
       <workItem from="1733073810444" duration="7450000" />
-      <workItem from="1733171634233" duration="933000" />
-    </task>
-    <task id="LOCAL-00161" summary="Implemented hasMiddleware to only allow comments on verified email">
-      <option name="closed" value="true" />
-      <created>1722287522452</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1722287522453</updated>
+      <workItem from="1733171634233" duration="3244000" />
+      <workItem from="1733434538877" duration="859000" />
+      <workItem from="1733521970682" duration="1980000" />
+      <workItem from="1733615708235" duration="1144000" />
     </task>
     <task id="LOCAL-00162" summary="Like with auth and verification Gateway">
       <option name="closed" value="true" />
@@ -676,7 +670,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733172479596</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="Fixed Password Reset">
+      <option name="closed" value="true" />
+      <created>1733172645085</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1733172645085</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -697,7 +699,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Like icon change" />
     <MESSAGE value="Change form on reply/edit" />
     <MESSAGE value="fixed error for unauth sessions" />
     <MESSAGE value="EventListener for Editing/Replying for CKEDITORInstance Access" />
@@ -722,7 +723,8 @@
     <MESSAGE value="Visualization of Projects on project.blade.php" />
     <MESSAGE value="Fixed theme toggle" />
     <MESSAGE value="Added Validation to reset-password.blade.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Validation to reset-password.blade.php" />
+    <MESSAGE value="Fixed Password Reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Password Reset" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

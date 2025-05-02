@@ -8,10 +8,9 @@
             <h2 class="h1">Interesting Projects</h2>
             <section class="container">
                 <div class="blog-card-group">
-{{--                    {{dd($response)}}--}}
                     @foreach ($response as $project)
                         @if(!$project->private and !$project->fork)
-                        <x-Project :project="$project"/>
+                            <x-project :project="$project" />
                         @endif
                     @endforeach
                 </div>

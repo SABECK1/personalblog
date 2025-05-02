@@ -1,4 +1,16 @@
 services:
+    mysql_db:
+        container_name: laravel-mysql
+        image: mysql:latest
+        environment:
+            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+            MYSQL_ROOT_HOST: '%'
+            MYSQL_DATABASE: '${DB_DATABASE}'
+            #MYSQL_USER: '${DB_USERNAME}'
+            MYSQL_PASSWORD: '${DB_PASSWORD}'
+            MYSQL_ALLOW_EMPTY_PASSWORD: 1
+        ports:
+            - 3306:3306
 
     laravel-docker:
         container_name: laravel-docker
@@ -16,19 +28,6 @@ services:
         depends_on:
             - mysql_db
             - phpmyadmin
-
-    mysql_db:
-        container_name: laravel-mysql
-        image: mysql:latest
-        environment:
-            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
-            MYSQL_ROOT_HOST: '%'
-            MYSQL_DATABASE: '${DB_DATABASE}'
-            MYSQL_USER: '${DB_USERNAME}'
-            MYSQL_PASSWORD: '${DB_PASSWORD}'
-            MYSQL_ALLOW_EMPTY_PASSWORD: 1
-        ports:
-            - 3306:3306
 #        volumes:
 #            - db-data:/var/lib/mysql
 

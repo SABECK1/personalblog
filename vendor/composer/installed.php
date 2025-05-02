@@ -3,13 +3,22 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'c252661cadb6adb1be874234281d340005dd4a14',
+        'reference' => '97760f2f299a45efda70d3755273240705326d9c',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
+        'appstract/laravel-opcache' => array(
+            'pretty_version' => '4.0.2',
+            'version' => '4.0.2.0',
+            'reference' => 'd2ce88cddda6af54c14d1f9ceaaf94b54f38f9d3',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../appstract/laravel-opcache',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'brick/math' => array(
             'pretty_version' => '0.12.1',
             'version' => '0.12.1.0',
@@ -382,7 +391,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'c252661cadb6adb1be874234281d340005dd4a14',
+            'reference' => '97760f2f299a45efda70d3755273240705326d9c',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

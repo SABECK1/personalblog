@@ -4,40 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Better API requests github">
-      <change afterPath="$PROJECT_DIR$/app/View/Components/Project.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/.styleci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/config/opcache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/src/Commands/Clear.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/src/Commands/Compile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/src/Commands/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/src/Commands/Status.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/src/CreatesRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/src/Http/Controllers/OpcacheController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/src/Http/Middleware/Request.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/src/Http/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/src/OpcacheClass.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/src/OpcacheFacade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/appstract/laravel-opcache/src/OpcacheServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/personal_blog_new.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/personal_blog_new.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Hid Projects, at least for now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,15 +291,7 @@
       <workItem from="1734031780658" duration="219000" />
       <workItem from="1745018971124" duration="2450000" />
       <workItem from="1746193775673" duration="3465000" />
-      <workItem from="1746215723558" duration="2026000" />
-    </task>
-    <task id="LOCAL-00163" summary="Fixed error message display">
-      <option name="closed" value="true" />
-      <created>1722373600718</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1722373600719</updated>
+      <workItem from="1746215723558" duration="4546000" />
     </task>
     <task id="LOCAL-00164" summary="Fixed error message display">
       <option name="closed" value="true" />
@@ -717,7 +677,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733619550772</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="Hid Projects, at least for now">
+      <option name="closed" value="true" />
+      <created>1746218398950</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1746218398951</updated>
+    </task>
+    <option name="localTasksCounter" value="213" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -738,7 +706,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed error for unauth sessions" />
     <MESSAGE value="EventListener for Editing/Replying for CKEDITORInstance Access" />
     <MESSAGE value="Content copy when editing" />
     <MESSAGE value="Fixed Bug that caused only the first element in dashboard to be edited" />
@@ -763,7 +730,8 @@
     <MESSAGE value="Added Validation to reset-password.blade.php" />
     <MESSAGE value="Fixed Password Reset" />
     <MESSAGE value="Better API requests github" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better API requests github" />
+    <MESSAGE value="Hid Projects, at least for now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hid Projects, at least for now" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

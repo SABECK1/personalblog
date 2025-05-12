@@ -630,13 +630,13 @@ li { list-style: none; }
 
 .about .content h2{
     font-size: 3rem;
-    color: var(--white);
+    "color: var(--white);
     padding-bottom: 1rem;
 }
 
 .about .content > p{
     font-size: 1.6rem;
-    color: var(--grey);
+    "color: var(--grey);
     line-height: 1.6;
     padding-bottom: 1rem;
 }
@@ -671,7 +671,7 @@ li { list-style: none; }
 .about .content .about-info .info span{
     font-size: 1.6rem;
     font-weight: 400;
-    color: var(--grey);
+    "color: var(--grey);
 }
 
 .about .content .about-info .info .btn{
@@ -722,7 +722,7 @@ li { list-style: none; }
     line-height: 5rem;
     text-align: center;
     font-size: 2rem;
-    color:var(--background-tertiary);
+    color:var(--white);
     background:var(--foreground-secondary);
 }
 
@@ -733,7 +733,7 @@ li { list-style: none; }
 }
 
 .experience-item span{
-    background: #222;
+    background: var(--background-tertiary);
     color: var(--foreground-primary);
     padding: 0.5rem 1.5rem;
     font-size: 1.8rem;
@@ -742,12 +742,13 @@ li { list-style: none; }
 
 .experience-item h3{
     font-size: 1.8rem;
-    color: var(--white);
+    "color: var(--white);
+    margin-top: 0.5rem;
     padding: 2rem 0;
 }
 
 .experience-item p{
-    color: var(--grey);
+    "color: var(--grey);
     font-size: 1.3rem;
     line-height: 2.5rem;
     margin-bottom: 1rem;

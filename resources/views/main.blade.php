@@ -16,7 +16,7 @@
 
     <div class="main">
         <div class="blog">
-            <h2 class="h1">Latest Blog Posts</h2>
+            <h1 class="h1">Latest Blog Posts</h1>
             <section class="container">
                     <div class="blog-card-group">
                         @foreach ($posts as $post)

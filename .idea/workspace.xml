@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Redesigned and moved hero section to &quot;about&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Finished about section" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -299,23 +293,7 @@
       <workItem from="1746215723558" duration="4546000" />
       <workItem from="1746304606742" duration="10642000" />
       <workItem from="1747002152507" duration="1259000" />
-      <workItem from="1747047210347" duration="1537000" />
-    </task>
-    <task id="LOCAL-00166" summary="moved error messages in dashboard.blade.php">
-      <option name="closed" value="true" />
-      <created>1722455891232</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1722455891232</updated>
-    </task>
-    <task id="LOCAL-00167" summary="better error handling">
-      <option name="closed" value="true" />
-      <created>1722456135254</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1722456135254</updated>
+      <workItem from="1747047210347" duration="4084000" />
     </task>
     <task id="LOCAL-00168" summary="New editor with better performance in comments -&gt; TODO: edit comments">
       <option name="closed" value="true" />
@@ -693,7 +671,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746311457039</updated>
     </task>
-    <option name="localTasksCounter" value="215" />
+    <task id="LOCAL-00215" summary="Finished about section">
+      <option name="closed" value="true" />
+      <created>1747048795962</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1747048795963</updated>
+    </task>
+    <task id="LOCAL-00216" summary="Finished about section">
+      <option name="closed" value="true" />
+      <created>1747055474458</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1747055474458</updated>
+    </task>
+    <option name="localTasksCounter" value="217" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -714,7 +708,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed Bug that caused only the first element in dashboard to be edited" />
     <MESSAGE value="Working edit comment in comment section TODO: update commenteditor.js so that the put method is only used on update" />
     <MESSAGE value="Added middlewares to all dashboard routes" />
     <MESSAGE value="Password Change now possible in dashboard.blade.php" />
@@ -739,7 +732,8 @@
     <MESSAGE value="Hid Projects, at least for now" />
     <MESSAGE value="Fixed footer styling" />
     <MESSAGE value="Redesigned and moved hero section to &quot;about&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redesigned and moved hero section to &quot;about&quot;" />
+    <MESSAGE value="Finished about section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished about section" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

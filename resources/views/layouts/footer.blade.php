@@ -5,10 +5,10 @@
             <br>
             <p>Welcome to my Blog, where I write about stuff I learned that I'd probably forget otherwise!
             </p>
-            <div class="contact">
-                <span><i class="fas fa-phone">&nbsp; +49 123456789</i></span>
-                <span><i class="fas fa-envelope">&nbsp; test@gmail.com</i></span>
-            </div>
+{{--            <div class="contact">--}}
+{{--                <span><i class="fas fa-phone">&nbsp; +49 123456789</i></span>--}}
+{{--                <span><i class="fas fa-envelope">&nbsp; test@gmail.com</i></span>--}}
+{{--            </div>--}}
         </div>
         <div class="footer-section links">
             <h2>Quick Links</h2>

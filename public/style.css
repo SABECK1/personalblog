@@ -22,8 +22,9 @@ fieldset {
 html,
 body {
      /*scroll-behavior: smooth; */
+    overflow: auto;
     height: 100%;
-    /*transition: 0.5s;*/
+    min-height: fit-content;
 }
 
 .h1,
@@ -743,7 +744,7 @@ li { list-style: none; }
 
 .experience-item h3{
     font-size: 1.8rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     padding: 2rem 0;
 }
 

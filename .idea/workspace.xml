@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Changed colors to fit light mode" />
+    <list default="true" id="1a0a706d-0ada-4b53-b06a-369f2e5e8b7c" name="Changes" comment="Merge remote-tracking branch 'origin/master'">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -294,22 +297,7 @@
       <workItem from="1746304606742" duration="10642000" />
       <workItem from="1747002152507" duration="1259000" />
       <workItem from="1747047210347" duration="5738000" />
-    </task>
-    <task id="LOCAL-00173" summary="Like icon change">
-      <option name="closed" value="true" />
-      <created>1722544400241</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1722544400241</updated>
-    </task>
-    <task id="LOCAL-00174" summary="Change form on reply/edit">
-      <option name="closed" value="true" />
-      <created>1722551114928</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1722551114929</updated>
+      <workItem from="1747528472361" duration="782000" />
     </task>
     <task id="LOCAL-00175" summary="fixed error for unauth sessions">
       <option name="closed" value="true" />
@@ -687,7 +675,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747056935122</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="Updated Footer">
+      <option name="closed" value="true" />
+      <created>1747528504143</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1747528504143</updated>
+    </task>
+    <task id="LOCAL-00223" summary="Merge remote-tracking branch 'origin/master'">
+      <option name="closed" value="true" />
+      <created>1747528561868</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1747528561868</updated>
+    </task>
+    <option name="localTasksCounter" value="224" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -708,8 +712,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Password Change now possible in dashboard.blade.php" />
-    <MESSAGE value="Access Permissions" />
     <MESSAGE value="Published Dockerfiles" />
     <MESSAGE value="Heroku" />
     <MESSAGE value="Docker Update" />
@@ -733,7 +735,9 @@
     <MESSAGE value="Finished about section" />
     <MESSAGE value="Merge branch 'samuel' of https://github.com/SABECK1/personalblog" />
     <MESSAGE value="Changed colors to fit light mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed colors to fit light mode" />
+    <MESSAGE value="Updated Footer" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

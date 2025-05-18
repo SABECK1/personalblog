@@ -27,6 +27,6 @@ I'm continuously adding new features and refining the blog. Future updates may i
 - Fully functional comment system
 - Better optimization for mobile devices
 
-Feel free to browse around and [reach out](#) if you have feedback or questions!
+Feel free to browse around and [reach out]((http://samuelbeck.software/contact)) if you have feedback or questions!
 
 Thanks for stopping by! 

@@ -50,17 +50,24 @@
             <h2>Contact</h2>
             <br>
             <p>Message me directly without needing to register. Business inquiries only</p>
-            <form action="{{ route('contact.mail_guest') }}" method="POST">
-                @csrf
-                @if ($errors->any() AND Request::is('contact'))
-                    {!! implode('', $errors->all('<div class="error">:message</div>')) !!}
-                @endif
-                <input type="email" name="contact_email" class="textinput" placeholder="Your Email">
-                <textarea name="contact_message" class="textinput" placeholder="Your Message"></textarea>
-                <button type="submit" name="contact_message_submit" class="btn btn-primary"><i
-                        class="fas fa-envelope"></i> Send
-                    Message</button>
-            </form>
+             <form action="{{ route('contact.mail_guest') }}" method="POST" id="contactform_guest">
+                            @csrf
+                            @if ($errors->any())
+                                {!! implode('', $errors->all('<div class="error">:message</div>')) !!}
+                            @endif
+                            <div>
+                                <input type="email" class="textinput email" placeholder="E-Mail" name="contact_email_guest"
+                                    id="contact_email_guest">
+                            </div>
+                            <div class="textinput">
+                                <textarea id="contact_message_guest" name="contact_message_guest" class="textinput" placeholder="Your Message..."></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" name="contact_message_submit" class="btn btn-primary">
+                                    <i class="fas fa-envelope"></i>
+                                    Send Message</button>
+                            </div>
+                        </form>
         </div>
 
     </div>

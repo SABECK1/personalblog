@@ -50,7 +50,7 @@
             <h2>Contact</h2>
             <br>
             <p>Message me directly without needing to register. Business inquiries only</p>
-            <form action="{{ route('contact') }}" method="POST">
+            <form action="{{ route('contact.mail_guest') }}" method="POST">
                 @csrf
                 @if ($errors->any() AND Request::is('contact'))
                     {!! implode('', $errors->all('<div class="error">:message</div>')) !!}

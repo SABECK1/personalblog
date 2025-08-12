@@ -104,7 +104,7 @@ class PagesController extends Controller
 
         Mail::to(getenv('MAIL_USERNAME'))->send(new ContactMessage($request->contact_email_guest, $request->contact_message_guest));
 //        Mail::to($to_mail)->send(new ContactConfirmation());
-        return redirect(route('home', absolute: true));
+        return redirect()->back()->with('success', 'Email sent! Please check your inbox!');
     }
 
     public function contact_mail_auth(Request $request): RedirectResponse
@@ -118,6 +118,6 @@ class PagesController extends Controller
 
         auth()->user()->notify(new ContactConfirmation());
         Mail::to(getenv('MAIL_USERNAME'))->send(new ContactMessage($request->user()->email, $request->contact_message_auth));
-        return redirect(route('home', absolute: true));
+        return redirect()->back()->with('success', 'Email sent! Please check your inbox!');
     }
 }
